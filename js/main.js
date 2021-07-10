@@ -1,6 +1,8 @@
 $(document).ready(function () {
-  function check_if_in_view() {
-    $(".grid-letters").css({ marginRight: -(scrollY / 4) });
+  // function to slide grid letters towards with respect to the scroll position
+  function SlideGridLetters() {
+    $(".grid-letters").css({ marginRight: -scrollY });
   }
-  $(window).on("scroll", check_if_in_view);
+
+  $(window).on("scroll", SlideGridLetters);
 });

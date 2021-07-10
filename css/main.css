@@ -8,9 +8,6 @@ body {
 
 /* grid structure */
 
-.main-container {
-}
-
 .grid-container {
   position: fixed;
   width: 100%;
@@ -24,7 +21,7 @@ body {
   float: left;
   width: calc((100vw - 6px) / 7);
   height: 100%;
-  border-right: 1px solid;
+  border-right: 1px solid rgba(141, 134, 134, 0.3);
   overflow: hidden;
   text-align: center;
 }
@@ -34,14 +31,20 @@ body {
 }
 
 .grid-letters {
-  display: inline-block;
+  display: block;
   font-size: 160px;
   position: relative;
   top: 12%;
+  height: 24px;
+  color: rgba(56, 56, 56, 0.3);
 }
 
-h1 {
-  height: 2000px;
+.grid-letters.row-2 {
+  margin-left: -40vw;
+}
+
+.grid-letters.row-3 {
+  margin-left: -80vw;
 }
 
 @media screen and (max-width: 767px) {
