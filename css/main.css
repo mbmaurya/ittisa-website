@@ -1,7 +1,103 @@
+@font-face {
+  font-family: BigCaslon;
+  src: url(../fonts/BigCaslon.ttf)
+}
+
 html,
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  background-color: #3d3d3d;
+}
+
+/* colors */
+:root {
+  --white: #FFFFFF;
+  --yellow: #FCB542;
+}
+
+
+/* common components */
+
+.main-title {
+  margin: 0;
+  font-family: "BigCaslon", serif;
+  font-size: 100px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+.title {
+  margin: 0;
+  font-family: "BigCaslon", serif;
+  font-size: 50px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+
+}
+
+.small-title {
+  border-left: 4px solid var(--yellow);
+  padding-left: 10px;
+  margin: 0;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+.yellow-title {
+  color: var(--yellow);
+}
+
+.services-title {
+  border-left: 4px solid var(--yellow);
+  padding-left: 16px;
+  margin: 0;
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+.view-all-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  padding: 0;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #fcb542;
+  text-decoration: none;
 }
