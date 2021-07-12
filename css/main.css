@@ -1,6 +1,6 @@
 @font-face {
   font-family: BigCaslon;
-  src: url(../fonts/BigCaslon.ttf)
+  src: url(../fonts/BigCaslon.ttf);
 }
 
 html,
@@ -14,10 +14,9 @@ body {
 
 /* colors */
 :root {
-  --white: #FFFFFF;
-  --yellow: #FCB542;
+  --white: #ffffff;
+  --yellow: #fcb542;
 }
-
 
 /* common components */
 
@@ -45,7 +44,6 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: var(--white);
-
 }
 
 .small-title {
@@ -102,7 +100,6 @@ body {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 .view-all-link {
   display: flex;
   flex-direction: row;
@@ -122,7 +119,6 @@ body {
   color: #fcb542;
   text-decoration: none;
 }
-=======
 /* grid structure */
 
 .grid-container {
@@ -169,4 +165,3 @@ body {
     font-size: 60px;
   }
 }
->>>>>>> 07b895737dd3275cbdba02d446a632eddfd12195
