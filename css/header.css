@@ -1,0 +1,91 @@
+header {
+  margin-top: 28px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .menu {
+  z-index: 1;
+  border: 0;
+  background: none;
+  line-height: 0;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+header .container .menu p {
+  display: inline-block;
+  font-family: "Inconsolata", monospace;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 7.42px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header .container .menu div.toggle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  padding: 0;
+}
+
+header .container .menu div.toggle span:first-of-type {
+  margin-bottom: 2px;
+}
+
+header .container .menu div.toggle span {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  border-top: 2px solid #ffffff;
+}
+
+header .container .menu div.toggle.rotate span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 3px;
+}
+
+header .container .menu div.toggle.rotate span:nth-child(2) {
+  transform: rotate(136deg);
+
+  top: -4px;
+}
+
+header .container nav {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(114 114 114);
+  z-index: 0;
+}
+
+header .container nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20vw;
+  margin-left: 40vw;
+  height: 100%;
+}
+
+header .container nav ul li a {
+  color: #e7e7e7;
+  font-family: BigCaslon;
+  font-size: 72px;
+  line-height: 96px;
+  text-decoration: none;
+}

@@ -5,4 +5,12 @@ $(document).ready(function () {
   }
 
   $(window).on("scroll", SlideGridLetters);
+
+  $("#toggle_menu").click(function () {
+    $("#toggle_menu > p").text(
+      $("#toggle_menu > p").text() == "Menu" ? "Close" : "Menu"
+    );
+    $(".toggle").toggleClass("rotate");
+    $("#navigation").toggleClass("d-block");
+  });
 });
