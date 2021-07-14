@@ -16,10 +16,10 @@ body {
 
 /* colors */
 :root {
-  --white: #ffffff;
-  --yellow: #fcb542;
-  --light-grey: #8a8a8a;
-  --dark-grey: #0000005b;
+  --white: rgb(255, 255, 255);
+  --yellow: rgb(252, 181, 66);
+  --light-grey: rgb(138, 138, 138);
+  --dark-grey: rgba(0, 0, 0, 0.357);
 }
 
 /* utility classses */
@@ -248,15 +248,18 @@ body {
 }
 
 .row .col-1 {
-  width: calc((100vw - 0px) / 7);
+  width: calc((100vw) / 7);
 }
 
 .row .col-2 {
-  width: calc(((100vw - 0px) / 7)*2);
+  width: calc(((100vw) / 7)*2);
 }
 
 .row .col-3 {
-  width: calc(((100vw - 0px) / 7)*3);
+  width: calc(((100vw) / 7)*3);
+}
+.row .col-5 {
+  width: calc(((100vw) / 7)*5);
 }
 
 /* Services section */
