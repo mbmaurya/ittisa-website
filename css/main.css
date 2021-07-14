@@ -113,6 +113,19 @@ body {
   color: var(--light-grey);
 }
 
+.banner-text {
+  margin-right: 30%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
 .blog-date {
   margin: 0;
   margin-bottom: 4px;
@@ -261,6 +274,42 @@ body {
 .row .col-5 {
   width: calc(((100vw) / 7)*5);
 }
+
+/* banner section */
+
+.banner-section {
+  padding-top: 89px;
+  padding-bottom: 146px;
+}
+
+.banner-section .slider .slide #text-col {
+  padding-top: 54px;
+}
+.banner-section .slider .slide #small-img-col {
+  padding-top: 94px;
+}
+
+.banner-section .slider .slick-prev, .banner-section .slider .slick-next {
+  top: 100%;
+  z-index: 10;
+}
+
+.banner-section .slider .slick-prev {
+  left: 0;
+}
+
+.banner-section .slider .slick-next {
+  left: 50px;
+}
+
+.banner-section .slider .slick-prev::before {
+  content: url(../assets/global/banner-arrow-left.svg);
+}
+
+.banner-section .slider .slick-next::before {
+  content: url(../assets/global/banner-arrow-right.svg);
+}
+
 
 /* Services section */
 

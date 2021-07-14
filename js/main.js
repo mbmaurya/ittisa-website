@@ -14,3 +14,5 @@ $(document).ready(function () {
     $("#navigation").toggleClass("d-block");
   });
 });
+
+$(".slider").slick()
