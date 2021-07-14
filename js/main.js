@@ -16,3 +16,7 @@ $(document).ready(function () {
 });
 
 $(".slider").slick()
+$(".work-slider").slick({
+  centerMode: true,
+  slidesToShow: 3
+})

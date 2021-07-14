@@ -194,6 +194,10 @@ body {
   text-decoration: none;
 }
 
+.view-all-link::after {
+  content: url(../assets/global/banner-arrow-right.svg);
+}
+
 /* grid structure */
 
 .grid-container {
@@ -310,6 +314,59 @@ body {
   content: url(../assets/global/banner-arrow-right.svg);
 }
 
+/* work section */
+
+.work-section {
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+.work-section #work-grid {
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
+.work-section #work-grid .work-slider .slide {
+  margin: 0 40px;
+}
+
+.work-section #work-grid .slick-list { 
+  padding-top:45px !important;
+  padding-bottom:45px !important;
+}
+
+.work-section #work-grid .work-slider .slick-center {
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  transform: scale(1.4);    
+}
+
+.work-section #work-grid .work-slider .slide .logo-img-div {
+  margin-top: -20px;
+}
+
+.work-section .work-slider .slick-prev {
+  left: -100px;
+}
+
+.work-section .work-slider .slick-next {
+  right: -100px;
+}
+
+.work-section .work-slider .slick-prev::before {
+  content: url(../assets/global/arrow-left.svg);
+}
+
+.work-section .work-slider .slick-next::before {
+  content: url(../assets/global/arrow-right.svg);
+}
+
+.work-section .link-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Services section */
 
@@ -369,7 +426,7 @@ body {
 
 .blogs-section {
   padding-top: 71px;
-  padding-bottom: 51px;
+  padding-bottom: 60px;
 }
 
 .blogs-section #blogs-row {
@@ -397,6 +454,12 @@ body {
 
 .blogs-section #blogs-row .blog-div:hover .text-div .hover-arrow-div {
   visibility: visible;
+}
+
+.blogs-section .link-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Recognition section */
