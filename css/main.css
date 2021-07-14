@@ -11,13 +11,15 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  background-color: #3d3d3d;
+  /* background-color: #3d3d3d; */
 }
 
 /* colors */
 :root {
   --white: #ffffff;
   --yellow: #fcb542;
+  --light-grey: #8a8a8a;
+  --dark-grey: #0000005b;
 }
 
 /* utility classses */
@@ -66,6 +68,7 @@ body {
   border-left: 4px solid var(--yellow);
   padding-left: 10px;
   margin: 0;
+  margin-bottom: 16px;
   font-family: Poppins;
   font-size: 18px;
   font-weight: 600;
@@ -94,6 +97,20 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: var(--white);
+}
+
+.services-text {
+  margin-left: 20px;
+  margin-right: 120px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--light-grey);
 }
 
 .view-all-link {
@@ -146,6 +163,13 @@ body {
   left: 0;
 }
 
+#base-grid-container {
+  background: url('../assets/home-page/banner-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
 .grid {
   float: left;
   width: calc((100vw - 6px) / 7);
@@ -186,4 +210,78 @@ body {
   .grid-letters {
     font-size: 60px;
   }
+}
+
+
+/* Services section */
+.services-section {
+  height: 100vh;
+  min-height: 100vh;
+  padding: 77px 0 67px 0;
+}
+
+.services-section #service-title-grid {
+  margin-bottom: 126px;
+  position: inherit;
+  width: 100vw;
+  max-height: 146px;
+}
+
+.services-section #service-title-grid .grid {
+  overflow: visible;
+  border: none;
+}
+
+.services-section #service-title-grid .grid .title-div {
+  width: max-content;
+}
+
+.services-section #services-grid {
+  position: static;
+  width: 100vw;
+  height: 245px;
+}
+
+.services-section #services-grid .grid {
+  border: none;
+  margin-bottom: 129px;
+}
+
+.services-section #services-grid .grid:nth-child(2),
+.services-section #services-grid .grid:nth-child(4),
+.services-section #services-grid .grid:nth-child(7),
+.services-section #services-grid .grid:nth-child(9),
+.services-section #services-grid .grid:nth-child(12),
+.services-section #services-grid .grid:nth-child(14),
+.services-section #services-grid .grid:nth-child(17),
+.services-section #services-grid .grid:nth-child(19) {
+  width: calc((100vw) / 3.5);
+  text-align: left;
+}
+
+.services-section #services-grid .grid:nth-child(17),
+.services-section #services-grid .grid:nth-child(19) {
+  margin-bottom: 0 !important;
+}
+
+.services-section .service-div .service-icon {
+  margin-left: 20px
+}
+
+.services-section .service-div .text-div {
+  margin-top: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.services-section .service-div .text-div .hover-arrow-div {
+  text-align: right;
+  visibility: hidden;
+}
+
+.services-section .service-div:hover .text-div {
+  background-color: var(--dark-grey);
+}
+
+.services-section .service-div:hover .text-div .hover-arrow-div {
+  visibility: visible;
 }
