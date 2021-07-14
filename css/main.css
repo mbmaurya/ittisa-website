@@ -212,12 +212,12 @@ body {
   }
 }
 
-
 /* Services section */
+
 .services-section {
-  height: 100vh;
-  min-height: 100vh;
-  padding: 77px 0 67px 0;
+  height: 180vh;
+  min-height: 180vh;
+  padding: 0 0 67px 0;
 }
 
 .services-section #service-title-grid {
@@ -284,4 +284,40 @@ body {
 
 .services-section .service-div:hover .text-div .hover-arrow-div {
   visibility: visible;
+}
+
+/* Our Clients section */
+.clients-section {
+  height: 65vh;
+  min-height: 10vh;
+  padding: 77px 0 67px 0;
+}
+
+.clients-section #clients-title-grid {
+  margin-bottom: 0px;
+  position: inherit;
+  width: 100vw;
+  max-height: 60px;
+}
+
+.clients-section #clients-title-grid .grid {
+  overflow: visible;
+  border: none;
+}
+
+.clients-section #clients-title-grid .grid .title-div {
+  width: max-content;
+}
+
+.clients-section #clients-grid {
+  position: static;
+  height: 100px;
+}
+
+.clients-section #clients-grid .img-div {
+  height: 100px;
+  background-color: var(--dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
