@@ -113,6 +113,34 @@ body {
   color: var(--light-grey);
 }
 
+.blog-date {
+  margin: 0;
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+.blog-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--yellow);
+}
+
 .view-all-link {
   display: flex;
   flex-direction: row;
@@ -128,7 +156,7 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: 2px;
-  text-align: left;
+  text-align: center;
   color: var(--yellow);
   text-decoration: none;
 }
@@ -278,6 +306,59 @@ body {
 }
 
 .clients-section #clients-row .col-1 .img-div {
+  height: 100px;
+  background-color: var(--dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Blog Section */
+
+.blogs-section {
+  padding-top: 71px;
+  padding-bottom: 51px;
+}
+
+.blogs-section #blogs-row {
+  margin-top: 72px;
+}
+
+.blogs-section #blogs-row .blog-div {
+  margin-bottom: 30px;
+}
+
+.blogs-section #blogs-row .blog-div .text-div {
+  margin-top: -30px;
+  margin-right: 45%;
+  transition: all 0.2s ease-in-out;
+}
+
+.blogs-section #blogs-row .blog-div .text-div .hover-arrow-div {
+  text-align: right;
+  visibility: hidden;
+}
+
+.blogs-section #blogs-row .blog-div:hover .text-div {
+  background-color: var(--dark-grey);
+}
+
+.blogs-section #blogs-row .blog-div:hover .text-div .hover-arrow-div {
+  visibility: visible;
+}
+
+/* Recognition section */
+
+.recognition-section {
+  padding-top: 17px;
+  padding-bottom: 83px;
+}
+
+.recognition-section #recognition-row {
+  margin-top: -70px;
+}
+
+.recognition-section #recognition-row .col-1 .img-div {
   height: 100px;
   background-color: var(--dark-grey);
   display: flex;
