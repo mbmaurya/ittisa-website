@@ -24,10 +24,17 @@ $(".work-slider").slick({
 
 // accordion
 var acc = $(".accordion-btn")
-var i;
 
-for(i=0; i < acc.length; i++) {
-  acc[i].click(function() {
-    console.log('f')
-  })
-}
+acc.each(function(i) {
+  $(this).on("click", function() {
+
+    $(this).toggleClass("accordion-active")
+    const panel = $(this).next()
+    if($(this).hasClass("accordion-active")) {
+      panel.css({"max-height": "fit-content"})
+    }
+    else {
+      panel.css({"max-height": "0"})
+    }
+  }) 
+})

@@ -524,11 +524,11 @@ body {
   position: relative;
 }
 
-.accordion-active,.faq-section #faq-row #text-col .accordion-div  .accordion-btn:hover {
+.faq-section #faq-row #text-col .accordion-div .accordion-active,.faq-section #faq-row #text-col .accordion-div .accordion-btn:hover {
   background-color: var(--dark-grey);
 }
 
-.accordion-active,.faq-section #faq-row #text-col .accordion-div .accordion-btn:after {
+.faq-section #faq-row #text-col .accordion-div .accordion-btn:after {
   content: '\002B';
   color: var(--white);
   font-size: 20px;
@@ -554,6 +554,10 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.faq-section #faq-row #text-col .accordion-div .accordion-panel ul {
+  margin-left: 0;
 }
 
 /* contact section */
