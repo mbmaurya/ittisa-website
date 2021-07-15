@@ -494,6 +494,68 @@ body {
   align-items: center;
 }
 
+/* FAQ section */
+.faq-section {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.faq-section #faq-row {
+  margin-top: 57px;
+}
+
+.faq-section #faq-row #text-col .accordion-div .accordion-btn {
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  padding: 10px 25% 10px 0;
+  width: 100%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  transition: 0.4s;
+  border: none;
+  border-bottom: 1px dashed var(--light-grey);
+  position: relative;
+}
+
+.accordion-active,.faq-section #faq-row #text-col .accordion-div  .accordion-btn:hover {
+  background-color: var(--dark-grey);
+}
+
+.accordion-active,.faq-section #faq-row #text-col .accordion-div .accordion-btn:after {
+  content: '\002B';
+  color: var(--white);
+  font-size: 20px;
+  font-weight: normal;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-section #faq-row #text-col .accordion-div .accordion-panel {
+  padding: 0 0;
+  background-color: var(--dark-grey);
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 /* contact section */
 
 .contact-section {

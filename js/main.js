@@ -15,8 +15,19 @@ $(document).ready(function () {
   });
 });
 
+// carousel
 $(".slider").slick()
 $(".work-slider").slick({
   centerMode: true,
   slidesToShow: 3
 })
+
+// accordion
+var acc = $(".accordion-btn")
+var i;
+
+for(i=0; i < acc.length; i++) {
+  acc[i].click(function() {
+    console.log('f')
+  })
+}
