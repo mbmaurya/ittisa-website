@@ -24,3 +24,9 @@ These are alphabets representing title of the section that is currently in view 
 Grid letters are span elements which holds these content and has different rows for different titles of the section.
 
 To add new title, add another row in each grid and fill it with each letters of the new tilte. In main.css file, you need to add negative left margin of (x + 40)vw where x is the negative left margin of the previous row in the grid.
+
+
+## carousel
+
+For carousel, using Slick slider plugin
+link --> https://kenwheeler.github.io/slick/
