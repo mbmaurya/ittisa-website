@@ -9,7 +9,7 @@ header .container {
 }
 
 header .container .menu {
-  z-index: 1;
+  z-index: 12;
   border: 0;
   background: none;
   line-height: 0;
@@ -64,7 +64,7 @@ header .container nav {
   top: 0;
   left: 0;
   background: rgb(114 114 114);
-  z-index: 0;
+  z-index: 11;
 }
 
 header .container nav ul {
