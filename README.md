@@ -25,8 +25,19 @@ Grid letters are span elements which holds these content and has different rows 
 
 To add new title, add another row in each grid and fill it with each letters of the new tilte. In main.css file, you need to add negative left margin of (x + 40)vw where x is the negative left margin of the previous row in the grid.
 
-
-## carousel
+# carousel
 
 For carousel, using Slick slider plugin
 link --> https://kenwheeler.github.io/slick/
+
+# Grid Letters
+
+function SlideGridLetters() {
+$(".grid-letters").css({
+marginRight: (scrollY / (screen.height X 1)) X (-100) + "%",
+});
+}
+
+The above function checks for an Html element with a class name ".grid-letters" and applies negative margin towards right in percentage by dividing the current position of the scroll and height of the viewport.
+
+The letters pass their grids when the scroll position is equal to the height of the viewport. To increase or decrease the speed, multiply screen.height with the desired number.
