@@ -251,11 +251,12 @@ body {
 
 .grid-letters {
   display: block;
-  font-size: 160px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 228px;
   position: relative;
-  top: 12%;
+  top: 65%;
   height: 24px;
-  color: rgba(56, 56, 56, 0.3);
+  color: #383838;
 }
 
 .grid-letters.row-2 {
