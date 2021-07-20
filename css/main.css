@@ -405,6 +405,10 @@ body {
   margin-bottom: 78px;
 }
 
+.services-section #services-grid .col-2 .service-div {
+  cursor: pointer;
+}
+
 .services-section #services-grid .col-2 .service-div .service-icon {
   margin-left: 20px;
   margin-bottom: 18px;
@@ -416,7 +420,7 @@ body {
 }
 
 .services-section #services-grid .col-2 .service-div .text-div {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .services-section #services-grid .col-2 .service-div:hover .text-div {
@@ -424,6 +428,16 @@ body {
 }
 .services-section #services-grid .col-2 .service-div:hover .hover-arrow-div {
   visibility: visible;
+}
+
+.services-section
+  #services-grid
+  .col-2
+  .service-div:hover
+  .hover-arrow-div
+  img {
+  animation-name: swingRgiht;
+  animation-duration: 0.5s;
 }
 
 /* Our Clients section */
@@ -460,15 +474,36 @@ body {
   margin-bottom: 30px;
 }
 
+.blogs-section #blogs-row .blog-div .img-div {
+  position: relative;
+  overflow: hidden;
+}
+
+.blogs-section #blogs-row .blog-div .img-div .overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--yellow);
+  opacity: 0.5;
+  margin-left: -100%;
+}
+
 .blogs-section #blogs-row .blog-div .text-div {
   margin-top: -30px;
   margin-right: 45%;
   transition: all 0.2s ease-in-out;
+  position: relative;
 }
 
 .blogs-section #blogs-row .blog-div .text-div .hover-arrow-div {
   text-align: right;
   visibility: hidden;
+}
+
+.blogs-section #blogs-row .blog-div:hover .img-div .overlay {
+  animation: swipeRightOverlay;
+  animation-duration: 1s;
 }
 
 .blogs-section #blogs-row .blog-div:hover .text-div {
@@ -477,6 +512,11 @@ body {
 
 .blogs-section #blogs-row .blog-div:hover .text-div .hover-arrow-div {
   visibility: visible;
+}
+
+.blogs-section #blogs-row .blog-div:hover .text-div .hover-arrow-div img {
+  animation-name: swingRgiht;
+  animation-duration: 0.5s;
 }
 
 .blogs-section .link-div {

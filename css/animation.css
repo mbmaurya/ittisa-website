@@ -1,0 +1,21 @@
+@keyframes swingRgiht {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes swipeRightOverlay {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+[data-aos="swing-right"] {
+  animation-name: swingRight;
+}

@@ -38,3 +38,7 @@ acc.each(function (i) {
     }
   });
 });
+
+// Initialize animation on scroll
+
+AOS.init();
