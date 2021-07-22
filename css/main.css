@@ -785,6 +785,10 @@ footer .division-social-media {
     font-size: 80px;
   }
 
+  .title {
+    font-size: 32px;
+  }
+
   .banner-section {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -800,10 +804,42 @@ footer .division-social-media {
     margin-right: 50px;
   }
 
+  .services-section #services-title-grid {
+    margin-bottom: 80px;
+  }
+
+  .services-section #services-grid .col-2 {
+    margin-bottom: 40px;
+  }
+
+  /* clients */
+
+  .clients-section {
+    padding-bottom: 40px;
+  }
+
+  .clients-section #clients-row {
+    margin-top: -40px;
+  }
+
+  .clients-section #clients-row .col-1 .img-div {
+    height: 64px;
+  }
+
   /* Blogs section */
 
   .blogs-section #blogs-row .blog-div .text-div {
     margin-right: 15%;
+  }
+
+  /* recognisation section */
+
+  .recognition-section {
+    padding-bottom: 40px;
+  }
+
+  .recognition-section #recognition-row {
+    margin-top: -114px;
   }
 
 
