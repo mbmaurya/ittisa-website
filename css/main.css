@@ -798,6 +798,25 @@ footer .division-social-media {
     padding-top: 54px;
   }
 
+  /* work section */ 
+
+  .work-section #work-grid .work-slider .slide {
+    margin: 0 20px;
+  }
+
+  .work-section #work-grid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+  .work-section .work-slider .slick-prev {
+      left: -40px;
+  }
+
+  .work-section .work-slider .slick-next {
+      right: -40px;
+  }
+
   /* services section */
 
   .services-text {
