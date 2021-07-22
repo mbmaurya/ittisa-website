@@ -888,5 +888,25 @@ footer .division-social-media {
   .contact-section #form-col {
     margin-top: 28px;
   }
+
+  /* footer */
+
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  footer .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  footer .img-2 {
+    margin-top: 20px;
+  }
+
+  footer .social-media-links {
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+  }
   
 }
