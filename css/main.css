@@ -858,7 +858,11 @@ footer .division-social-media {
   }
 
   .recognition-section #recognition-row {
-    margin-top: -114px;
+    margin-top: -80px;
+  }
+
+  .recognition-section #recognition-row .col-1 .img-div {
+    height: 64px;
   }
 
 
