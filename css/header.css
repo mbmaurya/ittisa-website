@@ -2,10 +2,27 @@ header {
   margin-top: 28px;
 }
 
+header .header-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+header .header-container .logo {
+  padding-right: 20px;
+  text-align: right;
+}
+
+header .header-container .button-div {
+  padding-left: 20px;
+  height: 90%;
+  display: flex;
+  align-items: center;
 }
 
 header .container .menu {
@@ -63,29 +80,87 @@ header .container nav {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgb(114 114 114);
+  background: url(/assets/images/home-page/banner-bg.jpg) no-repeat;
+  background-size: cover;
   z-index: 11;
 }
 
-header .container nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 20vw;
-  margin-left: 40vw;
+header .header-container nav .header-base {
+  position: absolute;
+  top: 0;
+  left: -5px;
   height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
-header .container nav ul li a {
-  color: #e7e7e7;
-  font-family: BigCaslon;
-  font-size: 72px;
-  line-height: 96px;
+header .header-container nav .header-base .col-1 {
+  border-right: 1px solid rgb(83, 82, 82);
+}
+
+header .header-container nav .col-1 {
+  padding-top: 72px;
+  height: 100vh;
+}
+
+header .header-container nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header .header-container nav ul li {
+  margin-bottom: 22px;
+}
+
+header .header-container nav ul li a {
   text-decoration: none;
+  font-family: BigCaslon;
+  font-size: 34px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(83, 82, 82);
+}
+
+header .header-container nav ul li a:hover {
+  color: #fcb542;
+}
+
+header .header-container nav p {
+  margin: 27px 0 0;
+  padding-right: 10px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #757575;
+}
+
+
+/* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+  header .header-container .logo {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  header .header-container .button-div {
+    padding-left: 0;
+  }
+
+  header .header-container .button-div #toggle_menu {
+    font-size: 11px;
+  }
+
+
+
 }
