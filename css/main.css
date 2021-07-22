@@ -752,6 +752,9 @@ footer .division-social-media {
 
   /* row and cols */
 
+  .row .col-sm-0 {
+    width: 0px;
+  }
   .row .col-sm-1 {
     width: calc((100vw) / 7);
   }
@@ -776,13 +779,26 @@ footer .division-social-media {
     width: calc(((100vw) / 7) * 6);
   }
 
+  /* banner sectiob */
+
+  .main-title {
+    font-size: 80px;
+  }
+
+  .banner-section {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .banner-section .slider .slide #small-img-col {
+    padding-top: 54px;
+  }
+
   /* services section */
 
   .services-text {
     margin-right: 50px;
   }
-
-
 
   /* Blogs section */
 
