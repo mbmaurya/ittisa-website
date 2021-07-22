@@ -28,7 +28,13 @@ $(".work-slider").slick({
      settings: {
        slidesToShow: 1
      }
-   }
+   },
+   {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 1
+    }
+  }
   ]
 });
 

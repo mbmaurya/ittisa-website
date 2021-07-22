@@ -99,8 +99,10 @@ header .header-container nav .header-base .col-1 {
 }
 
 header .header-container nav .col-1 {
-  padding-top: 72px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header .header-container nav ul {
@@ -146,7 +148,7 @@ header .header-container nav p {
 
 /* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
 
   header .header-container .logo {
     padding-right: 0;
@@ -160,7 +162,5 @@ header .header-container nav p {
   header .header-container .button-div #toggle_menu {
     font-size: 11px;
   }
-
-
 
 }
