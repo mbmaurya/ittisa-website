@@ -30,6 +30,35 @@ body {
 
 /* common components */
 
+.pre-loading-screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--yellow);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pre-loading-screen .initial {
+  font-family: "BigCaslon", serif;
+  font-size: 100px;
+  line-height: 200px;
+  font-weight: 500;
+  color: var(--dark-grey);
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 200px;
+  border-radius: 50%;
+  border: 8px solid var(--dark-grey);
+  animation-name: rotateLoader;
+  animation-duration: 3s;
+}
+
 .container {
   /* width: 1170px; */
   width: 100vw;

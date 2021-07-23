@@ -16,6 +16,15 @@
   }
 }
 
+@keyframes rotateLoader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 [data-aos="swing-right"] {
   animation-name: swingRight;
 }

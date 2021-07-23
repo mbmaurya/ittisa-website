@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  // fadeout pre-loading-screen on complete page load
+  $(".pre-loading-screen").fadeOut(3000);
   // function to slide grid letters towards with respect to the scroll position
   function SlideGridLetters() {
     $(".grid-letters").css({
@@ -17,7 +19,7 @@ $(document).ready(function () {
     $("#navigation").toggleClass("d-block");
 
   });
-});
+
 
 // carousel
 $(".slider").slick();
@@ -40,21 +42,22 @@ $(".work-slider").slick({
   ]
 });
 
-// accordion
-var acc = $(".accordion-btn");
 
-acc.each(function (i) {
-  $(this).on("click", function () {
-    $(this).toggleClass("accordion-active");
-    const panel = $(this).next();
-    if ($(this).hasClass("accordion-active")) {
-      panel.css({ "max-height": "fit-content" });
-    } else {
-      panel.css({ "max-height": "0" });
-    }
+  // accordion
+  var acc = $(".accordion-btn");
+
+  acc.each(function (i) {
+    $(this).on("click", function () {
+      $(this).toggleClass("accordion-active");
+      const panel = $(this).next();
+      if ($(this).hasClass("accordion-active")) {
+        panel.css({ "max-height": "fit-content" });
+      } else {
+        panel.css({ "max-height": "0" });
+      }
+    });
   });
+
+  // Initialize animation on scroll
+  AOS.init();
 });
-
-// Initialize animation on scroll
-
-AOS.init();
