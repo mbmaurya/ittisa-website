@@ -169,3 +169,20 @@ header .header-container nav p {
   }
 
 }
+
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  
+  header .header-container nav ul li {
+    margin-bottom: 8px;
+  }
+  
+  header .header-container nav ul li a {
+    font-size: 24px;
+  }
+  
+  header .header-container nav p {
+    margin: 00px 0 0;
+  }
+
+}
