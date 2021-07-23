@@ -779,11 +779,11 @@ footer .division-social-media {
   /* banner sectiob */
 
   .main-title {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .title {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .banner-section {
@@ -831,15 +831,15 @@ footer .division-social-media {
   /* clients */
 
   .clients-section {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 
   .clients-section #clients-row {
-    margin-top: -40px;
+    margin-top: 40px;
   }
 
   .clients-section #clients-row .col-1 .img-div {
-    height: 64px;
+    margin-bottom: 40px;
   }
 
   /* Blogs section */
@@ -851,15 +851,15 @@ footer .division-social-media {
   /* recognisation section */
 
   .recognition-section {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 
   .recognition-section #recognition-row {
-    margin-top: -80px;
+    margin-top: 40px;
   }
 
   .recognition-section #recognition-row .col-1 .img-div {
-    height: 64px;
+    margin-bottom: 40px;
   }
 
 
