@@ -14,16 +14,34 @@ $(document).ready(function () {
     $("#toggle_menu > p").text(
       $("#toggle_menu > p").text() == "Menu" ? "Close" : "Menu"
     );
+    $("#toggle_menu").toggleClass("menu-close")
     $(".toggle").toggleClass("rotate");
     $("#navigation").toggleClass("d-block");
+
   });
 
-  // carousel
-  $(".slider").slick();
-  $(".work-slider").slick({
-    centerMode: true,
-    slidesToShow: 3,
-  });
+
+// carousel
+$(".slider").slick();
+$(".work-slider").slick({
+  centerMode: true,
+  slidesToShow: 3,
+  responsive: [
+   {
+     breakpoint: 767,
+     settings: {
+       slidesToShow: 1
+     }
+   },
+   {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 1
+    }
+  }
+  ]
+});
+
 
   // accordion
   var acc = $(".accordion-btn");

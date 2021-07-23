@@ -85,40 +85,75 @@
 
       <!-- header -->
       <header>
-        <div class="container">
-          <div class="logo">
-            <a href="#">
-              <img src="./assets/images/global/logo.png" alt="Ittisa Logo" />
-            </a>
-          </div>
-          <button class="menu" id="toggle_menu">
-            <p>Menu</p>
-            <div class="toggle">
-              <span></span>
-              <span></span>
+        <div class="container header-container">
+          <div class="row">
+            <div class="col-1">
+              <div class="logo">
+                <a href="#">
+                  <img src="./assets/images/global/logo.png" alt="Ittisa Logo" />
+                </a>
+              </div>
             </div>
-          </button>
+            <div class="col-5 col-sm-4"></div>
+            <div class="col-1 col-sm-2">
+              <div class="button-div">
+                <button class="menu" id="toggle_menu">
+                  <p>Menu</p>
+                  <div class="toggle">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
           <nav id="navigation">
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Carrers</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
+            <!-- background lines -->
+            <div class="header-base">
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+              </div>
+            </div>
+            <!-- main navigation -->
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1 col-sm-0 col-md-1"></div>
+              <div class="col-1 col-sm-3 col-md-2">
+                <ul>
+                  <li>
+                    <a href="#">- About us</a>
+                  </li>
+                  <li>
+                    <a href="#">- Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#">- Services</a>
+                  </li>
+                  <li>
+                    <a href="#">- Carrers</a>
+                  </li>
+                  <li>
+                    <a href="#">- Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">- Contact</a>
+                  </li>
+                </ul>
+                <p>
+                  We are a creative, innovative bunch eager to work with you towards meeting your business objectives.
+                </p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+            </div>
           </nav>
         </div>
       </header>
@@ -132,7 +167,7 @@
               <!-- slide 1 -->
               <div class="slide" id="slide-1">
                 <div class="row">
-                  <div class="col-2" id="text-col">
+                  <div class="col-2 col-sm-5" id="text-col">
                     <p
                       class="small-title"
                       data-aos="fade-right"
@@ -147,14 +182,14 @@
                       We are driven by our craft, our culture, & our passion.
                     </p>
                   </div>
-                  <div class="col-1" id="small-img-col">
+                  <div class="col-1 col-sm-2" id="small-img-col">
                     <img
                       src="./assets/images/home-page/banner/banner-small-image.png"
                       alt="Banner Small Image"
                       width="100%"
                     />
                   </div>
-                  <div class="col-2" id="big-img-col">
+                  <div class="col-2 col-sm-3" id="big-img-col">
                     <img
                       src="./assets/images/home-page/banner/banner-big-image.png"
                       alt="Banner Small Image"
@@ -164,10 +199,16 @@
                 </div>
               </div>
               <!-- slide 2 -->
-              <div class="slide" id="slide-2">
+              <div class="slide" id="slide-1">
                 <div class="row">
-                  <div class="col-2" id="text-col">
-                    <p class="small-title">WE ARE YOUR</p>
+                  <div class="col-2 col-sm-5" id="text-col">
+                    <p
+                      class="small-title"
+                      data-aos="fade-right"
+                      data-aos-duration="700"
+                    >
+                      WE ARE YOUR
+                    </p>
                     <h1 class="main-title">
                       Growth <br /><span class="yellow-title">Partner</span>
                     </h1>
@@ -175,14 +216,48 @@
                       We are driven by our craft, our culture, & our passion.
                     </p>
                   </div>
-                  <div class="col-1" id="small-img-col">
+                  <div class="col-1 col-sm-2" id="small-img-col">
                     <img
                       src="./assets/images/home-page/banner/banner-small-image.png"
                       alt="Banner Small Image"
                       width="100%"
                     />
                   </div>
-                  <div class="col-2" id="big-img-col">
+                  <div class="col-2 col-sm-3" id="big-img-col">
+                    <img
+                      src="./assets/images/home-page/banner/banner-big-image.png"
+                      alt="Banner Small Image"
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- slide 3 -->
+              <div class="slide" id="slide-1">
+                <div class="row">
+                  <div class="col-2 col-sm-5" id="text-col">
+                    <p
+                      class="small-title"
+                      data-aos="fade-right"
+                      data-aos-duration="700"
+                    >
+                      WE ARE YOUR
+                    </p>
+                    <h1 class="main-title">
+                      Growth <br /><span class="yellow-title">Partner</span>
+                    </h1>
+                    <p class="banner-text">
+                      We are driven by our craft, our culture, & our passion.
+                    </p>
+                  </div>
+                  <div class="col-1 col-sm-2" id="small-img-col">
+                    <img
+                      src="./assets/images/home-page/banner/banner-small-image.png"
+                      alt="Banner Small Image"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="col-2 col-sm-3" id="big-img-col">
                     <img
                       src="./assets/images/home-page/banner/banner-big-image.png"
                       alt="Banner Small Image"
@@ -201,8 +276,8 @@
       <section class="work-section">
         <div class="row" id="work-title-grid">
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-3">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-3 col-sm-5">
             <p
               class="small-title"
               data-aos="fade-right"
@@ -299,7 +374,7 @@
       <section class="services-section">
         <div class="row" id="services-title-grid">
           <div class="col-1"></div>
-          <div class="col-3">
+          <div class="col-3 col-sm-5">
             <p
               class="small-title"
               data-aos="fade-right"
@@ -317,7 +392,7 @@
         <div class="row" id="services-grid">
           <div class="col-1"></div>
           <!-- first service -->
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/Digital-Marketing.svg"
@@ -341,8 +416,9 @@
             </div>
           </div>
           <div class="col-1"></div>
+          <div class="col-sm-1"></div>
           <!-- second service -->
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/Social-media-marketing.svg"
@@ -368,7 +444,7 @@
           <div class="col-1"></div>
           <div class="col-1"></div>
           <!-- Third service -->
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/performance-marketing.svg"
@@ -392,8 +468,9 @@
             </div>
           </div>
           <div class="col-1"></div>
+          <div class="col-sm-1"></div>
           <!-- Fourth service -->
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/search-engine-optimization.svg"
@@ -419,7 +496,7 @@
           <div class="col-1"></div>
           <div class="col-1"></div>
           <!-- Fifth service -->
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/amazone-360.svg"
@@ -443,8 +520,9 @@
             </div>
           </div>
           <div class="col-1"></div>
+          <div class="col-sm-1"></div>
           <!-- Sixth service -->
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/startup-growth-accelarator.svg"
@@ -470,7 +548,7 @@
           <div class="col-1"></div>
           <div class="col-1"></div>
           <!-- Seventh service -->
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/product-package-design.svg"
@@ -494,8 +572,9 @@
             </div>
           </div>
           <div class="col-1"></div>
+          <div class="col-sm-1"></div>
           <!-- Eight service -->
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/UX.svg"
@@ -526,8 +605,8 @@
       <section class="clients-section">
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-3">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-3 col-sm-5">
             <p
               class="small-title"
               data-aos="fade-right"
@@ -549,7 +628,7 @@
         <!-- clients grid -->
         <div class="row" id="clients-row">
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/aashirwad.png"
@@ -559,10 +638,10 @@
               />
             </div>
           </div>
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-0"></div>
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/redchillies.png"
@@ -574,8 +653,8 @@
           </div>
           <div class="col-1"></div>
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/airtel.png"
@@ -586,7 +665,7 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/world-leader.png"
@@ -598,8 +677,8 @@
           </div>
           <div class="col-1"></div>
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/viacom.png"
@@ -610,7 +689,7 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/dharma.png"
@@ -621,7 +700,8 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-sm-1"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/canara-bank.png"
@@ -632,9 +712,9 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/eureka-forbes.png"
@@ -645,7 +725,8 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-sm-1"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/hayyat.png"
@@ -656,9 +737,9 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/irobot.png"
@@ -669,7 +750,8 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-sm-1"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/columbia-asia.png"
@@ -680,7 +762,7 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/clients/apollo-hospital.png"
@@ -697,7 +779,7 @@
       <section class="blogs-section">
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-3">
+          <div class="col-3 col-sm-5">
             <p
               class="small-title"
               data-aos="fade-right"
@@ -717,7 +799,7 @@
         <!-- Blogs grid -->
         <div class="row" id="blogs-row">
           <div class="col-1"></div>
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="blog-div">
               <div class="img-div">
                 <span class="overlay"></span>
@@ -743,7 +825,8 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-2">
+          <div class="col-sm-1"></div>
+          <div class="col-2 col-sm-5">
             <div class="blog-div">
               <div class="img-div">
                 <span class="overlay"></span>
@@ -768,7 +851,7 @@
           </div>
           <div class="col-1"></div>
           <div class="col-1"></div>
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <div class="blog-div">
               <div class="img-div">
                 <span class="overlay"></span>
@@ -794,7 +877,8 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-2">
+          <div class="col-sm-1"></div>
+          <div class="col-2 col-sm-5">
             <div class="blog-div">
               <div class="img-div">
                 <span class="overlay"></span>
@@ -829,7 +913,7 @@
       <section class="recognition-section">
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <p
               class="small-title"
               data-aos="fade-right"
@@ -849,9 +933,9 @@
         <!-- recognition grid -->
         <div class="row" id="recognition-row">
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/recognitions/scoop-woop.png"
@@ -862,7 +946,7 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/recognitions/business-standard.png"
@@ -874,8 +958,8 @@
           </div>
           <div class="col-1"></div>
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/recognitions/forbes.png"
@@ -886,7 +970,7 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/recognitions/tech-story.png"
@@ -898,10 +982,10 @@
           </div>
           <div class="col-1"></div>
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/recognitions/cosmopoliton.png"
@@ -912,7 +996,7 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/recognitions/yi.png"
@@ -924,8 +1008,8 @@
           </div>
           <div class="col-1"></div>
           <div class="col-1"></div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-0"></div>
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/recognitions/social-samosa.png"
@@ -936,7 +1020,7 @@
             </div>
           </div>
           <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-sm-2">
             <div class="img-div">
               <img
                 src="./assets/images/home-page/recognitions/economic-times.png"
@@ -954,7 +1038,7 @@
       <section class="faq-section">
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-2">
+          <div class="col-2 col-sm-5">
             <p
               class="small-title"
               data-aos="fade-right"
@@ -973,7 +1057,7 @@
         </div>
         <div class="row" id="faq-row">
           <div class="col-1"></div>
-          <div class="col-2" id="img-col">
+          <div class="col-2 col-sm-5" id="img-col">
             <img
               src="./assets/images/home-page/faq/faq-image.png"
               alt="Frequently Asked Questions"
@@ -982,7 +1066,8 @@
             />
           </div>
           <div class="col-1"></div>
-          <div class="col-2" id="text-col">
+          <div class="col-sm-1"></div>
+          <div class="col-2 col-sm-5" id="text-col">
             <div class="accordion-div">
               <button class="accordion-btn">
                 Digital marketing trends in 2020?
@@ -1092,7 +1177,7 @@
         <div class="row" id="contact-row">
           <div class="col-1"></div>
           <!-- map col -->
-          <div class="col-2" id="map-col">
+          <div class="col-2 col-sm-5 col-md-5" id="map-col">
             <div class="map-div">
               <h3 class="contact-title">
                 Our <span class="yellow-title">Offices</span>
@@ -1109,8 +1194,10 @@
             </div>
           </div>
           <div class="col-1"></div>
+          <div class="col-sm-1"></div>
+          <div class="col-md-1"></div>
           <!-- form col -->
-          <div class="col-2" id="form-col">
+          <div class="col-2 col-sm-5 col-md-5" id="form-col">
             <div class="form-div">
               <h3 class="contact-title">
                 Let's Create <br /><span class="yellow-title"
@@ -1142,14 +1229,20 @@
         </div>
       </section>
 
+
+      <!-- footer -->
+
       <footer>
         <div class="row">
-          <div class="col-1 footer-logo">
+          <div class="col-sm-1"></div>
+          <div class="col-1 col-sm-2 footer-logo">
             <img src="./assets/images/global/logo.png" alt="Ittisa Logo" />
           </div>
-          <div class="col-2">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-1"></div>
+          <div class="col-2 col-sm-5">
             <div class="row">
-              <div class="col-1">
+              <div class="col-1 col-sm-4 col-md-2">
                 <p>
                   Work that stirs up a million emotions and a reaction – ‘It
                   couldn’t have been done any better!’
@@ -1157,20 +1250,20 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-1">
+              <div class="col-1 col-sm-3 col-md-2 partner-img-1">
                 <img src="assets/images/global/google-partner.png" />
               </div>
-              <div class="col-1">
+              <div class="col-1 col-sm-3 col-md-2 partner-img-2">
                 <img src="assets/images/global/ie-20.png" />
               </div>
             </div>
             <div class="row align-flex-center division-social-media">
-              <div class="col-1">
+              <div class="col-1 col-sm-3 col-md-2 whatsapp-div">
                 <img src="assets/images/global/whatsapp.png" class="v-middle" />
                 <span class="right-triangle"></span>
                 <span class="comment-box">Let's Talk</span>
               </div>
-              <div class="col-1">
+              <div class="col-1 col-sm-3 col-md-2">
                 <ul class="social-media-links">
                   <li>
                     <a href="#">
@@ -1191,7 +1284,9 @@
               </div>
             </div>
           </div>
-          <div class="col-1">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1"></div>
+          <div class="col-1 col-sm-2 col-md-2">
             <ul>
               <li>
                 <a href="#"> Search Engine Optimization </a>
@@ -1225,8 +1320,8 @@
               </li>
             </ul>
           </div>
-          <div class="col-1"></div>
-          <div class="col-1">
+          <div class="col-1 col-md-0"></div>
+          <div class="col-1 col-sm-2">
             <ul>
               <li>
                 <a href="#">Services</a>
