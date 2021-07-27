@@ -61,3 +61,37 @@ $(".work-slider").slick({
   // Initialize animation on scroll
   AOS.init();
 });
+
+
+
+// Team Tab
+
+// Vanilla JS
+// function openTab (evt, name) {
+//   var i, tabContent, tabLinks
+//   tabContent = document.getElementsByClassName("tab-content")
+//   for (i = 0; i < tabContent.length; i++) {
+//     tabContent[i].style.display = "none"
+//   }
+//   tabLinks = document.getElementsByClassName("tab-link")
+//   for (i = 0; i < tabLinks.length; i++) {
+//     tabLinks[i].className = tabLinks[i].className.replace(" active-link", "")
+//   }
+//   document.getElementById(name).style.display = "block"
+//   evt.currentTarget.className += " active"
+// }
+
+// jquery
+function openTab (evt, name) {
+  var i, tabContent, tabLinks
+  tabContent = $(".tab-content")
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none"
+  }
+  tabLinks = $(".tab-link")
+  for (i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(" active-link", "")
+  }
+  $("#"+name).css({"display": "block"})
+  evt.currentTarget.className += " active-link"
+}
