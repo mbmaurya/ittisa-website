@@ -316,6 +316,9 @@ body {
   flex-wrap: wrap;
 }
 
+.row .col-0 {
+  width: 0px;
+}
 .row .col-1 {
   width: calc((100vw) / 7);
 }
@@ -727,7 +730,7 @@ body {
   margin-top: -130px;
 }
 
-.about-us-banner-section .text-row p {
+.about-us-banner-section .text-row .banner-para {
   font-family: Poppins;
   font-size: 16px;
   font-weight: normal;
@@ -749,18 +752,18 @@ body {
   margin-top: -50px;
 }
 
-.team-section .team-row .leadership-row .member-col {
+.team-section .team-row .row .member-col {
   margin-bottom: 136px;
 }
-.team-section .team-row .leadership-row .even-col {
+.team-section .team-row .row .even-col {
   margin-top: -265px;
 }
 
-.team-section .team-row .leadership-row .text-div {
+.team-section .team-row .row .text-div {
   margin-top: -91px;
 }
 
-.team-section .team-row .leadership-row .text-div .small-title {
+.team-section .team-row .row .text-div .small-title {
   position: relative
 }
 
@@ -794,6 +797,11 @@ body {
   cursor: pointer;
   position: relative;
   transition: all 0.1s ease-in-out;
+}
+
+.team-section .mobile-tab-link-row .tab-links-col {
+  margin: 0;
+  display: none;
 }
 
 .team-section .team-row .tab-links-col .tab-link:hover {
@@ -1067,6 +1075,39 @@ footer .division-social-media {
     margin-top: 20px;
   }
 
+  /* team section */
+
+  .team-section .team-row {
+    margin-top: 40px;
+  }
+
+  .team-section .team-row .row .member-col {
+    margin-bottom: 50px;
+  }
+
+  .team-section .team-row .row .even-col {
+    margin-top: 0;
+  }
+
+  .team-section .team-row .row .text-div  {
+    margin-top: -75px;
+  }
+
+  .team-section .team-row .tab-links-col {
+    display: none;
+  }
+
+  .team-section .mobile-tab-link-row .tab-links-col {
+    margin: 0;
+    display: block;
+  }
+
+  .team-section .mobile-tab-link-row .tab-links-col .tab-link {
+    margin-bottom: 10px;
+  }
+
+  /* grow section */
+
   .grow-section {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1197,6 +1238,15 @@ footer .division-social-media {
 
     .grow-section .email-col {
       margin-top: 32px;
+    }
+
+    /* team section */
+    .team-section .team-row {
+      margin-top: -16px;
+    }
+
+    .team-section .team-row .row .even-col {
+      margin-top: -160px;
     }
 
   /* footer */
