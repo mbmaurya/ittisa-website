@@ -27,19 +27,19 @@ $(".work-slider").slick({
   centerMode: true,
   slidesToShow: 3,
   responsive: [
-   {
-     breakpoint: 767,
-     settings: {
-       slidesToShow: 1
-     }
-   },
-   {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 1
-    }
-  }
-  ]
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
 
 
