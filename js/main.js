@@ -14,34 +14,31 @@ $(document).ready(function () {
     $("#toggle_menu > p").text(
       $("#toggle_menu > p").text() == "Menu" ? "Close" : "Menu"
     );
-    $("#toggle_menu").toggleClass("menu-close")
+    $("#toggle_menu").toggleClass("menu-close");
     $(".toggle").toggleClass("rotate");
     $("#navigation").toggleClass("d-block");
-
   });
 
-
-// carousel
-$(".slider").slick();
-$(".work-slider").slick({
-  centerMode: true,
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
+  // carousel
+  $(".slider").slick();
+  $(".work-slider").slick({
+    centerMode: true,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
       },
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 1,
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+        },
       },
-    },
-  ],
-});
-
+    ],
+  });
 
   // accordion
   var acc = $(".accordion-btn");
@@ -62,8 +59,6 @@ $(".work-slider").slick({
   AOS.init();
 });
 
-
-
 // Team Tab
 
 // Vanilla JS
@@ -82,16 +77,21 @@ $(".work-slider").slick({
 // }
 
 // jquery
-function openTab (evt, name) {
-  var i, tabContent, tabLinks
-  tabContent = $(".tab-content")
+function openTab(evt, name) {
+  var i, tabContent, tabLinks;
+  tabContent = $(".tab-content");
   for (i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none"
+    tabContent[i].style.display = "none";
   }
-  tabLinks = $(".tab-link")
+  tabLinks = $(".tab-link");
   for (i = 0; i < tabLinks.length; i++) {
-    tabLinks[i].className = tabLinks[i].className.replace(" active-link", "")
+    tabLinks[i].className = tabLinks[i].className.replace(" active-link", "");
   }
-  $("#"+name).css({"display": "block"})
-  evt.currentTarget.className += " active-link"
+  $("#" + name).css({ display: "block" });
+  evt.currentTarget.className += " active-link";
 }
+
+$(".navigate-team ul li").click(function () {
+  $(".navigate-team ul li").removeClass("active");
+  $(this).addClass("active");
+});

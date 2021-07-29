@@ -16,6 +16,15 @@
   }
 }
 
+@keyframes swipeRight {
+  from {
+    margin-left: -50%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
 @keyframes rotateLoader {
   from {
     transform: rotate(0deg);
