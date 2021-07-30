@@ -316,6 +316,9 @@ body {
   flex-wrap: wrap;
 }
 
+.row .col-0 {
+  width: 0px;
+}
 .row .col-1 {
   width: calc((100vw) / 7);
 }
@@ -339,6 +342,8 @@ body {
 .row .col-6 {
   width: calc(((100vw) / 7) * 6);
 }
+
+/* HOME PAGE ------------------------------------------------------------ */
 
 /* banner section */
 
@@ -707,7 +712,146 @@ body {
   margin: 10px auto 0 auto;
 }
 
-/* Footer */
+/* ABOUT PAGE ------------------------------------------- */
+
+.about-us-main-container #base-grid-container {
+  background: url("../assets/images/about-us/about-us-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* banner section */
+.about-us-banner-section {
+  padding-top: 20px;
+  padding-bottom: 56px;
+}
+
+.about-us-banner-section .text-row {
+  margin-top: -130px;
+}
+
+.about-us-banner-section .text-row .banner-para {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+/* team sectoion */
+
+.team-section {
+  padding-top: 56px;
+}
+
+.team-section .team-row {
+  margin-top: -50px;
+}
+
+.team-section .team-row .row .member-col {
+  margin-bottom: 136px;
+}
+.team-section .team-row .row .even-col {
+  margin-top: -265px;
+}
+
+.team-section .team-row .row .text-div {
+  margin-top: -91px;
+}
+
+.team-section .team-row .row .text-div .small-title {
+  position: relative
+}
+
+.team-section .tab-content {
+  display: none;
+}
+
+.team-section .tab-content:first-child {
+  display: block;
+}
+
+.team-section .team-row .tab-links-col {
+  margin-top: 187px;
+  padding: 40px 0 15px 0;
+  background-color: var(--dark-grey);
+  height: fit-content;
+  text-align: right;
+}
+
+.team-section .team-row .tab-links-col .tab-link {
+  margin-bottom: 25px;
+  padding: 0;
+  padding-right: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #444444;
+  width: 100%;
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+}
+
+.team-section .mobile-tab-link-row .tab-links-col {
+  margin: 0;
+  display: none;
+}
+
+.team-section .team-row .tab-links-col .tab-link:hover {
+  color: var(--white);
+}
+
+.team-section .team-row .tab-links-col .tab-link::after {
+  content: '';
+  height: 2px;
+  width: 26px;
+  background-color: #444444;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.team-section .active-link {
+  color: var(--white) !important;
+}
+
+.team-section .active-link::after {
+  content: '';
+  height: 2px;
+  width: 26px;
+  background-color: var(--yellow) !important;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* grow section */
+
+.grow-section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.grow-section .row .email-col {
+  padding: 28px 0;
+  background-color: var(--dark-grey);
+}
+
+.grow-section .row .email-col .small-title {
+  margin-bottom: 6px;
+}
+
+
+/* Footer ------------------------------------------------*/
 footer {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -815,6 +959,10 @@ footer .division-social-media {
     font-size: 30px;
   }
 
+  .contact-title {
+    font-size: 32px
+  }
+
   .banner-section {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -915,6 +1063,60 @@ footer .division-social-media {
     margin-top: 28px;
   }
 
+  /* About page ------------------------------------*/
+
+  /* banner section */
+  .about-us-banner-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .about-us-banner-section .text-row {
+    margin-top: 20px;
+  }
+
+  /* team section */
+
+  .team-section .team-row {
+    margin-top: 40px;
+  }
+
+  .team-section .team-row .row .member-col {
+    margin-bottom: 50px;
+  }
+
+  .team-section .team-row .row .even-col {
+    margin-top: 0;
+  }
+
+  .team-section .team-row .row .text-div  {
+    margin-top: -75px;
+  }
+
+  .team-section .team-row .tab-links-col {
+    display: none;
+  }
+
+  .team-section .mobile-tab-link-row .tab-links-col {
+    margin: 0;
+    display: block;
+  }
+
+  .team-section .mobile-tab-link-row .tab-links-col .tab-link {
+    margin-bottom: 10px;
+  }
+
+  /* grow section */
+
+  .grow-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .grow-section .email-col {
+    margin-top: 24px;
+  }
+
   /* footer */
 
   footer {
@@ -979,6 +1181,10 @@ footer .division-social-media {
     font-size: 32px;
   }
 
+  .contact-title {
+    font-size: 32px
+  }
+
   /* banner */
   .banner-section .slider .slide #small-img-col {
     padding-top: 225px;
@@ -1021,6 +1227,27 @@ footer .division-social-media {
   .contact-section .form-div {
     margin-top: 40px;
   }
+
+  /* About page ------------------------------------*/
+
+    /* banner section */
+
+    .about-us-banner-section .text-row {
+      margin-top: -80px;
+    }
+
+    .grow-section .email-col {
+      margin-top: 32px;
+    }
+
+    /* team section */
+    .team-section .team-row {
+      margin-top: -16px;
+    }
+
+    .team-section .team-row .row .even-col {
+      margin-top: -160px;
+    }
 
   /* footer */
 
