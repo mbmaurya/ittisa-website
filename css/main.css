@@ -764,7 +764,7 @@ body {
 }
 
 .team-section .team-row .row .text-div .small-title {
-  position: relative
+  position: relative;
 }
 
 .team-section .tab-content {
@@ -809,7 +809,7 @@ body {
 }
 
 .team-section .team-row .tab-links-col .tab-link::after {
-  content: '';
+  content: "";
   height: 2px;
   width: 26px;
   background-color: #444444;
@@ -824,7 +824,7 @@ body {
 }
 
 .team-section .active-link::after {
-  content: '';
+  content: "";
   height: 2px;
   width: 26px;
   background-color: var(--yellow) !important;
@@ -849,7 +849,6 @@ body {
 .grow-section .row .email-col .small-title {
   margin-bottom: 6px;
 }
-
 
 /* Footer ------------------------------------------------*/
 footer {
@@ -915,11 +914,9 @@ footer .division-social-media {
   margin-top: 40px;
 }
 
-
 /* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */
 
 @media screen and (max-width: 767px) {
-
   /* row and cols */
 
   .row .col-sm-0 {
@@ -928,23 +925,23 @@ footer .division-social-media {
   .row .col-sm-1 {
     width: calc((100vw) / 7);
   }
-  
+
   .row .col-sm-2 {
     width: calc(((100vw) / 7) * 2);
   }
-  
+
   .row .col-sm-3 {
     width: calc(((100vw) / 7) * 3);
   }
-  
+
   .row .col-sm-4 {
     width: calc(((100vw) / 7) * 4);
   }
-  
+
   .row .col-sm-5 {
     width: calc(((100vw) / 7) * 5);
   }
-  
+
   .row .col-sm-6 {
     width: calc(((100vw) / 7) * 6);
   }
@@ -960,7 +957,7 @@ footer .division-social-media {
   }
 
   .contact-title {
-    font-size: 32px
+    font-size: 32px;
   }
 
   .banner-section {
@@ -972,7 +969,7 @@ footer .division-social-media {
     padding-top: 54px;
   }
 
-  /* work section */ 
+  /* work section */
 
   .work-section #work-grid .work-slider .slide {
     margin: 0 20px;
@@ -981,14 +978,14 @@ footer .division-social-media {
   .work-section #work-grid {
     margin-top: 50px;
     margin-bottom: 50px;
-}
+  }
 
   .work-section .work-slider .slick-prev {
-      left: -40px;
+    left: -40px;
   }
 
   .work-section .work-slider .slick-next {
-      right: -40px;
+    right: -40px;
   }
 
   /* services section */
@@ -1039,7 +1036,6 @@ footer .division-social-media {
     margin-bottom: 40px;
   }
 
-
   /* FAQ section */
 
   .faq-section {
@@ -1050,7 +1046,6 @@ footer .division-social-media {
   .faq-section #faq-row #text-col {
     margin-top: 28px;
   }
-
 
   /* contact section */
 
@@ -1089,7 +1084,7 @@ footer .division-social-media {
     margin-top: 0;
   }
 
-  .team-section .team-row .row .text-div  {
+  .team-section .team-row .row .text-div {
     margin-top: -75px;
   }
 
@@ -1136,13 +1131,11 @@ footer .division-social-media {
     margin-top: 20px !important;
     margin-bottom: 40px !important;
   }
-  
 }
 
 /* HOME PAGE TABLET VIEW --------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  
   /* row and cols */
 
   .row .col-md-0 {
@@ -1151,27 +1144,26 @@ footer .division-social-media {
   .row .col-md-1 {
     width: calc((100vw) / 7);
   }
-  
+
   .row .col-md-2 {
     width: calc(((100vw) / 7) * 2);
   }
-  
+
   .row .col-md-3 {
     width: calc(((100vw) / 7) * 3);
   }
-  
+
   .row .col-md-4 {
     width: calc(((100vw) / 7) * 4);
   }
-  
+
   .row .col-md-5 {
     width: calc(((100vw) / 7) * 5);
   }
-  
+
   .row .col-md-6 {
     width: calc(((100vw) / 7) * 6);
   }
-
 
   .main-title {
     font-size: 80px;
@@ -1182,7 +1174,7 @@ footer .division-social-media {
   }
 
   .contact-title {
-    font-size: 32px
+    font-size: 32px;
   }
 
   /* banner */
@@ -1230,24 +1222,24 @@ footer .division-social-media {
 
   /* About page ------------------------------------*/
 
-    /* banner section */
+  /* banner section */
 
-    .about-us-banner-section .text-row {
-      margin-top: -80px;
-    }
+  .about-us-banner-section .text-row {
+    margin-top: -80px;
+  }
 
-    .grow-section .email-col {
-      margin-top: 32px;
-    }
+  .grow-section .email-col {
+    margin-top: 32px;
+  }
 
-    /* team section */
-    .team-section .team-row {
-      margin-top: -16px;
-    }
+  /* team section */
+  .team-section .team-row {
+    margin-top: -16px;
+  }
 
-    .team-section .team-row .row .even-col {
-      margin-top: -160px;
-    }
+  .team-section .team-row .row .even-col {
+    margin-top: -160px;
+  }
 
   /* footer */
 
@@ -1262,6 +1254,58 @@ footer .division-social-media {
   footer .row .whatsapp-div {
     margin-bottom: 20px;
   }
-  
-
 }
+
+/*----------------- Contact Us --------------------*/
+
+.locations {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.locations li {
+  margin-bottom: 50px;
+}
+
+.locations li h2 {
+  font-family: BigCaslon;
+  font-size: 30px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8d8d8d;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.locations li p,
+.locations li a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--light-grey);
+}
+
+.locations li a {
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 1200px) {
+  .locations li:first-of-type {
+    margin-top: 50px;
+  }
+  .locations li p {
+    line-height: 1.5;
+  }
+}
+
+/*----------------- /Contact Us --------------------*/
