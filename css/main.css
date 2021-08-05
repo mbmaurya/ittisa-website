@@ -344,7 +344,7 @@ body {
   width: calc(((100vw) / 7) * 6);
 }
 
-/* HOME PAGE ------------------------------------------------------------ */
+/* LANDING PAGE ------------------------------------------------------------ */
 
 /* banner section */
 
@@ -936,6 +936,8 @@ body {
   margin-bottom: 6px;
 }
 
+
+
 /* Footer ------------------------------------------------*/
 footer {
   padding-top: 80px;
@@ -1000,7 +1002,7 @@ footer .division-social-media {
   margin-top: 40px;
 }
 
-/* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */
+/* LANDING PAGE MOBILE VIEW --------------------------------------------------------------- */
 
 @media screen and (max-width: 767px) {
   /* row and cols */
@@ -1039,87 +1041,99 @@ footer .division-social-media {
   }
 
   .title {
-    font-size: 30px;
+    font-size: 40px !important;
   }
 
   .contact-title {
     font-size: 32px;
   }
 
+  .banner-text {
+    margin-right: 0 ;
+  }
+
   .banner-section {
     padding-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
-  .banner-section .slider .slide #small-img-col {
-    padding-top: 54px;
+  .banner-section .get-in-touch-link {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  /* work section */
-
-  .work-section #work-grid .work-slider .slide {
-    margin: 0 20px;
+  .banner-section #small-img-col img {
+    bottom: 7px;
   }
 
-  .work-section #work-grid {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  /* ittisa section */
+
+  .ittisa-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
-  .work-section .work-slider .slick-prev {
-    left: -40px;
+  .ittisa-section .ittisa-video {
+    height: 280px;
+    margin-bottom: 24px;
   }
 
-  .work-section .work-slider .slick-next {
-    right: -40px;
+  .ittisa-section .small-img-col .small-img {
+    width: 200%;
+    left: -100%;
+  }
+
+  .ittisa-section .text-col .google-partner-line {
+    font-size: 14px;
+  }
+
+  .ittisa-section .text-col .google-partner-line img {
+    width: 40%;
+    margin: 0px 8px;
+  }
+
+  /* impact section */
+  .impact-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .impact-row .client-growth-div {
+    margin-top: 20px;
+    padding: 30px 5px 20px;
+  }
+
+  .impact-section .impact-row .growth-list li {
+    font-size: 14px;
+  }
+
+  .impact-section .impact-row .growth-list li span {
+    margin-left: 28px;
+    margin-right: 4px;
+    font-size: 20px;
+
+  }
+
+  /* brands section */
+  .brands-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   /* services section */
-
-  .services-text {
-    margin-right: 50px;
+  .services-section {
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
-  .services-section #services-title-grid {
-    margin-bottom: 80px;
+  /* testimonials section */
+  .testimonials-section {
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
-  .services-section #services-grid .col-2 {
-    margin-bottom: 40px;
-  }
-
-  /* clients */
-
-  .clients-section {
-    padding-bottom: 0px;
-  }
-
-  .clients-section #clients-row {
-    margin-top: 40px;
-  }
-
-  .clients-section #clients-row .col-1 .img-div {
-    margin-bottom: 40px;
-  }
-
-  /* Blogs section */
-
-  .blogs-section #blogs-row .blog-div .text-div {
-    margin-right: 15%;
-  }
-
-  /* recognisation section */
-
-  .recognition-section {
-    padding-bottom: 0px;
-  }
-
-  .recognition-section #recognition-row {
-    margin-top: 40px;
-  }
-
-  .recognition-section #recognition-row .col-1 .img-div {
-    margin-bottom: 40px;
+  .testimonials-section .testimony-div {
+    margin-bottom: 20px;
   }
 
   /* FAQ section */
@@ -1219,7 +1233,7 @@ footer .division-social-media {
   }
 }
 
-/* HOME PAGE TABLET VIEW --------------------------------------------------------------- */
+/* LANDING PAGE TABLET VIEW --------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   /* row and cols */
@@ -1256,48 +1270,76 @@ footer .division-social-media {
   }
 
   .title {
-    font-size: 32px;
+    font-size: 48px !important;
   }
 
   .contact-title {
     font-size: 32px;
   }
 
+  .banner-text {
+    margin: 0;
+  }
+
   /* banner */
-  .banner-section .slider .slide #small-img-col {
-    padding-top: 225px;
+  .banner-section {
+    padding-bottom: 40px;
   }
 
-  .banner-section .slider .slide #big-img-col {
-    padding-top: 100px;
+  .banner-section .get-in-touch-link {
+    margin-top: 50px;
   }
 
-  /* work */
+  .banner-section #small-img-col img {
+    bottom: 40px;
+  } 
 
-  .work-section #work-grid {
-    margin-top: 60px;
+  /* ittisa section */
+
+  .ittisa-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-  .work-section #work-grid .work-slider .slick-center {
-    transition: all 0.2s ease-in-out;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    transform: scale(1.1);
+  .ittisa-section .ittisa-video {
+    margin-bottom: 30px;
   }
 
-  /* service */
-  .services-section #services-title-grid {
-    margin-bottom: 80px;
+  .ittisa-section .small-img-col .small-img {
+    width: 200%;
+    bottom: 0;
+    left: -100%;
   }
 
-  .services-section .services-text {
-    margin-right: 20px;
+  .ittisa-section .text-col .google-partner-line  {
+    justify-content: center;
   }
 
-  /* blog  */
+  /* impact section */
 
-  .blogs-section #blogs-row .blog-div .text-div {
-    margin-right: 50px;
+  .impact-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .impact-row .client-growth-div {
+    margin-top: 28px;
+  }
+
+  /* service section */
+  .services-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .services-section .service-div .services-title {
+    font-size: 19px;
+  }
+
+  /* testimonials section */
+  .testimonials-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 
   /* contact  */
