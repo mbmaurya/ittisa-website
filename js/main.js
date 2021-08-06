@@ -66,32 +66,43 @@ $(".work-slider").slick({
 
 // Team Tab
 
-// Vanilla JS
-// function openTab (evt, name) {
-//   var i, tabContent, tabLinks
-//   tabContent = document.getElementsByClassName("tab-content")
-//   for (i = 0; i < tabContent.length; i++) {
-//     tabContent[i].style.display = "none"
-//   }
-//   tabLinks = document.getElementsByClassName("tab-link")
-//   for (i = 0; i < tabLinks.length; i++) {
-//     tabLinks[i].className = tabLinks[i].className.replace(" active-link", "")
-//   }
-//   document.getElementById(name).style.display = "block"
-//   evt.currentTarget.className += " active"
-// }
 
-// jquery
-function openTab (evt, name) {
-  var i, tabContent, tabLinks
-  tabContent = $(".tab-content")
-  for (i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none"
-  }
-  tabLinks = $(".tab-link")
-  for (i = 0; i < tabLinks.length; i++) {
-    tabLinks[i].className = tabLinks[i].className.replace(" active-link", "")
-  }
-  $("#"+name).css({"display": "block"})
-  evt.currentTarget.className += " active-link"
+$(document).ready(function () {
+    $('.scroll-team').on("scroll", onScroll);
+    
+    //smoothscroll
+    $('.tab-link a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('.scroll-team').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 0, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $('.team-section').scrollTop() + 400;
+    $('.tab-link a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.tab-link a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
 }
