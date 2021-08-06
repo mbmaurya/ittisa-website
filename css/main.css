@@ -1088,6 +1088,39 @@ footer .division-social-media {
 
   /* team section */
 
+  .team-section {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .team-section .navigation-row {
+    display: none;
+  }
+
+  .team-section .scroll-team {
+    margin-top: 20px;
+    height: fit-content;
+    overflow: hidden;
+  }
+
+  .team-section .scroll-team .member-col-left {
+    margin-top: 0;
+    margin-bottom: 60px !important;
+  }
+
+  .team-section .scroll-team .member-col {
+    margin-bottom: 30px;
+  }
+
+  .team-section .scroll-team .member-col .name-title {
+    margin-top: -55px;
+  }
+
+  .team-section .scroll-team .member-col .name-title .small-title {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
 
   /* grow section */
 
@@ -1221,6 +1254,39 @@ footer .division-social-media {
   }
 
   /* team section */
+
+  .team-section {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .team-section .navigation-row {
+    display: none;
+  }
+
+  .team-section .scroll-team {
+    /* margin-top: 20px; */
+    height: fit-content;
+    overflow: hidden;
+  }
+
+  .team-section .scroll-team .member-col-left {
+    margin-top: -60px;
+    /* margin-bottom: 60px !important; */
+  }
+
+  .team-section .scroll-team .member-col {
+    /* margin-bottom: 30px; */
+  }
+
+  .team-section .scroll-team .member-col .name-title {
+    margin-top: -55px;
+  }
+
+  .team-section .scroll-team .member-col .name-title .small-title {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
 
 
   /* footer */

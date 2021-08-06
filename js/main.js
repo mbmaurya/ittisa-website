@@ -93,7 +93,7 @@ $(document).ready(function () {
 });
 
 function onScroll(event){
-    var scrollPos = $(document).scrollTop();
+    var scrollPos = $('.team-section').scrollTop() + 400;
     $('.tab-link a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
