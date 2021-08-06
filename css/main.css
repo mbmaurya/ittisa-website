@@ -68,7 +68,7 @@ body {
 
 .container {
   /* width: 1170px; */
-  width: 100vw;
+  width: 98vw;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -275,7 +275,7 @@ body {
 
 .grid {
   float: left;
-  width: calc((100vw - 6px) / 7);
+  width: calc((98vw - 6px) / 7);
   height: 100%;
   border-right: 1px solid rgba(141, 134, 134, 0.3);
   overflow: hidden;
@@ -327,27 +327,27 @@ body {
   width: 0px;
 }
 .row .col-1 {
-  width: calc((100vw) / 7);
+  width: calc((98vw) / 7);
 }
 
 .row .col-2 {
-  width: calc(((100vw) / 7) * 2);
+  width: calc(((98vw) / 7) * 2);
 }
 
 .row .col-3 {
-  width: calc(((100vw) / 7) * 3);
+  width: calc(((98vw) / 7) * 3);
 }
 
 .row .col-4 {
-  width: calc(((100vw) / 7) * 4);
+  width: calc(((98vw) / 7) * 4);
 }
 
 .row .col-5 {
-  width: calc(((100vw) / 7) * 5);
+  width: calc(((98vw) / 7) * 5);
 }
 
 .row .col-6 {
-  width: calc(((100vw) / 7) * 6);
+  width: calc(((98vw) / 7) * 6);
 }
 
 /* LANDING PAGE ------------------------------------------------------------ */
@@ -550,8 +550,12 @@ body {
 
 .scroll-brands {
   height: 70vh;
-  overflow: scroll;
+  overflow-y: scroll;
   scroll-behavior: smooth;
+}
+
+.scroll-brands::-webkit-scrollbar {
+  width: 0;
 }
 
 .brands-section .brand-col {
@@ -913,8 +917,12 @@ body {
 .team-section .scroll-team {
   margin-top: -40px;
   height: 80vh;
-  overflow: scroll;
+  overflow-y: scroll;
   scroll-behavior: smooth;
+}
+
+.team-section .scroll-team::-webkit-scrollbar {
+  width: 0;
 }
 
 
@@ -1027,27 +1035,27 @@ footer .division-social-media {
     width: 0px;
   }
   .row .col-sm-1 {
-    width: calc((100vw) / 7);
+    width: calc((98vw) / 7);
   }
 
   .row .col-sm-2 {
-    width: calc(((100vw) / 7) * 2);
+    width: calc(((98vw) / 7) * 2);
   }
 
   .row .col-sm-3 {
-    width: calc(((100vw) / 7) * 3);
+    width: calc(((98vw) / 7) * 3);
   }
 
   .row .col-sm-4 {
-    width: calc(((100vw) / 7) * 4);
+    width: calc(((98vw) / 7) * 4);
   }
 
   .row .col-sm-5 {
-    width: calc(((100vw) / 7) * 5);
+    width: calc(((98vw) / 7) * 5);
   }
 
   .row .col-sm-6 {
-    width: calc(((100vw) / 7) * 6);
+    width: calc(((98vw) / 7) * 6);
   }
 
   /* banner sectiob */
@@ -1263,27 +1271,27 @@ footer .division-social-media {
     width: 0px;
   }
   .row .col-md-1 {
-    width: calc((100vw) / 7);
+    width: calc((98vw) / 7);
   }
 
   .row .col-md-2 {
-    width: calc(((100vw) / 7) * 2);
+    width: calc(((98vw) / 7) * 2);
   }
 
   .row .col-md-3 {
-    width: calc(((100vw) / 7) * 3);
+    width: calc(((98vw) / 7) * 3);
   }
 
   .row .col-md-4 {
-    width: calc(((100vw) / 7) * 4);
+    width: calc(((98vw) / 7) * 4);
   }
 
   .row .col-md-5 {
-    width: calc(((100vw) / 7) * 5);
+    width: calc(((98vw) / 7) * 5);
   }
 
   .row .col-md-6 {
-    width: calc(((100vw) / 7) * 6);
+    width: calc(((98vw) / 7) * 6);
   }
 
   .main-title {
