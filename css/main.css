@@ -1493,3 +1493,57 @@ footer .division-social-media {
 }
 
 /*----------------- /Contact Us --------------------*/
+
+/*----------- Blog landing page --------*/
+
+.blog-landing-page #base-grid-container {
+  background: url(../assets/images/blog-landing-page/banner.jpg);
+}
+
+.blog-landing-page .section-hero .hero-banner img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-landing-page .section-hero .title-and-image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: -165px;
+}
+
+.blog-landing-page .section-hero .title-and-image .title .small-title {
+  margin-top: 30px;
+}
+
+.blog-landing-page .section-hero .title-and-image .title .yellow-title {
+  font-size: 100px;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* medium screens */
+@media screen and (max-width: 1366px) and (min-width: 1200px) {
+  .blog-landing-page .section-hero .title-and-image {
+    margin-top: -140px;
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 1200px) and (min-width: 767px) {
+  .blog-landing-page .section-hero .title-and-image {
+    margin-top: -100px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .blog-landing-page .section-hero .title-and-image {
+    margin-top: -50px;
+    display: block;
+  }
+}
+
+/*----------- /Blog landing page --------*/
