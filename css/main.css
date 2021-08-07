@@ -1668,6 +1668,10 @@ footer .division-social-media {
 
 /*----------- Blog inner page --------*/
 
+.blog-inner-page #base-grid-container {
+  background: url(../assets/images/blog-landing-page/banner.jpg);
+}
+
 .blog-header {
   margin-top: 80px;
 }
