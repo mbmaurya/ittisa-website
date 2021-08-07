@@ -1732,4 +1732,74 @@ footer .division-social-media {
   color: #fff;
 }
 
+.blog-body {
+  margin-top: 60px;
+}
+
+.blog-body p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bababa;
+  margin-bottom: 30px;
+}
+
+.blog-body h3 {
+  font-size: 23px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcb542;
+  margin-bottom: 10px;
+}
+
+.blog-body h2 {
+  font-family: BigCaslon;
+  font-size: 50px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcb542;
+  margin-bottom: 30px;
+}
+
+.blog-body h2 span {
+  color: #ffffff;
+}
+
+.blog-body ul {
+  margin: 0px 0px 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.blog-body ul li {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bababa;
+}
+
+.blog-body ul li:before {
+  content: "\2022";
+  color: var(--yellow);
+  width: 16px;
+  display: inline-block;
+}
 /*----------- /Blog inner page --------*/
