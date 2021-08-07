@@ -60,6 +60,7 @@ $(document).ready(function () {
 
   $(".select-menu-title").click(function () {
     $(".select-menu-options").toggleClass("open");
+    $(".section-category .dropdown-arrow").toggleClass("rotate-180");
   });
 
   $(".select-menu-options li").click(function () {
@@ -87,9 +88,7 @@ $(document).ready(function () {
         console.log("Unknown category");
     }
   });
-});
 
-$(document).ready(function () {
   $(".scroll-team").on("scroll", onScroll);
 
   //smoothscroll
@@ -119,36 +118,35 @@ $(document).ready(function () {
         }
       );
   });
-});
 
-function onScroll(event) {
-  var scrollPos = $(".team-section").scrollTop() + 400;
-  $(".tab-link a").each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-    if (
-      refElement.position().top <= scrollPos &&
-      refElement.position().top + refElement.height() > scrollPos
-    ) {
-      $(".tab-link a").removeClass("active");
-      currLink.addClass("active");
-    } else {
-      currLink.removeClass("active");
+  function onScroll(event) {
+    var scrollPos = $(".team-section").scrollTop() + 400;
+    $(".tab-link a").each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (
+        refElement.position().top <= scrollPos &&
+        refElement.position().top + refElement.height() > scrollPos
+      ) {
+        $(".tab-link a").removeClass("active");
+        currLink.addClass("active");
+      } else {
+        currLink.removeClass("active");
+      }
+    });
+  }
+
+  function openTab(evt, name) {
+    var i, tabContent, tabLinks;
+    tabContent = $(".tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
     }
-  });
-}
-
-// jquery
-function openTab(evt, name) {
-  var i, tabContent, tabLinks;
-  tabContent = $(".tab-content");
-  for (i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
+    tabLinks = $(".tab-link");
+    for (i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].className = tabLinks[i].className.replace(" active-link", "");
+    }
+    $("#" + name).css({ display: "block" });
+    evt.currentTarget.className += " active-link";
   }
-  tabLinks = $(".tab-link");
-  for (i = 0; i < tabLinks.length; i++) {
-    tabLinks[i].className = tabLinks[i].className.replace(" active-link", "");
-  }
-  $("#" + name).css({ display: "block" });
-  evt.currentTarget.className += " active-link";
-}
+});
