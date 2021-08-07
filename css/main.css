@@ -31,6 +31,7 @@ body {
 
 .img-res {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -1664,3 +1665,71 @@ footer .division-social-media {
 }
 
 /*----------- /Blog landing page --------*/
+
+/*----------- Blog inner page --------*/
+
+.blog-header {
+  margin-top: 80px;
+}
+
+.blog-header-content .date {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0px 0px 10px;
+}
+
+.blog-header-content .blog-title {
+  font-family: BigCaslon;
+  font-size: 50px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcb542;
+  margin-bottom: 32px;
+}
+
+.blog-header-content .blog-title span {
+  color: #ffffff;
+}
+
+.blog-header-content .pagelinks {
+  margin: 0px 0px 32px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.blog-header-content .pagelinks li {
+  display: inline-block;
+}
+
+.blog-header-content .pagelinks li::after {
+  content: ">>";
+  color: var(--yellow);
+  padding: 0px 5px 0px;
+}
+
+.blog-header-content .pagelinks li a {
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+/*----------- /Blog inner page --------*/
