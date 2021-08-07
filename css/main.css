@@ -1548,6 +1548,8 @@ footer .division-social-media {
   font-weight: normal;
   text-transform: capitalize;
   display: none;
+  position: absolute;
+  z-index: 1;
 }
 
 .blog-landing-page .open {
@@ -1592,7 +1594,7 @@ footer .division-social-media {
 
 .blog-landing-page .section-category .blog-div .text-div {
   margin-top: -30px;
-  margin-right: 45%;
+  margin-right: 0;
   transition: all 0.2s ease-in-out;
   position: relative;
 }
@@ -1646,6 +1648,10 @@ footer .division-social-media {
 @media screen and (max-width: 1200px) and (min-width: 767px) {
   .blog-landing-page .section-hero .title-and-image {
     margin-top: -100px;
+  }
+
+  .blog-landing-page .section-category .blog-div .text-div {
+    margin-right: 0;
   }
 }
 
