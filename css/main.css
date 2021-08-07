@@ -1868,4 +1868,74 @@ footer .division-social-media {
   text-transform: uppercase;
   border: none;
 }
+
+.blog-footer .pagination {
+  margin: 60px 0px;
+}
+
+.blog-footer .pagination .link-div {
+  margin-bottom: 30px;
+}
+
+.blog-footer .pagination .view-all-link.prev::after {
+  content: "";
+}
+
+.blog-footer .pagination .view-all-link.prev::before {
+  content: url(../assets/images/global/banner-arrow-right.svg);
+  transform: rotate(180deg);
+}
+
+.blog-footer .pagination .view-all-link.next {
+  justify-content: flex-end;
+}
+
+.blog-footer .pagination .blog-div {
+  margin-bottom: 30px;
+}
+
+.blog-footer .pagination .blog-div .img-div {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-footer .pagination .blog-div .img-div .overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--yellow);
+  opacity: 0.5;
+  margin-left: -100%;
+}
+
+.blog-footer .pagination .blog-div .text-div {
+  margin-top: -30px;
+  margin-right: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.blog-footer .pagination .blog-div .text-div .hover-arrow-div {
+  text-align: right;
+  visibility: hidden;
+}
+
+.blog-footer .pagination .blog-div:hover .img-div .overlay {
+  animation: swipeRightOverlay;
+  animation-duration: 1s;
+}
+
+.blog-footer .pagination .blog-div:hover .text-div {
+  background-color: var(--dark-grey);
+}
+
+.blog-footer .pagination .blog-div:hover .text-div .hover-arrow-div {
+  visibility: visible;
+}
+
+.blog-footer .pagination .blog-div:hover .text-div .hover-arrow-div img {
+  animation-name: swingRgiht;
+  animation-duration: 0.5s;
+}
 /*----------- /Blog inner page --------*/
