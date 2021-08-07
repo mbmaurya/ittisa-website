@@ -1802,4 +1802,70 @@ footer .division-social-media {
   width: 16px;
   display: inline-block;
 }
+
+.blog-footer {
+  margin-top: 90px;
+}
+
+.blog-footer .form {
+  padding: 20px 0px 30px;
+  background-color: rgba(5, 5, 5, 0.2);
+}
+
+.blog-footer .form h3 {
+  font-family: BigCaslon;
+  font-size: 40px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcb542;
+  margin-bottom: 10px;
+}
+
+.blog-footer .form h3 span {
+  color: #ffffff;
+}
+
+.blog-footer .form p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bababa;
+  margin-bottom: 45px;
+}
+
+.blog-footer form {
+  padding: 0px 25px 0px;
+}
+
+.blog-footer form .input-elm {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed #bababa;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  color: #ffffff;
+}
+
+.blog-footer form .button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-footer form .button-div button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+}
 /*----------- /Blog inner page --------*/
