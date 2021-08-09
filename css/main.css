@@ -850,6 +850,292 @@ body {
   margin-bottom: 6px;
 }
 
+/* Landing page ----------------------------------------- */
+
+
+.marketing-success,
+.marketing-partner,
+.impact-section,
+.kafqa-section,
+.service-section,
+.faq-section{
+  padding-bottom: 130px;
+}
+
+/* ============= marketing-success-section ============ */
+
+.yellow-title-large{
+    font-family: BigCaslon;
+    font-size: 64px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--yellow);
+    line-height: 1;
+    margin: 0;
+  }
+
+#marketing_banner_img  img{
+    padding-top: 290px;
+    
+}
+.links-div{
+  padding: 150px 0 0 0;
+  display: inline-block;
+}
+
+
+/* ============ marketing-partner-section ============== */
+
+.marketing-partner .youtube-thumbnail{
+  position: relative;
+  height: 100%;
+}
+.marketing-partner  .youtube_icon{
+    position: absolute;
+    width: 96px;
+    height: 66px;
+    background-color:#ff0000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+.marketing-partner  .youtube_icon::after{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    left: 3px;
+    border-style: solid;
+    border-width: 14px 0 14px 24px;
+    border-color: transparent transparent transparent var(--white);
+}
+#marketing_partner_img img{
+    padding-top: 250px;
+    margin-left: -100px;
+    position: relative;
+}
+
+
+.marketing-partner h2.yellow-title-large.heading-big-size{
+  font-size: 84px;
+}
+.marketing-partner p.banner-text.text-big-size {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-right: 0;
+  font-weight: 600;
+}
+.marketing-partner .small-para-text{
+  margin-right: 0;
+  font-size: 14px;
+  line-height: 1.86;
+  
+}
+.agency-div{
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+.agency-div span{
+  margin: 0;
+  color:var(--white);
+  padding: 9px 32px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255,0.16);
+  font-weight: 600;
+}
+.agency-div img{
+  width: 124px;
+  height: 44px;
+  object-fit: cover;
+}
+
+/*============ impact-section ========== */
+.impact-div {
+  padding: 30px 4px 20px 3px;
+  background-color: rgba(5, 5, 5, 0.2);
+  margin-top: 42px;
+}
+
+.impact-div h3 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--yellow);
+}
+
+.impact-div .img-shape{
+  display: block;
+  margin: 0 auto;
+}
+
+.client-level {
+  padding: 24px 16px 22px 16px;
+}
+.client-level img{
+  display: inline;
+}
+.bg-tick-box{
+  display: inline-block;
+  background: #323131;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  margin-right: 24px;
+}
+.level-box {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px dotted #bebebe;
+  padding: 15px 0 15px 0;
+}
+.level-box:last-child {
+  border-bottom: none;
+}
+.level-box span{
+  font-family: BigCaslon;
+  font-size: 30px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  text-align: center;
+  color:var(--yellow);
+  margin-right: 10px;
+}
+.level-box  .imapct-text{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color:var(--white)
+}
+
+/* ================== kafqa-section ==================== */
+.kafqa-section .banner-text.kafqa-text{
+  line-height: 1.4;
+  margin-right: 15%;
+}
+.kafqa-section .links-div{
+  padding-top: 0;
+}
+.kafqa-section .img-col img{
+  margin-top: 22px;
+  filter: grayscale(100%);
+}
+.img-circle img{
+  position: absolute;
+  right: 0;
+}
+
+
+/* ================== service-section ================ */
+
+.service-content {
+  margin-top: 58px;
+}
+
+.service-area-div{
+ cursor: pointer;
+  padding: 30px 24px 30px 24px;
+}
+.service-area-div .text-div .service-title{
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+}
+.service-content .service-area-div {
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 24px;
+  background-color: rgba(5, 5, 5,  0.06);
+}
+.service-content .service-area-div:hover{
+  background:var(--dark-grey)
+}
+
+/* ================== service-section ================ */
+
+/* =============== testimonials section ================ */
+
+
+/* =============== testimonials section ================ */
+.testimonial-div{
+  margin-top: 56px;
+}
+.testimonial-div .testimonial-title{
+  display: flex;
+  align-items: flex-start;
+}
+.testimonial-div  .testimonial-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.testimonial-div .testimonial-quotes img{
+  margin-right: 20px;
+}
+.testimonial-div .testimonial-heading .testimonial-name{
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color:var(--yellow);
+}
+.testimonial-div .testimonial-heading .testimonial-description{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color:var(--white);
+  opacity: 0.6;
+}
+.testimonial-div .testimonial-para{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  text-align: left;
+  color:var(--white);
+  margin-top: 8px;
+  margin-right: 15%;
+}
+/* Landing page ----------------------------------------- */
+
+
 /* Footer ------------------------------------------------*/
 footer {
   padding-top: 80px;
