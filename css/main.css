@@ -1672,7 +1672,7 @@ footer .division-social-media {
 /*----------- Blog inner page --------*/
 
 .blog-inner-page #base-grid-container {
-  background: url(../assets/images/blog-landing-page/banner.jpg);
+  background: url(../assets/images/blog-inner-page/banner.jpg);
 }
 
 .blog-header {
@@ -1816,7 +1816,7 @@ footer .division-social-media {
 
 .blog-footer .form {
   padding: 20px 0px 30px;
-  background-color: rgba(5, 5, 5, 0.2);
+  background-color: rgba(5, 5, 5, 0.5);
 }
 
 .blog-footer .form h3 {
