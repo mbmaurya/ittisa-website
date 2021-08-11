@@ -352,11 +352,8 @@ body {
   padding-bottom: 146px;
 }
 
-.banner-section .slider .slide #text-col {
-  padding-top: 54px;
-}
-.banner-section .slider .slide #small-img-col {
-  padding-top: 94px;
+.banner-section .slick-slide .row {
+  align-items: center;
 }
 
 .banner-section .slider .slick-prev,
@@ -366,7 +363,9 @@ body {
 }
 
 .banner-section .slider .slick-prev {
-  left: 0;
+  left: 10px;
+  transform: rotate(180deg);
+  margin-top: -6px;
 }
 
 .banner-section .slider .slick-next {
@@ -374,7 +373,7 @@ body {
 }
 
 .banner-section .slider .slick-prev::before {
-  content: url(../assets/images/global/banner-arrow-left.svg);
+  content: url(../assets/images/global/banner-arrow-right.svg);
 }
 
 .banner-section .slider .slick-next::before {
@@ -668,9 +667,9 @@ body {
 }
 
 .contact-section .map-div {
+  height: 100%;
   background-color: var(--dark-grey);
   padding-top: 21px;
-  padding-bottom: 60px;
 }
 
 .contact-section .map-div img {
@@ -691,9 +690,9 @@ body {
 }
 
 .contact-section .form-div {
+  height: 100%;
   background-color: var(--dark-grey);
   padding-top: 21px;
-  padding-bottom: 36px;
 }
 
 .contact-section .form-div .contact-form {
@@ -836,10 +835,6 @@ footer .division-social-media {
     padding-bottom: 80px;
   }
 
-  .banner-section .slider .slide #small-img-col {
-    padding-top: 54px;
-  }
-
   /* work section */
 
   .work-section #work-grid .work-slider .slide {
@@ -926,7 +921,7 @@ footer .division-social-media {
   }
 
   .contact-section #form-col {
-    margin-top: 28px;
+    margin-top: 40px;
   }
 
   /* footer */
@@ -947,6 +942,10 @@ footer .division-social-media {
   footer .social-media-links {
     margin-top: 20px !important;
     margin-bottom: 40px !important;
+  }
+
+  footer .comment-box {
+    padding: 4px 12px;
   }
 }
 
@@ -995,12 +994,8 @@ footer .division-social-media {
   }
 
   /* banner */
-  .banner-section .slider .slide #small-img-col {
-    padding-top: 225px;
-  }
-
-  .banner-section .slider .slide #big-img-col {
-    padding-top: 100px;
+  .banner-section .slick-slide .row {
+    align-items: flex-end;
   }
 
   /* work */
