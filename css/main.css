@@ -196,6 +196,10 @@ body {
   color: var(--yellow);
 }
 
+.blog-div {
+  text-decoration: none;
+}
+
 .contact-title {
   margin: 0;
   font-family: "BigCaslon", serif;
@@ -259,6 +263,26 @@ body {
 
 .v-middle {
   vertical-align: middle;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+}
+
+button[type="submit"]:hover::before,
+.view-all-link:hover::before,
+.get-in-touch-link:hover::before {
+  transition: 0.3s ease-in-out;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+button[type="submit"]:hover::after,
+.view-all-link:hover::after,
+.get-in-touch-link:hover::after {
+  transition: 0.3s ease-in-out;
+  margin-left: 10px;
+  margin-right: -10px;
 }
 
 /* grid structure */
@@ -1578,12 +1602,14 @@ footer .division-social-media {
 }
 
 .blog-landing-page .section-category .blog-div {
+  display: block;
   margin-bottom: 30px;
 }
 
 .blog-landing-page .section-category .blog-div .img-div {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .blog-landing-page .section-category .blog-div .img-div .overlay {
@@ -1608,13 +1634,15 @@ footer .division-social-media {
   visibility: hidden;
 }
 
-.blog-landing-page .section-category.blog-div:hover .img-div .overlay {
+.blog-landing-page .section-category .blog-div:hover .img-div .overlay {
   animation: swipeRightOverlay;
   animation-duration: 1s;
+  cursor: pointer;
 }
 
 .blog-landing-page .section-category .blog-div:hover .text-div {
   background-color: var(--dark-grey);
+  cursor: pointer;
 }
 
 .blog-landing-page

@@ -25,6 +25,18 @@
   }
 }
 
+@keyframes slideRight {
+  from {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  to {
+    margin-left: 10px;
+    margin-right: -10px;
+  }
+}
+
 [data-aos="swing-right"] {
   animation-name: swingRight;
 }
