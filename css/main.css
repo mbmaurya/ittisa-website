@@ -758,9 +758,9 @@ body {
 }
 
 .contact-section .map-div {
+  height: 100%;
   background-color: var(--dark-grey);
   padding-top: 21px;
-  padding-bottom: 60px;
 }
 
 .contact-section .map-div img {
@@ -781,9 +781,9 @@ body {
 }
 
 .contact-section .form-div {
+  height: 100%;
   background-color: var(--dark-grey);
   padding-top: 21px;
-  padding-bottom: 36px;
 }
 
 .contact-section .form-div .contact-form {
@@ -918,7 +918,6 @@ body {
 }
 
 .team-section .scroll-team {
-  margin-top: -40px;
   height: 80vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -1255,6 +1254,10 @@ footer .division-social-media {
   footer .social-media-links {
     margin-top: 20px !important;
     margin-bottom: 40px !important;
+  }
+
+  footer .comment-box {
+    padding: 5px 14px;
   }
 }
 
