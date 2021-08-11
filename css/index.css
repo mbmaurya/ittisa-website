@@ -402,11 +402,19 @@ body {
   padding-bottom: 45px !important;
 }
 
+.work-section #work-grid .work-slider .slick-slide .preview-img-div img {
+  visibility: hidden;
+}
+
 .work-section #work-grid .work-slider .slick-center {
   transition: all 0.2s ease-in-out;
   -webkit-transform: scale(1.4);
   -moz-transform: scale(1.4);
   transform: scale(1.4);
+}
+
+.work-section #work-grid .work-slider .slick-center .preview-img-div img {
+  visibility: visible;
 }
 
 .work-section #work-grid .work-slider .slide .logo-img-div {
@@ -503,7 +511,7 @@ body {
 
 .blogs-section {
   padding-top: 71px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .blogs-section #blogs-row {
@@ -512,6 +520,7 @@ body {
 
 .blogs-section #blogs-row .blog-div {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .blogs-section #blogs-row .blog-div .img-div {
