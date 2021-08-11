@@ -38,7 +38,6 @@ header .container .menu-close {
   position: fixed;
 }
 
-
 header .container .menu p {
   display: inline-block;
   font-family: "Inconsolata", monospace;
@@ -85,7 +84,7 @@ header .container nav {
   height: 100%;
   top: 0;
   left: 0;
-  background: url(/assets/images/home-page/banner-bg.jpg) no-repeat;
+  background-image: url(../assets/images/home-page/banner-bg.jpg);
   background-size: cover;
   z-index: 11;
 }
@@ -150,11 +149,9 @@ header .header-container nav p {
   color: #757575;
 }
 
-
 /* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */
 
 @media screen and (max-width: 1200px) {
-
   header .header-container .logo {
     padding-right: 0;
     padding-left: 10px;
@@ -167,22 +164,24 @@ header .header-container nav p {
   header .header-container .button-div #toggle_menu {
     font-size: 11px;
   }
-
 }
 
-
 @media screen and (max-width: 850px) and (orientation: landscape) {
-  
   header .header-container nav ul li {
     margin-bottom: 8px;
   }
-  
+
   header .header-container nav ul li a {
     font-size: 24px;
   }
-  
+
   header .header-container nav p {
     margin: 00px 0 0;
   }
+}
 
+@media screen and (max-width: 767px) {
+  header .header-container .button-div {
+    justify-content: flex-end;
+  }
 }
