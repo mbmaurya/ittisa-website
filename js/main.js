@@ -40,24 +40,6 @@ $(document).ready(function () {
     ],
   });
 
-  // accordion
-  var acc = $(".accordion-btn");
-
-  acc.each(function (i) {
-    $(this).on("click", function () {
-      $(this).toggleClass("accordion-active");
-      const panel = $(this).next();
-      if ($(this).hasClass("accordion-active")) {
-        panel.css({ "max-height": "fit-content" });
-      } else {
-        panel.css({ "max-height": "0" });
-      }
-    });
-  });
-
-  // Initialize animation on scroll
-  AOS.init();
-
   $(".select-menu-title").click(function () {
     $(".select-menu-options").toggleClass("open");
     $(".section-category .dropdown-arrow").toggleClass("rotate-180");
@@ -89,6 +71,28 @@ $(document).ready(function () {
     }
   });
 
+  // accordion
+  var acc = $(".accordion-btn");
+
+  acc.each(function (i) {
+    $(this).on("click", function () {
+      $(this).toggleClass("accordion-active");
+      const panel = $(this).next();
+      if ($(this).hasClass("accordion-active")) {
+        panel.css({ "max-height": "fit-content" });
+      } else {
+        panel.css({ "max-height": "0" });
+      }
+    });
+  });
+
+  // Initialize animation on scroll
+  AOS.init();
+});
+
+// Team Tab
+
+$(document).ready(function () {
   $(".scroll-team").on("scroll", onScroll);
 
   //smoothscroll
@@ -118,35 +122,21 @@ $(document).ready(function () {
         }
       );
   });
-
-  function onScroll(event) {
-    var scrollPos = $(".team-section").scrollTop() + 400;
-    $(".tab-link a").each(function () {
-      var currLink = $(this);
-      var refElement = $(currLink.attr("href"));
-      if (
-        refElement.position().top <= scrollPos &&
-        refElement.position().top + refElement.height() > scrollPos
-      ) {
-        $(".tab-link a").removeClass("active");
-        currLink.addClass("active");
-      } else {
-        currLink.removeClass("active");
-      }
-    });
-  }
-
-  function openTab(evt, name) {
-    var i, tabContent, tabLinks;
-    tabContent = $(".tab-content");
-    for (i = 0; i < tabContent.length; i++) {
-      tabContent[i].style.display = "none";
-    }
-    tabLinks = $(".tab-link");
-    for (i = 0; i < tabLinks.length; i++) {
-      tabLinks[i].className = tabLinks[i].className.replace(" active-link", "");
-    }
-    $("#" + name).css({ display: "block" });
-    evt.currentTarget.className += " active-link";
-  }
 });
+
+function onScroll(event) {
+  var scrollPos = $(".team-section").scrollTop() + 400;
+  $(".tab-link a").each(function () {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (
+      refElement.position().top <= scrollPos &&
+      refElement.position().top + refElement.height() > scrollPos
+    ) {
+      $(".tab-link a").removeClass("active");
+      currLink.addClass("active");
+    } else {
+      currLink.removeClass("active");
+    }
+  });
+}
