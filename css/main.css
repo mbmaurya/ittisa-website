@@ -805,7 +805,6 @@ button[type="submit"]:hover::after,
 }
 
 .contact-section .form-div {
-  height: 100%;
   background-color: var(--dark-grey);
   padding-top: 21px;
 }
