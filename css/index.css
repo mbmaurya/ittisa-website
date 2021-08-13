@@ -884,6 +884,7 @@ footer .division-social-media {
 
   .banner-section .slick-slide #big-img-col {
     margin-top: 60px;
+    margin-bottom: 35px;
   }
 
   .banner-section .slick-slide #small-img-col {
@@ -893,7 +894,7 @@ footer .division-social-media {
   .banner-section .slick-slide #small-img-col img {
     position: absolute;
     width: 200%;
-    bottom: -25px;
+    bottom: 0px;
     left: -100%;
   }
 
