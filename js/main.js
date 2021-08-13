@@ -40,6 +40,7 @@ $(document).ready(function () {
     ],
   });
 
+
   $(".select-menu-title").click(function () {
     $(".select-menu-options").toggleClass("open");
     $(".section-category .dropdown-arrow").toggleClass("rotate-180");
