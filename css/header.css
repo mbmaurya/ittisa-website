@@ -80,13 +80,21 @@ header .container .menu div.toggle.rotate span:nth-child(2) {
 header .container nav {
   display: none;
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 0;
+  height: 0;
   top: 0;
-  left: 0;
+  right: 0;
   background-image: url(../assets/images/home-page/banner-bg.jpg);
   background-size: cover;
   z-index: 11;
+}
+
+header .container nav.d-nav {
+  display: block;
+  animation-name: revealFromLeft;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards; /* stops animation from getting to initial point */
+  animation-timing-function: linear; /* smooths the animations at breakpoints */
 }
 
 header .header-container nav .header-base {
@@ -116,6 +124,8 @@ header .header-container nav ul {
 
 header .header-container nav ul li {
   margin-bottom: 22px;
+  animation-name: reveal;
+  animation-duration: 2.5s;
 }
 
 header .header-container nav ul li a {
@@ -147,6 +157,8 @@ header .header-container nav p {
   letter-spacing: normal;
   text-align: left;
   color: #757575;
+  animation-name: reveal;
+  animation-duration: 2.5s;
 }
 
 /* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */

@@ -16,7 +16,7 @@ $(document).ready(function () {
     );
     $("#toggle_menu").toggleClass("menu-close");
     $(".toggle").toggleClass("rotate");
-    $("#navigation").toggleClass("d-block");
+    $("#navigation").toggleClass("d-nav");
   });
 
   // carousel
