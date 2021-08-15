@@ -28,6 +28,10 @@ body {
   display: block !important;
 }
 
+.ripple-effect canvas {
+  z-index: 1 !important;
+}
+
 /* common components */
 
 .pre-loading-screen {
@@ -347,8 +351,26 @@ body {
 
 /* banner section */
 
+.pointer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 1px rgb(238 238 238 / 25%);
+  -webkit-box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 48%);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(238, 238, 238, 0.25);
+  z-index: 2;
+  border: 1px solid rgb(0 0 0 / 45%);
+}
+
 .banner-section {
   padding: 80px 0px;
+}
+
+.banner-section .magnify {
+  transition: all 0.5s ease-in-out;
 }
 
 .banner-section .slick-slide .row {
@@ -509,6 +531,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 /* Blog Section */
@@ -595,6 +620,15 @@ body {
   align-items: center;
 }
 
+.recognition-section #recognition-row .col-1 .img-div img {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in;
+}
+
+.recognition-section #recognition-row .col-1 .img-div:hover img {
+  transform: scale(1);
+}
+
 /* FAQ section */
 .faq-section {
   padding-bottom: 80px;
@@ -671,10 +705,42 @@ body {
   height: 100%;
   background-color: var(--dark-grey);
   padding-top: 21px;
+  position: relative;
 }
 
 .contact-section .map-div img {
   margin-top: 46px;
+}
+
+.contact-section .map-div .dots {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #fcb542;
+  border-radius: 4px;
+  position: absolute;
+  box-shadow: 0px 0px 0px 3px rgb(252 181 66 / 75%);
+  -webkit-box-shadow: 0px 0px 0px 3px rgb(252 181 66 / 75%);
+  -moz-box-shadow: 0px 0px 0px 3px rgb(252 181 66 / 75%);
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.contact-section .map-div .dots.dot-1 {
+  top: 42%;
+  left: 12%;
+}
+
+.contact-section .map-div .dots.dot-2 {
+  top: 36%;
+  left: 29%;
+}
+
+.contact-section .map-div .dots.dot-3 {
+  top: 49%;
+  left: 68%;
 }
 
 .contact-section .map-div .contact-text {

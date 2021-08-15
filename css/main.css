@@ -29,6 +29,10 @@ body {
   display: block !important;
 }
 
+.ripple-effect canvas {
+  z-index: 1 !important;
+}
+
 .img-res {
   display: block;
   width: 100%;

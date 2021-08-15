@@ -16,7 +16,7 @@ $(document).ready(function () {
     );
     $("#toggle_menu").toggleClass("menu-close");
     $(".toggle").toggleClass("rotate");
-    $("#navigation").toggleClass("d-block");
+    $("#navigation").toggleClass("d-nav");
   });
 
   // carousel
@@ -88,11 +88,7 @@ $(document).ready(function () {
 
   // Initialize animation on scroll
   AOS.init();
-});
 
-// Team Tab
-
-$(document).ready(function () {
   $(".scroll-team").on("scroll", onScroll);
 
   //smoothscroll
@@ -122,21 +118,59 @@ $(document).ready(function () {
         }
       );
   });
-});
 
-function onScroll(event) {
-  var scrollPos = $(".team-section").scrollTop() + 400;
-  $(".tab-link a").each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-    if (
-      refElement.position().top <= scrollPos &&
-      refElement.position().top + refElement.height() > scrollPos
-    ) {
-      $(".tab-link a").removeClass("active");
-      currLink.addClass("active");
+  function onScroll(event) {
+    var scrollPos = $(".team-section").scrollTop() + 400;
+    $(".tab-link a").each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (
+        refElement.position().top <= scrollPos &&
+        refElement.position().top + refElement.height() > scrollPos
+      ) {
+        $(".tab-link a").removeClass("active");
+        currLink.addClass("active");
+      } else {
+        currLink.removeClass("active");
+      }
+    });
+  }
+
+  var mY = 0;
+  $(".magnify").mousemove(function (e) {
+    // moving upward
+    if (e.pageY < mY) {
+      $(this).css({
+        "margin-top": "-20px",
+        "margin-left": "20px",
+      });
+      $(".pointer").css({
+        display: "block",
+        top: e.pageY - 25,
+        left: e.pageX - 25,
+        transform: "scale(1.5)",
+      });
+
+      // moving downward
+    } else if (e.pageY > mY) {
+      $(this).css({
+        "margin-top": "20px",
+        "margin-left": "-20px",
+      });
+      $(".pointer").css({
+        display: "block",
+        top: e.pageY - 25,
+        left: e.pageX - 25,
+      });
     } else {
-      currLink.removeClass("active");
     }
+
+    // set new mY after doing test above
+    mY = e.pageY;
   });
-}
+
+  $(".magnify").mouseleave(function () {
+    $(this).css({ "margin-top": "0px", "margin-right": "0px" });
+    // $(".pointer").css({ display: "none" });
+  });
+});
