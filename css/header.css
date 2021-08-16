@@ -84,7 +84,8 @@ header .container nav {
   height: 0;
   top: 0;
   right: 0;
-  background-image: url(../assets/images/home-page/banner-bg.jpg);
+  /* background-image: url(../assets/images/home-page/banner-bg.jpg); */
+  background-color: beige;
   background-size: cover;
   z-index: 11;
 }
