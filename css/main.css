@@ -29,6 +29,10 @@ body {
   display: block !important;
 }
 
+.ripple-effect canvas {
+  z-index: 1 !important;
+}
+
 .img-res {
   display: block;
   width: 100%;
@@ -964,6 +968,64 @@ button[type="submit"]:hover::after,
 
 .team-section .scroll-team .member-col-left {
   margin-top: -150px;
+}
+
+.team-section .scroll-team .name-title .title .block {
+  width: 0%;
+  height: inherit;
+  background: #ffb510;
+  position: absolute;
+}
+
+.team-section .scroll-team .name-title .title {
+  width: 50%;
+  position: relative;
+  display: block;
+  align-items: center;
+  height: 100px;
+}
+
+.team-section .scroll-team .name-title .title .dot {
+  width: 0px;
+  height: 0px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  background: #ffb510;
+
+  margin-left: 5px;
+  margin-top: -10px;
+  position: absolute;
+  bottom: 13px;
+  right: -12px;
+}
+
+.team-section .scroll-team .name-title .designation {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: -10px;
+}
+
+.team-section .scroll-team .name-title .designation .block {
+  width: 0%;
+  height: inherit;
+  background: #e91e63;
+  position: absolute;
+
+  animation-delay: 2s;
+  display: flex;
+}
+
+.team-section .scroll-team .name-title .designation .small-title {
+  opacity: 0;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 /* grow section */
