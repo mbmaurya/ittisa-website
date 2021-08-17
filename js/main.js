@@ -17,6 +17,18 @@ $(document).ready(function () {
     $("#toggle_menu").toggleClass("menu-close");
     $(".toggle").toggleClass("rotate");
     $("#navigation").toggleClass("d-nav");
+    if ($("#navigation").hasClass("d-nav")) {
+      $("#navigation").animate({ top: -50 + "%", right: -50 + "%" }, 700);
+      $("#navigation ul li, header .header-container nav p").animate(
+        { opacity: 1 },
+        3500
+      );
+    } else {
+      $("#navigation").animate({ top: -200 + "%", right: -200 + "%" }, 700);
+      $("#navigation ul li, header .header-container nav p").animate({
+        opacity: 0,
+      });
+    }
   });
 
   // carousel
@@ -39,7 +51,6 @@ $(document).ready(function () {
       },
     ],
   });
-
 
   $(".select-menu-title").click(function () {
     $(".select-menu-options").toggleClass("open");
