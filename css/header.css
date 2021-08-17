@@ -1,10 +1,22 @@
 header {
   margin-top: 28px;
+  transition: all 0.3s ease-in-out;
 }
 
 header .header-container {
   padding-left: 0;
   padding-right: 0;
+}
+
+.nav-fixed {
+  position: fixed;
+  width: 100%;
+  background-color: #00000038;
+  padding: 6px 0px;
+  top: 0;
+  z-index: 1;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 header .container {
@@ -16,6 +28,20 @@ header .container {
 header .header-container .logo {
   padding-right: 20px;
   text-align: right;
+}
+
+header .header-container #navigation {
+  width: 200%;
+  height: 200%;
+  top: -200%;
+  right: -200%;
+  border-radius: 50%;
+}
+
+header .header-container #navigation > .row {
+  position: absolute;
+  left: 25%;
+  top: 25%;
 }
 
 header .header-container .button-div {
@@ -39,6 +65,7 @@ header .container .menu-close {
 }
 
 header .container .menu p {
+  width: 75px;
   display: inline-block;
   font-family: "Inconsolata", monospace;
   font-size: 14px;
@@ -64,6 +91,7 @@ header .container .menu div.toggle span {
   position: relative;
   width: 20px;
   border-top: 2px solid #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 header .container .menu div.toggle.rotate span:nth-child(1) {
@@ -78,22 +106,22 @@ header .container .menu div.toggle.rotate span:nth-child(2) {
 }
 
 header .container nav {
-  display: none;
+  /* display: none; */
   position: fixed;
   width: 0;
   height: 0;
   top: 0;
   right: 0;
   /* background-image: url(../assets/images/home-page/banner-bg.jpg); */
-  background-color: beige;
+  background-color: #fcb542;
   background-size: cover;
   z-index: 11;
 }
 
 header .container nav.d-nav {
   display: block;
-  animation-name: revealFromLeft;
-  animation-duration: 0.5s;
+  /* animation-name: openMenu; */
+  animation-duration: 0.7s;
   animation-fill-mode: forwards; /* stops animation from getting to initial point */
   animation-timing-function: linear; /* smooths the animations at breakpoints */
 }
@@ -124,9 +152,10 @@ header .header-container nav ul {
 }
 
 header .header-container nav ul li {
+  opacity: 0;
   margin-bottom: 22px;
-  animation-name: reveal;
-  animation-duration: 2.5s;
+  /* animation-name: reveal; */
+  /* animation-duration: 3.5s; */
 }
 
 header .header-container nav ul li a {
@@ -139,7 +168,7 @@ header .header-container nav ul li a {
   line-height: 1.4;
   letter-spacing: normal;
   text-align: left;
-  color: rgb(83, 82, 82);
+  color: #ffffff;
 }
 
 header .header-container nav ul li a:hover {
@@ -147,6 +176,7 @@ header .header-container nav ul li a:hover {
 }
 
 header .header-container nav p {
+  opacity: 0;
   margin: 27px 0 0;
   padding-right: 10px;
   font-family: Poppins;

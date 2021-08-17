@@ -41,7 +41,7 @@
   0% {
     width: 0;
     height: 0;
-    border-bottom-left-radius: 85%;
+    border-radius: 0;
   }
   25% {
     width: 25%;
@@ -177,6 +177,17 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes openMenu {
+  from {
+    top: -200%;
+    right: -200%;
+  }
+  to {
+    top: -50%;
+    right: -50%;
   }
 }
 

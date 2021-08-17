@@ -36,7 +36,6 @@ body {
 
 .ripple-effect canvas {
   z-index: 1 !important;
-
 }
 
 /* common components */
@@ -296,7 +295,7 @@ body {
   font-family: "Bebas Neue", cursive;
   font-size: 228px;
   position: relative;
-  top: 65%;
+  top: 75%;
   height: 24px;
   color: #383838;
 }
@@ -411,6 +410,10 @@ body {
 
 .banner-section .slick-slide .small-img-col {
   margin-top: -45px;
+}
+
+.banner-section .slick-slide #small-img-col img {
+  margin-top: -50px;
 }
 
 /* work section */
@@ -912,7 +915,7 @@ footer .division-social-media {
   }
 
   header .button-div .menu p {
-    display: none;
+    /* display: none; */
   }
 
   /* banner sectiob */
@@ -964,11 +967,10 @@ footer .division-social-media {
     left: -100%;
   }
 
-  .banner-section .slider .slick-prev, .banner-section .slider .slick-next {
-    top: 48%;
+  .banner-section .slider .slick-prev,
+  .banner-section .slider .slick-next {
+    /* top: 48%; */
   }
-
-
 
   /* work section */
 
@@ -1145,7 +1147,6 @@ footer .division-social-media {
   footer .links-2 {
     margin-top: 40px;
   }
-
 }
 
 /* HOME PAGE TABLET VIEW --------------------------------------------------------------- */
