@@ -1,10 +1,22 @@
 header {
   margin-top: 28px;
+  transition: all 0.3s ease-in-out;
 }
 
 header .header-container {
   padding-left: 0;
   padding-right: 0;
+}
+
+.nav-fixed {
+  position: fixed;
+  width: 100%;
+  background-color: #00000038;
+  padding: 6px 0px;
+  top: 0;
+  z-index: 1;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 header .container {
@@ -101,7 +113,7 @@ header .container nav {
   top: 0;
   right: 0;
   /* background-image: url(../assets/images/home-page/banner-bg.jpg); */
-  background-color: cornflowerblue;
+  background-color: #fcb542;
   background-size: cover;
   z-index: 11;
 }
@@ -156,7 +168,7 @@ header .header-container nav ul li a {
   line-height: 1.4;
   letter-spacing: normal;
   text-align: left;
-  color: rgb(83, 82, 82);
+  color: #ffffff;
 }
 
 header .header-container nav ul li a:hover {

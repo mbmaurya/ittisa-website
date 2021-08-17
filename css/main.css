@@ -407,6 +407,7 @@ button[type="submit"]:hover::after,
 .banner-section #small-img-col img {
   position: absolute;
   bottom: 0;
+  margin-top: -50px;
 }
 
 /* ittisa section */
@@ -1905,7 +1906,7 @@ footer .division-social-media {
 }
 
 .blog-footer {
-  margin-top: 90px;
+  margin-top: 60px;
 }
 
 .blog-footer .form {

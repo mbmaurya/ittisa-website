@@ -185,4 +185,13 @@ $(document).ready(function () {
     $(this).css({ "margin-top": "0px", "margin-right": "0px" });
     // $(".pointer").css({ display: "none" });
   });
+
+  $(window).scroll(function (event) {
+    var scrollPos = $(window).scrollTop();
+    if (scrollPos >= 400) {
+      $("header").addClass("nav-fixed");
+    } else {
+      $("header").removeClass("nav-fixed");
+    }
+  });
 });
