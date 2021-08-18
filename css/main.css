@@ -1689,6 +1689,7 @@ footer .division-social-media {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+  bottom: 0;
 }
 
 .blog-landing-page .section-category ul {
@@ -2011,6 +2012,7 @@ footer .division-social-media {
 .blog-footer .form {
   padding: 20px 0px 30px;
   background-color: rgba(5, 5, 5, 0.5);
+  margin-bottom: 60px;
 }
 
 .blog-footer .form h3 {
