@@ -324,7 +324,7 @@ button[type="submit"]:hover::after,
   font-family: "Bebas Neue", cursive;
   font-size: 228px;
   position: relative;
-  top: 65%;
+  top: 70%;
   height: 24px;
   color: #383838;
 }
@@ -1902,6 +1902,12 @@ footer .division-social-media {
   margin: 0px 0px 32px;
   padding: 0;
   list-style-type: none;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: horizontal;
+  color: #fff;
 }
 
 .blog-header-content .pagelinks li {
