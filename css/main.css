@@ -324,7 +324,7 @@ button[type="submit"]:hover::after,
   font-family: "Bebas Neue", cursive;
   font-size: 228px;
   position: relative;
-  top: 65%;
+  top: 70%;
   height: 24px;
   color: #383838;
 }
@@ -1689,6 +1689,7 @@ footer .division-social-media {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+  bottom: 0;
 }
 
 .blog-landing-page .section-category ul {
@@ -1853,6 +1854,10 @@ footer .division-social-media {
     right: 15%;
     z-index: -1;
   }
+
+  .team-section .scroll-team .name-title .title .dot {
+    right: -10px;
+  }
 }
 
 /*----------- /Blog landing page --------*/
@@ -1902,6 +1907,12 @@ footer .division-social-media {
   margin: 0px 0px 32px;
   padding: 0;
   list-style-type: none;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: horizontal;
+  color: #fff;
 }
 
 .blog-header-content .pagelinks li {
@@ -2005,6 +2016,7 @@ footer .division-social-media {
 .blog-footer .form {
   padding: 20px 0px 30px;
   background-color: rgba(5, 5, 5, 0.5);
+  margin-bottom: 60px;
 }
 
 .blog-footer .form h3 {

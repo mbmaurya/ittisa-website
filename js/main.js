@@ -188,7 +188,7 @@ $(document).ready(function () {
 
   $(window).scroll(function (event) {
     var scrollPos = $(window).scrollTop();
-    if (scrollPos >= 400) {
+    if (scrollPos >= 10) {
       $("header").addClass("nav-fixed");
     } else {
       $("header").removeClass("nav-fixed");
