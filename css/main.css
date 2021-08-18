@@ -945,6 +945,10 @@ button[type="submit"]:hover::after,
   z-index: 1000;
 }
 
+.team-section .navigation-row-mobile {
+  display: none;
+}
+
 .team-section .scroll-team {
   height: 80vh;
   overflow-y: scroll;
@@ -1292,10 +1296,46 @@ footer .division-social-media {
     display: none;
   }
 
+  .team-section .navigation-row-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .team-section .navigation-links {
+    width: max-content;
+  }
+
+  .team-section .navigation-row-mobile .navigation-links ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .team-section .navigation-row-mobile .navigation-links ul li {
+    display: inline-block;
+    width: 100vw;
+  }
+
   .team-section .scroll-team {
     margin-top: 20px;
     height: fit-content;
-    overflow: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-section .scroll-team section {
+    display: inline-block;
+    width: 100vw;
+    vertical-align: top;
+  }
+
+  .team-section .scroll-team .team-holder {
+    width: max-content;
+  }
+
+  .team-section .social-media-links .team-holder section {
+    width: 100%;
   }
 
   .team-section .scroll-team .member-col-left {
