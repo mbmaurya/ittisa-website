@@ -1854,6 +1854,10 @@ footer .division-social-media {
     right: 15%;
     z-index: -1;
   }
+
+  .team-section .scroll-team .name-title .title .dot {
+    right: -10px;
+  }
 }
 
 /*----------- /Blog landing page --------*/
