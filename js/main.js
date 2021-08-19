@@ -260,4 +260,27 @@ $(document).ready(function () {
       $(".navigate-right").removeClass("sticky");
     }
   });
+
+  // Project slider in landing/services page
+
+  $(".brands .brand-links li").on("click", function () {
+    $(".brands .brand-links li").removeClass("active");
+    $(this).addClass("active");
+    $(".brands .brand-links li").removeClass("active");
+
+    var linkId = this.id;
+
+    var brandListItem = [];
+    $(".brands .brand-list li").each(function () {
+      brandListItem.push($(this));
+    });
+
+    for (var i = 0; i < brandListItem.length; i++) {
+      if (brandListItem[i].attr("data-brand-name") !== linkId) {
+        brandListItem[i].removeClass("active");
+      } else {
+        brandListItem[i].addClass("active");
+      }
+    }
+  });
 });

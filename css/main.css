@@ -567,59 +567,68 @@ button[type="submit"]:hover::after,
 }
 
 /* brands section */
-.brands-section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+
+.brands .brand-list {
   position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0px 0px 60px;
+  height: 475px;
 }
 
-.brands-section .navigate-brands {
+.brands .brand-list li {
   position: absolute;
-  right: 0;
-  top: 10%;
+  visibility: hidden;
+  z-index: 0;
 }
 
-.brands-section .navigate-brands ul {
-  width: 283px;
-  background: url("../assets/images/home-page/Circle-image.png") no-repeat;
-  background-size: cover;
-  list-style: none;
+.brands .brand-list li.active {
+  visibility: visible;
+  z-index: 1;
 }
 
-.scroll-brands {
-  height: 70vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+.brands .brand-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0px -30px 0px 0px;
+  height: 100%;
+  background-image: url(../assets/images/landing-page/semi-circle.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
 }
 
-.scroll-brands::-webkit-scrollbar {
-  width: 0;
+.brands .brand-links li.active a {
+  color: #3d3d3d;
 }
 
-.brands-section .brand-col {
-  padding-bottom: 50px;
-}
-
-.brands-section .brand-col .title {
+.brands .brand-list .brand-title {
+  font-family: BigCaslon;
   font-size: 64px;
-  margin: 0;
-  margin-bottom: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fcb542;
+  margin-bottom: 21px;
 }
 
-.brands-section .brand-col .brand-description {
-  margin: 0;
-  margin-bottom: 16px;
+.brands .brand-list .detail {
+  font-family: Poppins;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.4;
   letter-spacing: normal;
-  color: var(--white);
+  text-align: left;
+  color: #fff;
 }
 
-.brands-section .brand-col img {
-  margin-top: 22.5px;
+.brands .brand-list a.view-all-link {
+  margin-bottom: 30px;
 }
 
 /* Services section */
@@ -1258,10 +1267,6 @@ footer .division-social-media {
   }
 
   /* brands section */
-  .brands-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
 
   /* services section */
   .services-section {
