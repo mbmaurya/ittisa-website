@@ -944,7 +944,7 @@ footer .division-social-media {
 
   .banner-section {
     padding-top: 40px;
-    padding-bottom: 22px;
+    padding-bottom: 80px;
   }
 
   .banner-section .slick-slide .row {
@@ -976,7 +976,7 @@ footer .division-social-media {
 
   .work-section {
     padding-top: 22px;
-    padding-bottom: 33px;
+    padding-bottom: 80px;
   }
 
   .work-section #work-grid .work-slider .slick-slide {
@@ -1000,7 +1000,7 @@ footer .division-social-media {
 
   .services-section {
     padding-top: 33px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
 
   .services-text {
@@ -1012,14 +1012,14 @@ footer .division-social-media {
   }
 
   .services-section #services-grid .col-2 {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   /* clients */
 
   .clients-section {
     padding-top: 30px;
-    padding-bottom: 33px;
+    padding-bottom: 80px;
   }
 
   .clients-section #clients-row {
@@ -1034,7 +1034,7 @@ footer .division-social-media {
 
   .blogs-section {
     padding-top: 33px;
-    padding-bottom: 33px;
+    padding-bottom: 80px;
   }
 
   .blogs-section #blogs-row .blog-div {
@@ -1049,7 +1049,7 @@ footer .division-social-media {
 
   .recognition-section {
     padding-top: 33px;
-    padding-bottom: 33px;
+    padding-bottom: 80px;
   }
 
   .recognition-section #recognition-row {
@@ -1083,11 +1083,11 @@ footer .division-social-media {
 
   .contact-section {
     padding-top: 33px;
-    padding-bottom: 33px;
+    padding-bottom: 80px;
   }
 
   .contact-section #form-col {
-    margin-top: 49px;
+    margin-top: 80px;
   }
 
   .contact-section .form-div .contact-form {
