@@ -245,4 +245,19 @@ $(document).ready(function () {
       );
     }
   });
+
+  // about us scroll for mobile
+
+  $(window).scroll(function () {
+    var scrollPos = $(window).scrollTop();
+    if (scrollPos >= 780 && scrollPos <= 1800) {
+      $(".navigation-row-mobile").addClass("sticky");
+      $(".navigate-left").addClass("sticky");
+      $(".navigate-right").addClass("sticky");
+    } else {
+      $(".navigation-row-mobile").removeClass("sticky");
+      $(".navigate-left").removeClass("sticky");
+      $(".navigate-right").removeClass("sticky");
+    }
+  });
 });
