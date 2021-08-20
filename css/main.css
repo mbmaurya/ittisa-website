@@ -588,18 +588,122 @@ button[type="submit"]:hover::after,
 }
 
 .brands .brand-links {
+  width: 300px;
   list-style-type: none;
   padding: 0;
-  margin: 0px -30px 0px 0px;
+  margin: 120px -38px 0px auto;
   height: 100%;
   background-image: url(../assets/images/landing-page/semi-circle.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  position: relative;
+  align-items: flex-end;
 }
 
-.brands .brand-links li.active a {
-  color: #3d3d3d;
+.brands .brand-links li {
+  position: absolute;
+}
+
+.brands .brand-links li:nth-child(1) {
+  top: -15px;
+  right: 26%;
+}
+
+.brands .brand-links li:nth-child(2) {
+  top: 10px;
+  right: 58%;
+}
+
+.brands .brand-links li:nth-child(3) {
+  right: 83%;
+  top: 85px;
+}
+
+.brands .brand-links li:nth-child(4) {
+  right: 92%;
+  top: 185px;
+}
+
+.brands .brand-links li:nth-child(5) {
+  right: 84%;
+  top: 275px;
+}
+
+.brands .brand-links li:nth-child(6) {
+  right: 56%;
+  top: 360px;
+}
+.brands .brand-links li:nth-child(7) {
+  right: 22%;
+  top: 384px;
+}
+
+.brands .brand-links li button {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+.brands .brand-links li.active button,
+.brands .brand-links li:hover button {
+  background-color: #fcb912;
+  border-radius: 12px;
+  border: 6px solid #fff;
+  width: 24px;
+  height: 24px;
+  margin-right: -4px;
+}
+
+.brands .brand-links li button img {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+
+.brands .brand-links li:nth-child(2) button img {
+  top: -35px;
+  left: -112px;
+}
+
+.brands .brand-links li:nth-child(3) button img {
+  left: -100px;
+  top: -45px;
+}
+
+.brands .brand-links li:nth-child(4) button img {
+  left: -110px;
+  top: -31px;
+}
+
+.brands .brand-links li:nth-child(5) button img {
+  left: -95px;
+  top: -8px;
+}
+
+.brands .brand-links li:nth-child(6) button img {
+  left: -95px;
+  top: -6px;
+}
+
+.brands .brand-links li:nth-child(7) button img {
+  top: 20px;
 }
 
 .brands .brand-list .brand-title {
@@ -1697,6 +1801,10 @@ footer .division-social-media {
   }
   .locations li p {
     line-height: 1.5;
+  }
+
+  .brands {
+    display: none;
   }
 }
 

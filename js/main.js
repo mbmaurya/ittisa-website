@@ -266,7 +266,6 @@ $(document).ready(function () {
   $(".brands .brand-links li").on("click", function () {
     $(".brands .brand-links li").removeClass("active");
     $(this).addClass("active");
-    $(".brands .brand-links li").removeClass("active");
 
     var linkId = this.id;
 
