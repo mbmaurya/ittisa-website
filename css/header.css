@@ -31,18 +31,15 @@ header .header-container .logo {
 }
 
 header .header-container #navigation {
-  width: 200%;
-  height: 200%;
-  top: -200%;
-  right: -200%;
-  border-radius: 50%;
+  width: 100%;
+  height: 100vh;
 }
 
-header .header-container #navigation > .row {
+/* header .header-container #navigation > .row {
   position: absolute;
   left: 25%;
   top: 25%;
-}
+} */
 
 header .header-container .button-div {
   padding-left: 20px;
@@ -106,24 +103,19 @@ header .container .menu div.toggle.rotate span:nth-child(2) {
 }
 
 header .container nav {
-  /* display: none; */
+  display: none;
   position: fixed;
   width: 0;
   height: 0;
   top: 0;
   right: 0;
-  /* background-image: url(../assets/images/home-page/banner-bg.jpg); */
-  background-color: #fcb542;
+  background-image: url(../assets/images/home-page/banner-bg.jpg);
   background-size: cover;
   z-index: 11;
 }
 
 header .container nav.d-nav {
   display: block;
-  /* animation-name: openMenu; */
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards; /* stops animation from getting to initial point */
-  animation-timing-function: linear; /* smooths the animations at breakpoints */
 }
 
 header .header-container nav .header-base {
@@ -152,7 +144,6 @@ header .header-container nav ul {
 }
 
 header .header-container nav ul li {
-  opacity: 0;
   margin-bottom: 22px;
   /* animation-name: reveal; */
   /* animation-duration: 3.5s; */
@@ -176,7 +167,7 @@ header .header-container nav ul li a:hover {
 }
 
 header .header-container nav p {
-  opacity: 0;
+  opacity: 1;
   margin: 27px 0 0;
   padding-right: 10px;
   font-family: Poppins;
@@ -188,8 +179,18 @@ header .header-container nav p {
   letter-spacing: normal;
   text-align: left;
   color: #757575;
-  animation-name: reveal;
-  animation-duration: 2.5s;
+  /* animation-name: reveal;
+  animation-duration: 2.5s; */
+}
+
+header .menu-overlay {
+  position: absolute;
+  width: 200%;
+  height: 100vh;
+  background-color: #fcb542;
+  top: 0;
+  left: -200%;
+  z-index: 12;
 }
 
 /* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */

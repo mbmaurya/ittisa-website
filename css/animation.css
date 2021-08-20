@@ -191,6 +191,24 @@
   }
 }
 
+@keyframes slideRight {
+  0% {
+    left: -100vw;
+  }
+  25% {
+    left: -50vw;
+  }
+  50% {
+    left: 0vw;
+  }
+  75% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 .apollo-effect:hover::before {
   position: absolute;
   top: 0;
