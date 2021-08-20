@@ -1803,9 +1803,60 @@ footer .division-social-media {
     line-height: 1.5;
   }
 
-  .brands {
-    display: none;
+  .brands .brand-links {
+    width: 100%;
+    margin: 60px 0px 0px;
+    height: auto;
+    align-items: center;
+    background: none;
+    display: block;
+    text-align: center;
   }
+
+  .brands .brand-links li {
+    display: inline-block;
+    position: relative;
+    right: 0 !important;
+    top: 0 !important;
+    width: 25%;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .brands .brand-links li button {
+    display: inline-block;
+  }
+
+  .brands .brand-links li button img {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .brands .brand-links li button {
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .brands .brand-links li.active button,
+  .brands .brand-links li:hover button {
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* .brands {
+    display: none;
+  } */
 }
 
 /*----------------- /Contact Us --------------------*/
