@@ -709,7 +709,7 @@ button[type="submit"]:hover::after,
 /* Services section */
 
 .services-section {
-  padding-top: 70px;
+  padding-top: 80px;
   padding-bottom: 50px;
 }
 
@@ -1307,7 +1307,7 @@ footer .division-social-media {
   }
 
   .ittisa-section .small-img-col .small-img {
-    width: 200%;
+    width: 150%;
     left: -100%;
   }
 
@@ -2021,6 +2021,28 @@ footer .division-social-media {
 
   .team-section .scroll-team .name-title .title .dot {
     right: -10px;
+  }
+
+  .brands .brand-list {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .brands .brand-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .brands .brand-links li {
+    width: 23%;
+    border: 1px solid transparent;
+    margin: 0px 0px 15px 0px;
+    padding: 10px;
+  }
+
+  .brands .brand-links li.active {
+    border: 1px solid #fbb542;
   }
 }
 
