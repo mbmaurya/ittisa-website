@@ -228,4 +228,8 @@ header .menu-overlay {
   header .header-container .button-div {
     justify-content: flex-end;
   }
+
+  header .button-div .menu p {
+    display: none;
+  }
 }
