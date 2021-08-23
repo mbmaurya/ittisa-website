@@ -1,9 +1,9 @@
-@import url(./header.css);
+/* @import url(./header.css);
 
 @font-face {
   font-family: BigCaslon;
   src: url(../fonts/big-caslon-medium/big-caslon-medium.woff);
-}
+} */
 
 html,
 body {
@@ -14,14 +14,27 @@ body {
   /* background-color: #3d3d3d; */
 }
 
+/* @import url("./normalize.css"); */
+/* @import url("./grid-structure.css"); */
+/* @import url("./colors.css"); */
+/* @import url("./typography.css"); */
+/* @import url("./animation.css"); */
+/* @import url("./common.css"); */
+/* @import url("./components.css"); */
+/* @import url("./header.css"); */
+/* @import url("./footer.css"); */
+/* @import url("./index-2.css"); */
+/* @import url("./pre-loading-screen.css"); */
+/* @import url("./contact.css"); */
+
 /* colors */
-:root {
+/* :root {
   --white: rgb(255, 255, 255);
   --yellow: rgb(252, 181, 66);
   --light-grey: rgb(138, 138, 138);
   --dark-grey: rgba(0, 0, 0, 0.357);
   --dark-grey-2: rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* utility classses */
 

@@ -1,0 +1,126 @@
+footer {
+  padding-bottom: 80px;
+}
+
+footer .footer-logo {
+  text-align: right;
+}
+
+footer .footer-logo img {
+  margin-right: 10px;
+}
+
+footer .row p {
+  margin: 0px 0px 20px 0px;
+  font-size: 1rem; /* 16px */
+  line-height: 1.3125rem; /* 21px */
+  color: var(--light-grey);
+}
+
+footer .row ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .row ul.social-media-links li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+footer .row ul li {
+  margin-bottom: 16px;
+}
+
+footer .row ul li a {
+  color: var(--light-grey);
+  text-decoration: none;
+}
+
+footer .comment-box {
+  display: inline-block;
+  font-size: 0.9375rem; /* 15px */
+  padding: 7px 16px;
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+footer .right-triangle {
+  display: inline-block;
+  border-top: 8px solid transparent;
+  border-right: 8px solid var(--light-grey);
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+footer .division-social-media {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    padding-bottom: 80px;
+  }
+  footer .footer-logo {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  footer .partner-img-1 img {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  footer .partner-img-2 img {
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  footer .whatsapp-div img {
+    width: 32px;
+  }
+
+  footer .whatsapp-div .right-triangle {
+    margin-left: -10px;
+    margin-right: -5px;
+  }
+
+  footer .whatsapp-div .comment-box {
+    padding: 5px 8px;
+  }
+
+  footer .social-media-links {
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+    text-align: right;
+  }
+
+  footer .row ul.social-media-links li {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  footer .links-1 {
+    margin-top: 48px;
+  }
+
+  footer .links-2 {
+    margin-top: 40px;
+  }
+}
+
+/* media query for tablets */
+footer .row p {
+  margin: 0 10px 20px 0;
+}
+
+footer .partner-img-2 {
+  margin-top: 20px;
+}
+
+footer .row .whatsapp-div {
+  margin-bottom: 20px;
+}

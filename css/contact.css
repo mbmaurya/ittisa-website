@@ -1,0 +1,50 @@
+.locations {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.locations li {
+  margin-bottom: 50px;
+}
+
+.locations li h2 {
+  font-family: BigCaslon;
+  font-size: 1.875rem; /* 30px */
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.875rem; /* 30px */
+  letter-spacing: normal;
+  text-align: left;
+  color: #8d8d8d;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.locations li p,
+.locations li a {
+  font-family: Poppins;
+  font-size: 1rem; /*16px*/
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75rem; /*12px*/
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--grey);
+}
+
+.locations li a {
+  color: var(--yellow);
+}
+
+/* for mobile and tablets */
+@media screen and (max-width: 1200px) {
+  .locations li:first-of-type {
+    margin-top: 50px;
+  }
+  .locations li p {
+    line-height: 1.5rem;
+  }
+}
