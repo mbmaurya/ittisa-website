@@ -35,3 +35,10 @@
 .contact-section {
   margin-bottom: 80px;
 }
+
+/* makes image responsive */
+.img-res {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
