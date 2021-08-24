@@ -1,0 +1,245 @@
+.blog-landing-page #base-grid-container {
+  background: url(../assets/images/blog-landing-page/banner.jpg);
+}
+
+.blog-landing-page .section-hero {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+.blog-landing-page .section-hero .badge {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-bottom: 0;
+}
+
+.blog-landing-page .section-category ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-landing-page .blog-date {
+  text-transform: uppercase;
+}
+
+.blog-landing-page .section-category ul li.select-menu-title {
+  display: block;
+  font-family: Poppins;
+  font-size: 1.125rem; /*18px*/
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-align: left;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.blog-landing-page
+  .section-category
+  ul
+  li.select-menu-title
+  ul.select-menu-options {
+  font-weight: normal;
+  text-transform: capitalize;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.blog-landing-page .open {
+  display: block !important;
+}
+
+.blog-landing-page .section-category .category-tabs .category-tab-content {
+  display: none;
+}
+
+.blog-landing-page .section-category .category-tabs #category_content_1 {
+  display: block;
+}
+
+.blog-landing-page .section-category .dropdown-arrow {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.blog-landing-page .section-category .category-tabs {
+  margin-top: 72px;
+}
+
+.blog-landing-page .section-category .category-tabs {
+  margin-top: 72px;
+}
+
+.blog-landing-page .section-category .blog-div {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.blog-landing-page .section-category .blog-div .img-div {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.blog-landing-page .section-category .blog-div .img-div .overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--yellow);
+  opacity: 0.5;
+  margin-left: -100%;
+}
+
+.blog-landing-page .section-category .blog-div .text-div {
+  margin-top: -30px;
+  margin-right: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.blog-landing-page .section-category .blog-div .text-div .hover-arrow-div {
+  text-align: right;
+  visibility: hidden;
+}
+
+.blog-landing-page .section-category .blog-div:hover .img-div .overlay {
+  animation: swipeRightOverlay;
+  animation-duration: 1s;
+  cursor: pointer;
+}
+
+.blog-landing-page .section-category .blog-div:hover .text-div {
+  background-color: var(--dark-grey);
+  cursor: pointer;
+}
+
+.blog-landing-page
+  .section-category
+  .blog-div:hover
+  .text-div
+  .hover-arrow-div {
+  visibility: visible;
+}
+
+.blog-landing-page
+  .section-category
+  .blog-div:hover
+  .text-div
+  .hover-arrow-div
+  img {
+  animation-name: swingRgiht;
+  animation-duration: 0.5s;
+}
+
+.blog-landing-page .section-category .link-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-date {
+  margin: 0;
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-size: 1rem; /*16px;*/
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.375rem; /*22px*/
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+.blog-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--yellow);
+}
+
+/* medium screens */
+@media screen and (max-width: 1366px) and (min-width: 1200px) {
+  .blog-landing-page .section-hero .title-and-image {
+    margin-top: -140px;
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 1200px) and (min-width: 767px) {
+  .blog-landing-page .section-hero .title-and-image {
+    margin-top: -100px;
+  }
+
+  .blog-landing-page .section-category .blog-div .text-div {
+    margin-right: 0;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .blog-landing-page .section-hero .title-and-image {
+    margin-top: -50px;
+    display: block;
+  }
+
+  .blog-landing-page .section-hero .main-title {
+    margin-bottom: 30px;
+  }
+
+  .blog-landing-page .section-hero .badge {
+    width: 100px;
+    transform: none;
+    top: 0;
+    right: 12%;
+    left: unset;
+    z-index: -1;
+  }
+
+  header .container .menu p {
+    display: none;
+  }
+
+  .team-section .scroll-team .name-title .title .dot {
+    right: -10px;
+  }
+
+  .brands .brand-list {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .brands .brand-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .brands .brand-links li {
+    width: 23%;
+    border: 1px solid transparent;
+    margin: 0px 0px 15px 0px;
+    padding: 10px;
+  }
+
+  .brands .brand-links li.active {
+    border: 1px solid var(--yellow);
+  }
+}
