@@ -102,10 +102,11 @@ $(document).ready(function () {
   AOS.init();
 
   $(".scroll-team").on("scroll", onScroll);
+  $(".scroll-portfolio").on("scroll", onScroll2);
 
   //smoothscroll
   $('.tab-link a[href^="#"]').on("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     $(document).off("scroll");
 
     $("a").each(function () {
@@ -116,7 +117,7 @@ $(document).ready(function () {
     var target = this.hash,
       menu = target;
     $target = $(target);
-    $(".scroll-team")
+    $(".scroll-team", ".portfolio-list")
       .stop()
       .animate(
         {
@@ -134,6 +135,24 @@ $(document).ready(function () {
   function onScroll(event) {
     var scrollPos = $(".team-section").scrollTop() + 400;
     $(".tab-link a").each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (
+        refElement.position().top <= scrollPos &&
+        refElement.position().top + refElement.height() > scrollPos
+      ) {
+        $(".tab-link a").removeClass("active");
+        currLink.addClass("active");
+      } else {
+        currLink.removeClass("active");
+      }
+    });
+  }
+
+  function onScroll2(event) {
+    var scrollPos = $(".scroll-portfolio").scrollTop() + 400;
+    console.log(scrollPos);
+    $(".navigate-portfolio .tab-link a").each(function () {
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
       if (
