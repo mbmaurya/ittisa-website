@@ -9,26 +9,33 @@
       | Ittisa
     </title>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/colors.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      .container {
+        background-color: antiquewhite;
+        margin: 20px 20px 0px;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
-          <div style="padding: 20px">
-                <h1 class="main-title">Main <span class="yellow-title">Title</span></h1><br/>
-                <h2 class="title">Title</h2><br/>
-                <p class="small-title">Small Title</p><br/>
-                <h2 class="services-title">Services Title</h2><br/>
-                <a href="#" class="view-all-link">View All Link</a>
-          </div>
-    
+    <div class="container">
+      <h2 class="main-title">
+        This is the main title with a <span>span tag in yellow</span>
+      </h2>
+    </div>
+
+    <div class="container">
+      <p class="small-title">
+        This is a small title with a left border in yellow
+      </p>
+    </div>
+
+    <div class="container">
+      <p class="grey-text">This is a paragraph with grey color</p>
+    </div>
   </body>
 </html>

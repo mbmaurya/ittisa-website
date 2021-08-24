@@ -38,12 +38,10 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
     <!-- animation on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/animation.css" />
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/landing-page.css" />
   </head>
   <body>
     <div class="pre-loading-screen">
@@ -83,11 +81,12 @@
 
       <!-- header -->
       <header>
+        <div class="menu-overlay"></div>
         <div class="container header-container">
           <div class="row">
-            <div class="col-1">
+            <div class="col-1 col-sm-1">
               <div class="logo">
-                <a href="#">
+                <a href="./index.html">
                   <img
                     src="./assets/images/global/logo.png"
                     alt="Ittisa Logo"
@@ -96,7 +95,7 @@
               </div>
             </div>
             <div class="col-5 col-sm-4"></div>
-            <div class="col-1 col-sm-2">
+            <div class="col-1 col-sm-1">
               <div class="button-div">
                 <button class="menu" id="toggle_menu">
                   <p>Menu</p>
@@ -112,39 +111,39 @@
             <!-- background lines -->
             <div class="header-base">
               <div class="row">
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
+                <div class="col-1 col-sm-1"></div>
+                <div class="col-1 col-sm-1"></div>
+                <div class="col-1 col-sm-1"></div>
+                <div class="col-1 col-sm-1"></div>
+                <div class="col-1 col-sm-1"></div>
+                <div class="col-1 col-sm-1"></div>
               </div>
             </div>
             <!-- main navigation -->
+
             <div class="row">
-              <div class="col-1"></div>
-              <div class="col-1"></div>
+              <div class="col-1 col-sm-1"></div>
+              <div class="col-1 col-sm-1"></div>
               <div class="col-1 col-sm-0 col-md-1"></div>
               <div class="col-1 col-sm-3 col-md-2">
                 <ul>
                   <li>
-                    <a href="#">- About us</a>
+                    <a href="./about-us.html">- About us</a>
                   </li>
                   <li>
-                    <a href="#">- Portfolio</a>
+                    <a href="./portfolio.html">- Portfolio</a>
                   </li>
                   <li>
-                    <a href="#">- Services</a>
+                    <a href="./landing-page.html">- Services</a>
                   </li>
                   <li>
                     <a href="#">- Carrers</a>
                   </li>
                   <li>
-                    <a href="#">- Blog</a>
+                    <a href="./blog-landing-page.html">- Blog</a>
                   </li>
                   <li>
-                    <a href="#">- Contact</a>
+                    <a href="./contact-us.html">- Contact</a>
                   </li>
                 </ul>
                 <p>
@@ -161,12 +160,12 @@
       </header>
 
       <!-- Banner section -->
-      <section class="banner-section">
+      <section class="banner-section section">
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-5">
+          <div class="col-5 col-sm-4">
             <div class="row">
-              <div class="col-2 col-sm-5" id="text-col">
+              <div class="col-2 col-sm-4" id="text-col">
                 <p
                   class="small-title"
                   data-aos="fade-right"
@@ -215,11 +214,11 @@
       </section>
 
       <!-- ittisa section -->
-      <section class="ittisa-section">
+      <section class="ittisa-section section">
         <div class="row">
           <div class="col-1"></div>
           <div
-            class="col-2 col-sm-5 col-md-5 video-col"
+            class="col-2 col-sm-4 col-md-4 video-col"
             data-aos="fade-right"
             data-aos-duration="500"
           >
@@ -240,7 +239,7 @@
             />
           </div>
           <div class="col-0 col-sm-1 col-md-1"></div>
-          <div class="col-2 col-sm-5 col-md-5 text-col">
+          <div class="col-2 col-sm-4 col-md-4 text-col">
             <h2
               class="title yellow-title"
               data-aos="fade-left"
@@ -282,7 +281,7 @@
       <section class="impact-section">
         <div class="row" id="impact-title-row">
           <div class="col-1"></div>
-          <div class="col-3 col-sm-5">
+          <div class="col-3 col-sm-4">
             <p
               class="small-title"
               data-aos="fade-right"
@@ -297,7 +296,7 @@
         </div>
         <div class="row impact-row">
           <div class="col-1"></div>
-          <div class="col-2 col-sm-5 col-md-5">
+          <div class="col-2 col-sm-4 col-md-4">
             <div class="radar-div">
               <h4 class="impact-sub-title">OUR METRICS RADAR</h4>
               <img
@@ -309,14 +308,14 @@
           </div>
           <div class="col-1"></div>
           <div class="col-0 col-sm-1 col-md-1"></div>
-          <div class="col-2 col-sm-5 col-md-5">
+          <div class="col-2 col-sm-4 col-md-4">
             <div class="client-growth-div">
               <h4 class="impact-sub-title">CLIENT GROWTH LEVELS</h4>
 
               <ul class="growth-list">
                 <li><span>60+</span>Brands Impacted</li>
                 <li><span>300+</span>Growth</li>
-                <li><span>1000+</span>Crores Budget Managed</li>
+                <li><span>1000+</span>Crores4Budget Managed</li>
                 <li><span>20+</span>Brands Launched</li>
                 <li><span>100+</span>Client Satisfaction</li>
               </ul>
@@ -327,10 +326,10 @@
       </section>
 
       <!-- brands section -->
-      <section class="brands">
+      <section class="brands section">
         <div class="row">
           <div class="col-1 col-sm-1 col-md-1"></div>
-          <div class="col-3 col-sm-5 col-md-5">
+          <div class="col-3 col-sm-4 col-md-4">
             <ul class="brand-list">
               <li class="active" data-brand-name="brand_1">
                 <div>
@@ -448,7 +447,7 @@
           </div>
           <div class="col-sm-1 col-md-1"></div>
           <div class="col-1 col-sm-1 col-md-1"></div>
-          <div class="col-2 col-sm-5 col-md-5">
+          <div class="col-2 col-sm-4 col-md-4">
             <ul class="brand-links">
               <li class="active" id="brand_1">
                 <button>
@@ -508,10 +507,10 @@
       <!-- /brands section-->
 
       <!-- services section -->
-      <section class="services-section">
+      <section class="services-section section">
         <div class="row" id="services-title-grid">
           <div class="col-1"></div>
-          <div class="col-3 col-sm-5">
+          <div class="col-3 col-sm-4">
             <p
               class="small-title"
               data-aos="fade-right"
@@ -527,7 +526,7 @@
         <div class="row" id="services-grid">
           <div class="col-1"></div>
           <!-- first service -->
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/Digital-Marketing.svg"
@@ -542,7 +541,7 @@
           <div class="col-1"></div>
           <div class="col-sm-1"></div>
           <!-- second service -->
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/Social-media-marketing.svg"
@@ -557,7 +556,7 @@
           <div class="col-1"></div>
           <div class="col-1"></div>
           <!-- Third service -->
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/performance-marketing.svg"
@@ -572,7 +571,7 @@
           <div class="col-1"></div>
           <div class="col-sm-1"></div>
           <!-- Fourth service -->
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/search-engine-optimization.svg"
@@ -587,7 +586,7 @@
           <div class="col-1"></div>
           <div class="col-1"></div>
           <!-- Fifth service -->
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/amazone-360.svg"
@@ -602,7 +601,7 @@
           <div class="col-1"></div>
           <div class="col-sm-1"></div>
           <!-- Sixth service -->
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/startup-growth-accelarator.svg"
@@ -617,7 +616,7 @@
           <div class="col-1"></div>
           <div class="col-1"></div>
           <!-- Seventh service -->
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/product-package-design.svg"
@@ -632,7 +631,7 @@
           <div class="col-1"></div>
           <div class="col-sm-1"></div>
           <!-- Eight service -->
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="service-div">
               <img
                 src="./assets/images/home-page/services/UX.svg"
@@ -650,16 +649,16 @@
 
       <!-- testimonials section -->
 
-      <section class="testimonials-section">
+      <section class="testimonials-section section">
         <div class="row testimonials-title-row">
           <div class="col-1"></div>
-          <div class="col-2">
+          <div class="col-2 col-sm-4">
             <h2 class="title yellow-title">Testimonials</h2>
           </div>
         </div>
         <div class="row testimonials-row">
           <div class="col-1"></div>
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="testimony-div">
               <div class="testimony-title-div">
                 <div class="img-div">
@@ -684,7 +683,7 @@
           </div>
           <div class="col-1"></div>
           <div class="col-0 col-sm-1"></div>
-          <div class="col-2 col-sm-5">
+          <div class="col-2 col-sm-4">
             <div class="testimony-div">
               <div class="testimony-title-div">
                 <div class="img-div">
@@ -712,10 +711,10 @@
       </section>
 
       <!-- FAQ section -->
-      <section class="faq-section">
+      <section class="faq-section section">
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-2 col-sm-5 col-md-5">
+          <div class="col-2 col-sm-4 col-md-4">
             <p
               class="small-title"
               data-aos="fade-right"
@@ -734,7 +733,7 @@
         </div>
         <div class="row" id="faq-row">
           <div class="col-1"></div>
-          <div class="col-2 col-sm-5" id="img-col">
+          <div class="col-2 col-sm-4" id="img-col">
             <img
               src="./assets/images/home-page/faq/faq-image.png"
               alt="Frequently Asked Questions"
@@ -744,7 +743,7 @@
           </div>
           <div class="col-1"></div>
           <div class="col-sm-1"></div>
-          <div class="col-2 col-sm-5" id="text-col">
+          <div class="col-2 col-sm-4" id="text-col">
             <div class="accordion-div">
               <button class="accordion-btn">
                 Digital marketing trends in 2020?
@@ -850,11 +849,11 @@
       </section>
 
       <!-- contact section -->
-      <section class="contact-section">
+      <section class="contact-section section">
         <div class="row" id="contact-row">
           <div class="col-1"></div>
           <!-- map col -->
-          <div class="col-2 col-sm-5 col-md-5" id="map-col">
+          <div class="col-2 col-sm-4 col-md-4" id="map-col">
             <div class="map-div">
               <h3 class="contact-title">
                 Our <span class="yellow-title">Offices</span>
@@ -877,7 +876,7 @@
           <div class="col-sm-1"></div>
           <div class="col-md-1"></div>
           <!-- form col -->
-          <div class="col-2 col-sm-5 col-md-5" id="form-col">
+          <div class="col-2 col-sm-4 col-md-4" id="form-col">
             <div class="form-div">
               <h3 class="contact-title">
                 Let's Create <br /><span class="yellow-title"
@@ -921,6 +920,7 @@
           <div class="col-sm-1"></div>
           <div class="col-2 col-sm-5">
             <div class="row">
+              <div class="col-sm-1"></div>
               <div class="col-1 col-sm-4 col-md-2">
                 <p>
                   Work that stirs up a million emotions and a reaction – ‘It
@@ -929,20 +929,22 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-1 col-sm-3 col-md-2 partner-img-1">
+              <div class="col-sm-1"></div>
+              <div class="col-1 col-sm-2 col-md-2 partner-img-1">
                 <img src="assets/images/global/google-partner.png" />
               </div>
-              <div class="col-1 col-sm-3 col-md-2 partner-img-2">
+              <div class="col-1 col-sm-2 col-md-2 partner-img-2">
                 <img src="assets/images/global/ie-20.png" />
               </div>
             </div>
             <div class="row align-flex-center division-social-media">
-              <div class="col-1 col-sm-3 col-md-2 whatsapp-div">
+              <div class="col-sm-1"></div>
+              <div class="col-1 col-sm-2 col-md-2 whatsapp-div">
                 <img src="assets/images/global/whatsapp.png" class="v-middle" />
                 <span class="right-triangle"></span>
                 <span class="comment-box">Let's Talk</span>
               </div>
-              <div class="col-1 col-sm-3 col-md-2">
+              <div class="col-1 col-sm-2 col-md-2">
                 <ul class="social-media-links">
                   <li>
                     <a href="#">
@@ -965,7 +967,7 @@
           </div>
           <div class="col-sm-1"></div>
           <div class="col-sm-1"></div>
-          <div class="col-1 col-sm-2 col-md-2">
+          <div class="col-1 col-sm-3 col-md-2 links-1">
             <ul>
               <li>
                 <a href="#"> Search Engine Optimization </a>
@@ -1000,7 +1002,9 @@
             </ul>
           </div>
           <div class="col-1 col-md-0"></div>
-          <div class="col-1 col-sm-2">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1"></div>
+          <div class="col-1 col-sm-3 links-2">
             <ul>
               <li>
                 <a href="#">Services</a>

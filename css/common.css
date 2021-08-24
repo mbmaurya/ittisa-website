@@ -1,0 +1,73 @@
+/* spacing for sections */
+.section {
+  padding: 0px 0px 80px;
+}
+
+/* button */
+.view-all-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  padding: 0;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #fcb542;
+  text-decoration: none;
+}
+
+.view-all-link::after {
+  content: url(../assets/images/global/banner-arrow-right.svg);
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+.contact-section {
+  margin-bottom: 80px;
+}
+
+/* makes image responsive */
+.img-res {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-date {
+  margin: 0;
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-size: 1rem; /*16px;*/
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.375rem; /*22px*/
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+.blog-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--yellow);
+}
