@@ -39,6 +39,35 @@
 /* makes image responsive */
 .img-res {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.blog-date {
+  margin: 0;
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-size: 1rem; /*16px;*/
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.375rem; /*22px*/
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+.blog-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--yellow);
 }
