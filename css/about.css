@@ -5,7 +5,7 @@
 }
 
 .about-us-banner-section {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .about-us-banner-section .text-row {
@@ -39,10 +39,11 @@
 }
 
 .team-section .navigation-row {
-  position: absolute;
+  position: fixed;
   top: 25%;
   right: 0;
   text-align: right;
+  opacity: 0;
 }
 
 .team-section .navigation-row ul {
@@ -136,9 +137,9 @@
 }
 
 .team-section .scroll-team {
-  height: 80vh;
+  /* height: 80vh;
   overflow-y: scroll;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; */
 }
 
 .team-section .scroll-team::-webkit-scrollbar {
@@ -183,7 +184,11 @@
   position: relative;
 }
 
-.team-section .scroll-team .name-title .title .dot {
+.team-section .scroll-team .name-title .title .content .yellow-title {
+  position: relative;
+}
+
+.team-section .scroll-team .name-title .title .content .yellow-title .dot {
   width: 0px;
   height: 0px;
   -webkit-border-radius: 50%;
@@ -195,12 +200,12 @@
   margin-left: 5px;
   margin-top: -10px;
   position: absolute;
-  bottom: 13px;
-  right: 25px;
+  bottom: 0;
+  right: -25px;
 }
 
 .team-section .scroll-team .name-title .designation {
-  width: 50%;
+  width: max-content;
   position: relative;
   display: flex;
   align-items: center;
@@ -336,6 +341,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    overflow: auto;
   }
 
   .team-section .scroll-team section {

@@ -288,6 +288,12 @@ $(document).ready(function () {
       $(".navigate-left").removeClass("sticky");
       $(".navigate-right").removeClass("sticky");
     }
+
+    if (scrollPos >= 500) {
+      $(".team-section .navigation-row").css({ opacity: 1 });
+    } else {
+      $(".team-section .navigation-row").css({ opacity: 0 });
+    }
   });
 
   // Project slider in landing/services page
