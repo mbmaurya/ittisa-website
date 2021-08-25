@@ -7,7 +7,7 @@
   height: 800px;
   overflow: auto;
   margin-bottom: 80px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .portfolio .portfolio-list .navigate-portfolio {
@@ -15,7 +15,7 @@
   top: 25%;
   right: 0;
   text-align: right;
-  z-index: 2;
+  z-index: 0;
 }
 
 .portfolio .portfolio-list .navigate-portfolio ul {

@@ -29,6 +29,16 @@ $(document).ready(function () {
     setTimeout(function () {
       $("#navigation").toggleClass("d-nav");
     }, 500);
+
+    if ($("#navigation").hasClass("d-nav")) {
+      $(
+        ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
+      ).css({ zIndex: 1 });
+    } else {
+      $(
+        ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
+      ).css({ zIndex: 0 });
+    }
   });
 
   // carousel
@@ -277,6 +287,12 @@ $(document).ready(function () {
       $(".navigation-row-mobile").removeClass("sticky");
       $(".navigate-left").removeClass("sticky");
       $(".navigate-right").removeClass("sticky");
+    }
+
+    if (scrollPos >= 500) {
+      $(".team-section .navigation-row").css({ opacity: 1 });
+    } else {
+      $(".team-section .navigation-row").css({ opacity: 0 });
     }
   });
 

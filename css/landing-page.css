@@ -1,5 +1,5 @@
 .banner-section {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .banner-section .main-title {
@@ -30,12 +30,11 @@
 
 .banner-section #small-img-col img {
   position: absolute;
-  bottom: 0;
-  margin-top: -50px;
+  bottom: -50px;
 }
 
 .ittisa-section {
-  padding-top: 70px;
+  padding-top: 200px;
   padding-bottom: 70px;
 }
 
@@ -55,7 +54,7 @@
 
 .ittisa-section .text-col .title {
   font-size: 84px;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .ittisa-section .text-col p {
@@ -101,7 +100,7 @@
 }
 
 .impact-section {
-  padding-top: 70px;
+  padding-top: 80px;
   padding-bottom: 70px;
 }
 
@@ -114,7 +113,7 @@
 }
 
 .impact-section .impact-row .radar-div {
-  padding: 30px 0 20px 0;
+  padding: 0;
   background-color: var(--dark-grey);
 }
 
@@ -205,12 +204,15 @@
 .brands .brand-list li {
   position: absolute;
   visibility: hidden;
+  opacity: 0;
   z-index: 0;
+  transition: 0.7s ease-in-out;
 }
 
 .brands .brand-list li.active {
   visibility: visible;
-  z-index: 1;
+  opacity: 1;
+  z-index: 0;
 }
 
 .brands .brand-links {
@@ -362,7 +364,6 @@
 }
 
 .services-section {
-  padding-top: 80px;
   padding-bottom: 50px;
 }
 
@@ -529,10 +530,8 @@
     position: relative;
     right: 0 !important;
     top: 0 !important;
-    width: 25%;
+    width: 32%;
     margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
   }
 
   .brands .brand-links li button {
@@ -564,9 +563,39 @@
     border: none;
     box-shadow: none;
   }
+
+  .banner-section #small-img-col img {
+    top: 200px;
+    right: -50px;
+  }
+
+  .ittisa-section {
+    padding-top: 100px;
+  }
+
+  .banner-section .get-in-touch-link {
+    margin-top: 40px;
+  }
+
+  .ittisa-section .text-col .title {
+    margin-top: 20px;
+  }
+
+  .impact-section .impact-row .radar-div {
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .banner-section .get-in-touch-link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .impact-section .impact-row .radar-div {
+    margin-bottom: 40px;
+  }
+
   .ittisa-section {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -611,9 +640,18 @@
     font-size: 20px;
   }
 
+  .banner-section #small-img-col img {
+    bottom: 0;
+    top: 100px;
+    left: 100px;
+  }
+
+  .form-div {
+    margin-top: 40px;
+  }
+
   /* services section */
   .services-section {
-    padding-top: 40px;
     padding-bottom: 20px;
   }
 

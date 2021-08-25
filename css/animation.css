@@ -37,6 +37,15 @@
   }
 }
 
+@keyframes openAccordion {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: fit-content;
+  }
+}
+
 @keyframes revealFromLeft {
   0% {
     width: 0;

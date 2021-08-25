@@ -208,6 +208,10 @@ header .menu-overlay {
   header .header-container .button-div #toggle_menu {
     font-size: 11px;
   }
+
+  header .container .menu p {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 850px) and (orientation: landscape) {
