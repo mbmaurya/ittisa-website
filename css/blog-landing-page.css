@@ -82,6 +82,7 @@
 .blog-landing-page .section-category .blog-div {
   display: block;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 
 .blog-landing-page .section-category .blog-div .img-div {

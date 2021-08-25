@@ -29,6 +29,16 @@ $(document).ready(function () {
     setTimeout(function () {
       $("#navigation").toggleClass("d-nav");
     }, 500);
+
+    if ($("#navigation").hasClass("d-nav")) {
+      $(
+        ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
+      ).css({ zIndex: 1 });
+    } else {
+      $(
+        ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
+      ).css({ zIndex: 0 });
+    }
   });
 
   // carousel

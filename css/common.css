@@ -22,10 +22,17 @@
   text-align: left;
   color: #fcb542;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .view-all-link::after {
   content: url(../assets/images/global/banner-arrow-right.svg);
+  transition: 0.3s ease-in-out;
+}
+
+.view-all-link:hover::after {
+  margin-left: 10px;
+  margin-right: -10px;
 }
 
 .v-middle {
@@ -70,4 +77,8 @@
   letter-spacing: normal;
   text-align: left;
   color: var(--yellow);
+}
+
+.no-margin {
+  margin: 0 !important;
 }

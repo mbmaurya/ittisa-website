@@ -83,7 +83,7 @@
 }
 
 .blog-body {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .blog-body p {
@@ -226,6 +226,7 @@
 
 .blog-footer .pagination .blog-div {
   margin-bottom: 30px;
+  text-decoration: none;
 }
 
 .blog-footer .pagination .blog-div .img-div {

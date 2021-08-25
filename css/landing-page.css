@@ -1,7 +1,3 @@
-.banner-section {
-  padding-top: 80px;
-}
-
 .banner-section .main-title {
   font-size: 64px !important;
   line-height: 1.1;
@@ -30,12 +26,11 @@
 
 .banner-section #small-img-col img {
   position: absolute;
-  bottom: 0;
-  margin-top: -50px;
+  bottom: -50px;
 }
 
 .ittisa-section {
-  padding-top: 70px;
+  padding-top: 200px;
   padding-bottom: 70px;
 }
 
@@ -55,7 +50,7 @@
 
 .ittisa-section .text-col .title {
   font-size: 84px;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .ittisa-section .text-col p {
@@ -101,7 +96,7 @@
 }
 
 .impact-section {
-  padding-top: 70px;
+  padding-top: 80px;
   padding-bottom: 70px;
 }
 
@@ -210,7 +205,7 @@
 
 .brands .brand-list li.active {
   visibility: visible;
-  z-index: 1;
+  z-index: 0;
 }
 
 .brands .brand-links {
@@ -609,6 +604,12 @@
     margin-left: 28px;
     margin-right: 4px;
     font-size: 20px;
+  }
+
+  .banner-section #small-img-col img {
+    bottom: 0;
+    top: 100px;
+    left: 100px;
   }
 
   /* services section */

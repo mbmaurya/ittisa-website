@@ -14,7 +14,7 @@
 .banner-section .slider .slick-prev,
 .banner-section .slider .slick-next {
   top: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .banner-section .slider .slick-prev {
@@ -366,8 +366,16 @@
 
 /* media query for mobile devices */
 @media screen and (max-width: 767px) {
+  .banner-section {
+    padding-top: 40px;
+  }
   .banner-section .slick-slide .row {
     align-items: flex-end;
+  }
+
+  .banner-section .slider .slick-prev,
+  .banner-section .slider .slick-next {
+    top: 40%;
   }
 
   .banner-section .slick-slide #big-img-col {
@@ -493,7 +501,11 @@
     margin-right: 50px;
   }
 
+  .blogs-section #blogs-row .blog-div .text-div {
+    width: 100%;
+  }
+
   .contact-section .form-div {
-    margin-top: 40px;
+    margin-top: 80px;
   }
 }
