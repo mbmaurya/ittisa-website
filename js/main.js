@@ -109,10 +109,16 @@ $(document).ready(function () {
   });
 
   // Initialize animation on scroll
-  AOS.init();
+  $(function () {
+    AOS.init();
+  });
 
-  $(".scroll-team").on("scroll", onScroll);
-  $(".scroll-portfolio").on("scroll", onScroll2);
+  if (document.readyState == "complete") {
+    AOS.refresh();
+  }
+
+  // $(".scroll-team").on("scroll", onScroll);
+  // $(".scroll-portfolio").on("scroll", onScroll2);
 
   //smoothscroll
   $('.tab-link a[href^="#"]').on("click", function (e) {
@@ -142,40 +148,40 @@ $(document).ready(function () {
       );
   });
 
-  function onScroll(event) {
-    var scrollPos = $(".team-section").scrollTop() + 400;
-    $(".tab-link a").each(function () {
-      var currLink = $(this);
-      var refElement = $(currLink.attr("href"));
-      if (
-        refElement.position().top <= scrollPos &&
-        refElement.position().top + refElement.height() > scrollPos
-      ) {
-        $(".tab-link a").removeClass("active");
-        currLink.addClass("active");
-      } else {
-        currLink.removeClass("active");
-      }
-    });
-  }
+  // function onScroll(event) {
+  //   var scrollPos = $(".team-section").scrollTop() + 400;
+  //   $(".tab-link a").each(function () {
+  //     var currLink = $(this);
+  //     var refElement = $(currLink.attr("href"));
+  //     if (
+  //       refElement.position().top <= scrollPos &&
+  //       refElement.position().top + refElement.height() > scrollPos
+  //     ) {
+  //       $(".tab-link a").removeClass("active");
+  //       currLink.addClass("active");
+  //     } else {
+  //       currLink.removeClass("active");
+  //     }
+  //   });
+  // }
 
-  function onScroll2(event) {
-    var scrollPos = $(".scroll-portfolio").scrollTop() + 400;
-    console.log(scrollPos);
-    $(".navigate-portfolio .tab-link a").each(function () {
-      var currLink = $(this);
-      var refElement = $(currLink.attr("href"));
-      if (
-        refElement.position().top <= scrollPos &&
-        refElement.position().top + refElement.height() > scrollPos
-      ) {
-        $(".tab-link a").removeClass("active");
-        currLink.addClass("active");
-      } else {
-        currLink.removeClass("active");
-      }
-    });
-  }
+  // function onScroll2(event) {
+  //   var scrollPos = $(".scroll-portfolio").scrollTop() + 400;
+  //   console.log(scrollPos);
+  //   $(".navigate-portfolio .tab-link a").each(function () {
+  //     var currLink = $(this);
+  //     var refElement = $(currLink.attr("href"));
+  //     if (
+  //       refElement.position().top <= scrollPos &&
+  //       refElement.position().top + refElement.height() > scrollPos
+  //     ) {
+  //       $(".tab-link a").removeClass("active");
+  //       currLink.addClass("active");
+  //     } else {
+  //       currLink.removeClass("active");
+  //     }
+  //   });
+  // }
 
   var mY = 0;
   $(".magnify").mousemove(function (e) {
@@ -294,7 +300,35 @@ $(document).ready(function () {
     } else {
       $(".team-section .navigation-row").css({ opacity: 0 });
     }
+
+    // console.log($("#leadership").position().top);
+    if ($(".scroll-team #leadership").offset().top - scrollPos <= 10) {
+      $(".tab-link a").removeClass("active");
+      $(".tab-link a#leadership_link").addClass("active");
+    }
+
+    if ($(".scroll-team #account_management").offset().top - scrollPos <= 10) {
+      $(".tab-link a").removeClass("active");
+      $(".tab-link a#account_management_link").addClass("active");
+    }
+
+    if ($(".scroll-team #design").offset().top - scrollPos <= 10) {
+      $(".tab-link a").removeClass("active");
+      $(".tab-link a#design_link").addClass("active");
+    }
+
+    if ($(".scroll-team #analytics").offset().top - scrollPos <= 10) {
+      $(".tab-link a").removeClass("active");
+      $(".tab-link a#analytics_link").addClass("active");
+    }
+
+    if ($(".scroll-team #technology").offset().top - scrollPos <= 10) {
+      $(".tab-link a").removeClass("active");
+      $(".tab-link a#technology_link").addClass("active");
+    }
   });
+
+  // alert($(".scroll-team #leadership").offset().top);
 
   // Project slider in landing/services page
 

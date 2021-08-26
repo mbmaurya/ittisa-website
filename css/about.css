@@ -137,9 +137,10 @@
 }
 
 .team-section .scroll-team {
-  /* height: 80vh;
+  /* /* height: 80vh; */
   overflow-y: scroll;
-  scroll-behavior: smooth; */
+  scroll-behavior: smooth;
+  margin-bottom: 80px;
 }
 
 .team-section .scroll-team::-webkit-scrollbar {
