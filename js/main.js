@@ -285,15 +285,6 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     var scrollPos = $(window).scrollTop();
-    if (scrollPos >= 780 && scrollPos <= 1800) {
-      $(".navigation-row-mobile").addClass("sticky");
-      $(".navigate-left").addClass("sticky");
-      $(".navigate-right").addClass("sticky");
-    } else {
-      $(".navigation-row-mobile").removeClass("sticky");
-      $(".navigate-left").removeClass("sticky");
-      $(".navigate-right").removeClass("sticky");
-    }
 
     if (scrollPos >= 500) {
       $(".team-section .navigation-row").css({ opacity: 1 });
@@ -350,5 +341,27 @@ $(document).ready(function () {
         brandListItem[i].addClass("active");
       }
     }
+  });
+
+  /** dropdown btn */
+  $(".dropdown-btn").on("click", function () {
+    $(".dropdown-list").toggleClass("active");
+  });
+
+  $(".dropdown-list li").on("click", function () {
+    $(".dropdown-list li").removeClass("active");
+    $(this).addClass("active");
+    var activeListItem = $(this);
+    console.log(activeListItem);
+    var listName = $(this).find("a").text();
+    $(".dropdown-btn").text(listName);
+    $(".dropdown-list").removeClass("active");
+    var sectionList = $(".scroll-team section");
+    $(sectionList).each(function () {
+      if ($(this).attr("data-dropdown") == $(activeListItem).attr("id")) {
+        $(".scroll-team section").removeClass("active");
+        $(this).addClass("active");
+      }
+    });
   });
 });

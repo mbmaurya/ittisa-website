@@ -285,17 +285,10 @@
   .team-section .navigation-row-mobile {
     position: relative;
     display: block;
-    width: 70vw;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-x: scroll;
-    text-align: center;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    background-color: #00000052;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+
+    background-color: rgba(0, 0, 0, 0.32);
+
+    margin-bottom: 40px;
   }
 
   .team-section .navigate-left {
@@ -315,7 +308,7 @@
   }
 
   .team-section .navigation-links {
-    width: max-content;
+    width: 100%;
   }
 
   .team-section .navigation-row-mobile .navigation-links ul {
@@ -325,11 +318,6 @@
   }
 
   .team-section .navigation-row-mobile .navigation-links ul li {
-    display: inline-block;
-    width: 100vw;
-    margin-left: -15vw;
-    color: #fff;
-    text-transform: uppercase;
   }
 
   .team-section .navigation-row-mobile::-webkit-scrollbar {
@@ -346,13 +334,15 @@
   }
 
   .team-section .scroll-team section {
-    display: inline-block;
-    width: 100vw;
-    float: none;
+    display: none;
+  }
+
+  .team-section .scroll-team section.active {
+    display: block;
   }
 
   .team-section .scroll-team .team-holder {
-    width: max-content;
+    /* width: max-content; */
   }
 
   .team-section .social-media-links .team-holder section {

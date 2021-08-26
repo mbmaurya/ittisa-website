@@ -225,25 +225,36 @@
                                 </div>
                         </div>
 
-                        <span class="navigate-left">
+                        <!-- <span class="navigate-left">
                                 <img src="./assets/images/global/banner-arrow-right.svg" alt="" />
-                        </span>
-                        <div class="navigation-row-mobile">
+                        </span> -->
+
+                        <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-4">
+                                        <div class="navigation-row-mobile">
                                 
-                                <div class="navigation-links">
-                                        <ul>
-                                                <li>Leadership</li>
-                                                <li>Account Management</li>
-                                                <li>Design</li>
-                                                <li>Analytics</li>
-                                                <li>Technology</li>
-                                        </ul>
+                                                <div class="navigation-links">
+                                                        <div class="dropdown">
+                                                                <button class="dropdown-btn">Leadership</button>
+                                                                <ul class="dropdown-list">
+                                                                        <li class="active" id="leadership_btn"><a href="javascript:void(0);">Leadership</a></li>
+                                                                        <li id="account_management_btn" ><a href="javascript:void(0);">Account Management</a></li>
+                                                                        <li id="design_btn"><a  href="javascript:void(0);">Design</a></li>
+                                                                        <li id="analytics_btn"><a  href="javascript:void(0);">Analytics</a></li>
+                                                                        <li id="technology_btn" ><a href="javascript:void(0);">Technology</a></li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                                
+                                        </div>
                                 </div>
-                                
+                                <div class="col-sm-1">  </div>
                         </div>
-                        <span class="navigate-right">
+                       
+                        <!-- <span class="navigate-right">
                                 <img src="./assets/images/global/banner-arrow-right.svg" alt="" />
-                        </span>
+                        </span> -->
                 
                         <div class="row section-title">
                                 <div class="col-1 col-sm-1"></div>
@@ -262,7 +273,7 @@
                         <section class="scroll-team">
                                 <div class="team-holder">
                                 <!-- leadership -->
-                                <section class="leadership team-group" id="leadership">
+                                <section class="leadership team-group active" data-dropdown="leadership_btn" id="leadership">
                                         <div class="row" id="team_member_1">
                                                 <div class="col-4 col-sm-1"></div>
                                                 <div class="col-2 col-sm-4 member-col">
@@ -339,7 +350,7 @@
                                 </section>
                 
                                 <!-- account management -->
-                                <section class="account-managemen team-groupt" id="account_management">
+                                <section data-dropdown="account_management_btn" class="account-managemen team-groupt" id="account_management">
                                         <div class="row" id="team_member_4">
                                                 <div class="col-1"></div>
                                                 <div class="col-2 col-sm-4 member-col member-col-left">
@@ -415,7 +426,7 @@
                                 <!-- /account management -->
                 
                                 <!-- design -->
-                                <section class="design" id="design">
+                                <section class="design" data-dropdown="design_btn" id="design">
                                         <div class="row" id="team_member_7">
                                                 <div class="col-4 col-sm-1"></div>
                                                 <div class="col-2 col-sm-4 member-col member-col-right">
@@ -490,7 +501,7 @@
                                 <!-- /design -->
                 
                                 <!-- analytics -->
-                                <section class="analytics" id="analytics">
+                                <section data-dropdown="analytics_btn" class="analytics" id="analytics">
                                         <div class="row">
                                                 <div class="col-1"></div>
                                                 <div class="col-2 col-sm-4 member-col member-col-left">
@@ -566,7 +577,7 @@
                                 <!-- /analytics -->
                 
                                 <!-- technology -->
-                                <section class="technology" id="technology">
+                                <section data-dropdown="technology_btn" class="technology" id="technology">
                                         <div class="row">
                                                 <div class="col-4 col-sm-1"></div>
                                                 <div class="col-2 col-sm-4 member-col member-col-right">
