@@ -317,6 +317,28 @@ $(document).ready(function () {
       $(".tab-link a").removeClass("active");
       $(".tab-link a#technology_link").addClass("active");
     }
+
+    /** */
+
+    // if ($(".scroll-portfolio #digital").offset().top - scrollPos <= 10) {
+    //   $(".navigate-portfolio .tab-link a").removeClass("active");
+    //   $(".navigate-portfolio .tab-link a#digital_link").addClass("active");
+    // }
+
+    // if ($(".scroll-portfolio #uiux").offset().top - scrollPos <= 10) {
+    //   $(".navigate-portfolio .tab-link a").removeClass("active");
+    //   $(".navigate-portfolio .tab-link a#uiux_link").addClass("active");
+    // }
+
+    // if ($(".scroll-portfolio #branding").offset().top - scrollPos <= 10) {
+    //   $(".navigate-portfolio .tab-link a").removeClass("active");
+    //   $(".navigate-portfolio .tab-link a#branding_link").addClass("active");
+    // }
+
+    // if ($(".scroll-portfolio #videos").offset().top - scrollPos <= 10) {
+    //   $(".navigate-portfolio .tab-link a").removeClass("active");
+    //   $(".navigate-portfolio .tab-link a#videos_link").addClass("active");
+    // }
   });
 
   // alert($(".scroll-team #leadership").offset().top);
@@ -356,10 +378,10 @@ $(document).ready(function () {
     var listName = $(this).find("a").text();
     $(".dropdown-btn").text(listName);
     $(".dropdown-list").removeClass("active");
-    var sectionList = $(".scroll-team section");
+    var sectionList = $("#dropdown_section section");
     $(sectionList).each(function () {
       if ($(this).attr("data-dropdown") == $(activeListItem).attr("id")) {
-        $(".scroll-team section").removeClass("active");
+        $("#dropdown_section section").removeClass("active");
         $(this).addClass("active");
       }
     });

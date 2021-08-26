@@ -4,7 +4,6 @@
 
 .portfolio .scroll-portfolio {
   position: relative;
-  height: 800px;
   overflow: auto;
   margin-bottom: 80px;
   z-index: 0;
