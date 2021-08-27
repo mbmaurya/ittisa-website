@@ -25,6 +25,10 @@
   margin: 0;
 }
 
+.navigation-row-mobile {
+  display: none;
+}
+
 .portfolio .portfolio-list .navigate-portfolio ul .tab-link {
   margin-bottom: 25px;
   position: relative;
@@ -157,5 +161,31 @@
 @media screen and (max-width: 767px) {
   .portfolio .banner {
     padding-top: 40px;
+  }
+
+  .navigate-portfolio {
+    display: none;
+  }
+
+  .portfolio-list .scroll-portfolio section {
+    display: none;
+  }
+
+  .portfolio-list .scroll-portfolio section.active {
+    display: block;
+  }
+
+  .portfolio .portfolio-block {
+    padding-top: 40px;
+  }
+
+  .portfolio .navigation-row-mobile.sticky {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    background-color: var(--black);
+    width: 40vh;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }

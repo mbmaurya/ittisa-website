@@ -34,10 +34,12 @@ $(document).ready(function () {
       $(
         ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
       ).css({ zIndex: 1 });
+      $(".navigation-row-mobile").css({ zIndex: 1 });
     } else {
       $(
         ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
       ).css({ zIndex: 0 });
+      $(".navigation-row-mobile").css({ zIndex: 0 });
     }
   });
 
@@ -371,6 +373,24 @@ $(document).ready(function () {
       if ($("#videos").offset().top - scrollPos <= 10) {
         $(".tab-link a").removeClass("active");
         $(".tab-link a#videos_link").addClass("active");
+      }
+
+      var navForMobile = $(".navigation-row-mobile").offset().top;
+      var teamHolderHeight = $(".scroll-portfolio").height();
+      if (scrollPos > $(".scroll-portfolio").offset().top + teamHolderHeight) {
+        console.log("You crossed");
+      }
+
+      var navForMobilePosition = navForMobile - scrollPos;
+
+      if (
+        navForMobilePosition <= 0 &&
+        navForMobile != 0 &&
+        scrollPos < $(".scroll-portfolio").offset().top + teamHolderHeight
+      ) {
+        $(".navigation-row-mobile").addClass("sticky");
+      } else {
+        $(".navigation-row-mobile").removeClass("sticky");
       }
 
       // console.log($("#digital").offset().top - scrollPos);
