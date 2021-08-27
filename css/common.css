@@ -82,3 +82,7 @@
 .no-margin {
   margin: 0 !important;
 }
+
+.relative-position {
+  position: relative;
+}

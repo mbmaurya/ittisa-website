@@ -9,12 +9,13 @@
   z-index: 0;
 }
 
-.portfolio .portfolio-list .navigate-portfolio {
+.portfolio-list .navigate-portfolio {
   position: fixed;
   top: 25%;
   right: 0;
   text-align: right;
-  z-index: 0;
+  z-index: 1;
+  opacity: 0;
 }
 
 .portfolio .portfolio-list .navigate-portfolio ul {
