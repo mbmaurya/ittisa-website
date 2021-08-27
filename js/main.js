@@ -34,10 +34,12 @@ $(document).ready(function () {
       $(
         ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
       ).css({ zIndex: 1 });
+      $(".navigation-row-mobile").css({ zIndex: 1 });
     } else {
       $(
         ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
       ).css({ zIndex: 0 });
+      $(".navigation-row-mobile").css({ zIndex: 0 });
     }
   });
 
@@ -288,57 +290,111 @@ $(document).ready(function () {
 
     if (scrollPos >= 500) {
       $(".team-section .navigation-row").css({ opacity: 1 });
+      $(".portfolio-list .navigate-portfolio").css({ opacity: 1 });
     } else {
       $(".team-section .navigation-row").css({ opacity: 0 });
+      $(".portfolio-list .navigate-portfolio").css({ opacity: 0 });
     }
 
-    // console.log($("#leadership").position().top);
-    if ($(".scroll-team #leadership").offset().top - scrollPos <= 10) {
-      $(".tab-link a").removeClass("active");
-      $(".tab-link a#leadership_link").addClass("active");
-    }
+    var currentURL = $(location).attr("href");
 
-    if ($(".scroll-team #account_management").offset().top - scrollPos <= 10) {
-      $(".tab-link a").removeClass("active");
-      $(".tab-link a#account_management_link").addClass("active");
-    }
+    if (currentURL.includes("about-us.html")) {
+      var navForMobile = $(".navigation-row-mobile").offset().top;
+      var teamHolderHeight = $(".team-holder").height();
+      if (scrollPos > $(".team-holder").offset().top + teamHolderHeight) {
+        console.log("You crossed");
+      }
 
-    if ($(".scroll-team #design").offset().top - scrollPos <= 10) {
-      $(".tab-link a").removeClass("active");
-      $(".tab-link a#design_link").addClass("active");
-    }
+      var navForMobilePosition = navForMobile - scrollPos;
 
-    if ($(".scroll-team #analytics").offset().top - scrollPos <= 10) {
-      $(".tab-link a").removeClass("active");
-      $(".tab-link a#analytics_link").addClass("active");
-    }
+      if (
+        navForMobilePosition <= 0 &&
+        navForMobile != 0 &&
+        scrollPos < $(".team-holder").offset().top + teamHolderHeight
+      ) {
+        $(".navigation-row-mobile").addClass("sticky");
+      } else {
+        $(".navigation-row-mobile").removeClass("sticky");
+      }
 
-    if ($(".scroll-team #technology").offset().top - scrollPos <= 10) {
-      $(".tab-link a").removeClass("active");
-      $(".tab-link a#technology_link").addClass("active");
-    }
+      // console.log($("#leadership").position().top);
+      if ($(".scroll-team #leadership").offset().top - scrollPos <= 10) {
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#leadership_link").addClass("active");
+      }
 
+      if (
+        $(".scroll-team #account_management").offset().top - scrollPos <=
+        10
+      ) {
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#account_management_link").addClass("active");
+      }
+
+      if ($(".scroll-team #design").offset().top - scrollPos <= 10) {
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#design_link").addClass("active");
+      }
+
+      if ($(".scroll-team #analytics").offset().top - scrollPos <= 10) {
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#analytics_link").addClass("active");
+      }
+
+      if ($(".scroll-team #technology").offset().top - scrollPos <= 10) {
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#technology_link").addClass("active");
+      }
+    }
     /** */
 
-    // if ($(".scroll-portfolio #digital").offset().top - scrollPos <= 10) {
-    //   $(".navigate-portfolio .tab-link a").removeClass("active");
-    //   $(".navigate-portfolio .tab-link a#digital_link").addClass("active");
-    // }
+    if (currentURL.includes("portfolio.html")) {
+      if (scrollPos <= 10) {
+        console.log(scrollPos);
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#all_link").addClass("active");
+      }
 
-    // if ($(".scroll-portfolio #uiux").offset().top - scrollPos <= 10) {
-    //   $(".navigate-portfolio .tab-link a").removeClass("active");
-    //   $(".navigate-portfolio .tab-link a#uiux_link").addClass("active");
-    // }
+      if ($("#digital").offset().top - scrollPos <= 10) {
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#digital_link").addClass("active");
+      }
 
-    // if ($(".scroll-portfolio #branding").offset().top - scrollPos <= 10) {
-    //   $(".navigate-portfolio .tab-link a").removeClass("active");
-    //   $(".navigate-portfolio .tab-link a#branding_link").addClass("active");
-    // }
+      if ($("#uiux").offset().top - scrollPos <= 10) {
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#uiux_link").addClass("active");
+      }
 
-    // if ($(".scroll-portfolio #videos").offset().top - scrollPos <= 10) {
-    //   $(".navigate-portfolio .tab-link a").removeClass("active");
-    //   $(".navigate-portfolio .tab-link a#videos_link").addClass("active");
-    // }
+      if ($("#branding").offset().top - scrollPos <= 10) {
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#branding_link").addClass("active");
+      }
+
+      if ($("#videos").offset().top - scrollPos <= 10) {
+        $(".tab-link a").removeClass("active");
+        $(".tab-link a#videos_link").addClass("active");
+      }
+
+      var navForMobile = $(".navigation-row-mobile").offset().top;
+      var teamHolderHeight = $(".scroll-portfolio").height();
+      if (scrollPos > $(".scroll-portfolio").offset().top + teamHolderHeight) {
+        console.log("You crossed");
+      }
+
+      var navForMobilePosition = navForMobile - scrollPos;
+
+      if (
+        navForMobilePosition <= 0 &&
+        navForMobile != 0 &&
+        scrollPos < $(".scroll-portfolio").offset().top + teamHolderHeight
+      ) {
+        $(".navigation-row-mobile").addClass("sticky");
+      } else {
+        $(".navigation-row-mobile").removeClass("sticky");
+      }
+
+      // console.log($("#digital").offset().top - scrollPos);
+    }
   });
 
   // alert($(".scroll-team #leadership").offset().top);
