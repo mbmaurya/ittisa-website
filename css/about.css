@@ -201,7 +201,7 @@
   margin-top: -10px;
   position: absolute;
   bottom: 0;
-  right: -25px;
+  right: -10px;
 }
 
 .team-section .scroll-team .name-title .designation {
@@ -326,6 +326,7 @@
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
+    margin-bottom: 0;
   }
 
   .team-section .scroll-team section {

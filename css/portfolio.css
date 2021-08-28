@@ -179,6 +179,10 @@
     padding-top: 40px;
   }
 
+  .portfolio .navigation-row-mobile {
+    display: block;
+  }
+
   .portfolio .navigation-row-mobile.sticky {
     position: fixed;
     z-index: 2;

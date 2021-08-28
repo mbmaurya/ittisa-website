@@ -35,11 +35,13 @@ $(document).ready(function () {
         ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
       ).css({ zIndex: 1 });
       $(".navigation-row-mobile").css({ zIndex: 1 });
+      $(".navigate-portfolio").css({ zIndex: 1 });
     } else {
       $(
         ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
       ).css({ zIndex: 0 });
       $(".navigation-row-mobile").css({ zIndex: 0 });
+      $(".navigate-portfolio").css({ zIndex: 0 });
     }
   });
 
@@ -441,5 +443,9 @@ $(document).ready(function () {
         $(this).addClass("active");
       }
     });
+  });
+
+  $("#dropdown_link").on("click", function () {
+    $("#dropdown_link_content").toggleClass("active");
   });
 });
