@@ -321,7 +321,7 @@
       </section>
 
       <!-- work section -->
-      <section class="work-section section">
+      <section class="work-section section" id="app-container">
         <div class="row" id="work-title-grid">
           <div class="col-1 col-sm-1"></div>
           <div class="col-1 col-sm-0"></div>
@@ -343,7 +343,14 @@
         <!-- work grid -->
         <div class="row" id="work-grid">
           <div class="col-1 col-sm-1"></div>
-          <div class="col-5 col-sm-4">
+          <div class="col-5 col-sm-4 relative-position">
+            <button id="ctrlLeft">
+              <!-- <i
+                class="fa fa-angle-left "
+                
+                aria-hidden="true"
+              ></i> -->
+            </button>
             <div class="work-slider" id="work-slider">
               <div class="slide" id="slide-1">
                 <div class="preview-img-div">
@@ -393,7 +400,7 @@
                   />
                 </div>
               </div>
-              <div class="slide" id="slide-1">
+              <div class="slide" id="slide-4">
                 <div class="preview-img-div">
                   <img
                     src="./assets/images/home-page/work/portfolio-redchillies.png"
@@ -410,12 +417,17 @@
                 </div>
               </div>
             </div>
+            <button id="ctrlRight">
+              <!-- <i class="fa fa-angle-right" aria-hidden="true"></i> -->
+            </button>
           </div>
           <div class="col-1"></div>
         </div>
         <div class="link-div">
           <a href="#" class="view-all-link">VIEW ALL</a>
         </div>
+        <canvas id="canvas"></canvas>
+        <!-- <canvas id="physics"></canvas> -->
       </section>
 
       <!-- services section -->
@@ -1435,6 +1447,11 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://ittisa.com/wp-content/themes/ittisa-v3/bubbles/js/paper-full.js"></script>
+    <script src="https://ittisa.com/wp-content/themes/ittisa-v3/bubbles/js/matter.min.js"></script>
+    <script src="https://ittisa.com/wp-content/themes/ittisa-v3/bubbles/js/TweenMax.min.js"></script>
+    <script src="js/bubble.class.js"></script>
 
     <!-- JQuery -->
     <script

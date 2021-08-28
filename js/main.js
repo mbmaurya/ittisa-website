@@ -442,4 +442,12 @@ $(document).ready(function () {
       }
     });
   });
+
+  // Get canvas DOM
+
+  var canvas = document.getElementById("canvas");
+
+  // Create an instance of the bubble and init it
+
+  this.bubble = new Bubble().init(canvas);
 });
