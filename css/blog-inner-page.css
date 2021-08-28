@@ -47,7 +47,7 @@
   margin-bottom: 32px;
 }
 
-.blog-header-content .pagelinks {
+.pagelinks {
   margin: 0px 0px 32px;
   padding: 0;
   list-style-type: none;
@@ -59,17 +59,17 @@
   color: var(--white);
 }
 
-.blog-header-content .pagelinks li {
+.pagelinks li {
   display: inline-block;
 }
 
-.blog-header-content .pagelinks li::after {
+.pagelinks li::after {
   content: ">>";
   color: var(--yellow);
   padding: 0px 5px 0px;
 }
 
-.blog-header-content .pagelinks li a {
+.pagelinks li a {
   text-decoration: none;
   font-family: Poppins;
   font-size: 1rem; /*16px*/
