@@ -342,6 +342,7 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
   });
+
   // Get canvas DOM
 
   var canvas = document.getElementById("canvas");
