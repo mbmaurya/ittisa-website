@@ -10,6 +10,7 @@ $(document).ready(function () {
 
   $(window).on("scroll", SlideGridLetters);
 
+  // Toggles menu and changes its text
   $("#toggle_menu").click(function () {
     $("#toggle_menu > p").text(
       $("#toggle_menu > p").text() == "Menu" ? "Close" : "Menu"
@@ -30,16 +31,19 @@ $(document).ready(function () {
       $("#navigation").toggleClass("d-nav");
     }, 500);
 
+    // prevents elements of pages from overlapping the menu
     if ($("#navigation").hasClass("d-nav")) {
       $(
         ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
       ).css({ zIndex: 1 });
       $(".navigation-row-mobile").css({ zIndex: 1 });
+      $(".navigate-portfolio").css({ zIndex: 1 });
     } else {
       $(
         ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
       ).css({ zIndex: 0 });
       $(".navigation-row-mobile").css({ zIndex: 0 });
+      $(".navigate-portfolio").css({ zIndex: 0 });
     }
   });
 
@@ -64,6 +68,7 @@ $(document).ready(function () {
     ],
   });
 
+  // Category selector for blog page
   $(".select-menu-title").click(function () {
     $(".select-menu-options").toggleClass("open");
     $(".section-category .dropdown-arrow").toggleClass("rotate-180");
@@ -95,7 +100,7 @@ $(document).ready(function () {
     }
   });
 
-  // accordion
+  // accordion on homepage
   var acc = $(".accordion-btn");
 
   acc.each(function (i) {
@@ -115,12 +120,10 @@ $(document).ready(function () {
     AOS.init();
   });
 
+  // referesh aos plugin for recent changes
   if (document.readyState == "complete") {
     AOS.refresh();
   }
-
-  // $(".scroll-team").on("scroll", onScroll);
-  // $(".scroll-portfolio").on("scroll", onScroll2);
 
   //smoothscroll
   $('.tab-link a[href^="#"]').on("click", function (e) {
@@ -150,136 +153,13 @@ $(document).ready(function () {
       );
   });
 
-  // function onScroll(event) {
-  //   var scrollPos = $(".team-section").scrollTop() + 400;
-  //   $(".tab-link a").each(function () {
-  //     var currLink = $(this);
-  //     var refElement = $(currLink.attr("href"));
-  //     if (
-  //       refElement.position().top <= scrollPos &&
-  //       refElement.position().top + refElement.height() > scrollPos
-  //     ) {
-  //       $(".tab-link a").removeClass("active");
-  //       currLink.addClass("active");
-  //     } else {
-  //       currLink.removeClass("active");
-  //     }
-  //   });
-  // }
-
-  // function onScroll2(event) {
-  //   var scrollPos = $(".scroll-portfolio").scrollTop() + 400;
-  //   console.log(scrollPos);
-  //   $(".navigate-portfolio .tab-link a").each(function () {
-  //     var currLink = $(this);
-  //     var refElement = $(currLink.attr("href"));
-  //     if (
-  //       refElement.position().top <= scrollPos &&
-  //       refElement.position().top + refElement.height() > scrollPos
-  //     ) {
-  //       $(".tab-link a").removeClass("active");
-  //       currLink.addClass("active");
-  //     } else {
-  //       currLink.removeClass("active");
-  //     }
-  //   });
-  // }
-
-  var mY = 0;
-  $(".magnify").mousemove(function (e) {
-    // moving upward
-    if (e.pageY < mY) {
-      $(this).css({
-        "margin-top": "-20px",
-        "margin-left": "20px",
-      });
-      $(".pointer").css({
-        display: "block",
-        top: e.pageY - 25,
-        left: e.pageX - 25,
-        transform: "scale(1.5)",
-      });
-
-      // moving downward
-    } else if (e.pageY > mY) {
-      $(this).css({
-        "margin-top": "20px",
-        "margin-left": "-20px",
-      });
-      $(".pointer").css({
-        display: "block",
-        top: e.pageY - 25,
-        left: e.pageX - 25,
-      });
-    } else {
-    }
-
-    // set new mY after doing test above
-    mY = e.pageY;
-  });
-
-  $(".magnify").mouseleave(function () {
-    $(this).css({ "margin-top": "0px", "margin-right": "0px" });
-    // $(".pointer").css({ display: "none" });
-  });
-
+  // sticks menu bar on top
   $(window).scroll(function (event) {
     var scrollPos = $(window).scrollTop();
     if (scrollPos >= 10) {
       $("header").addClass("nav-fixed");
     } else {
       $("header").removeClass("nav-fixed");
-    }
-  });
-
-  $(".navigate-left").click(function () {
-    var currentLeftMargin = $(".navigation-links ul").css("margin-left");
-    var screenWidth = $(window).width();
-    var screen15 = screenWidth - (screenWidth * 13.5) / 100;
-    if (currentLeftMargin >= 0 + "px") {
-      return false;
-    } else {
-      $(".navigation-links ul").css("margin-left", function (index, curValue) {
-        var newMarginLeft = parseInt(curValue, 10) + screen15 + "px";
-        curValue = newMarginLeft;
-        console.log("New current value:" + curValue);
-        return newMarginLeft;
-      });
-
-      $(".team-holder section:first-of-type").css(
-        "margin-left",
-        function (index, curValue) {
-          var teamMarginLeft = parseInt(curValue, 10) + screenWidth + "px";
-          curValue = teamMarginLeft;
-          console.log("New current value:" + curValue);
-          return teamMarginLeft;
-        }
-      );
-    }
-  });
-
-  $(".navigate-right").click(function () {
-    var currentLeftMargin = $(".navigation-links ul").css("margin-left");
-    var screenWidth = $(window).width();
-    var screen15 = screenWidth - (screenWidth * 13.5) / 100;
-    if (currentLeftMargin > -1500 + "px" || currentLeftMargin == 0 + "px") {
-      $(".navigation-links ul").css("margin-left", function (index, curValue) {
-        console.log("Current value:" + curValue);
-        var newMarginLeft = parseInt(curValue, 10) - screen15 + "px";
-        curValue = newMarginLeft;
-        console.log("New current value:" + curValue);
-        return newMarginLeft;
-      });
-
-      $(".team-holder section:first-of-type").css(
-        "margin-left",
-        function (index, curValue) {
-          var teamMarginLeft = parseInt(curValue, 10) - screenWidth + "px";
-          curValue = teamMarginLeft;
-          console.log("New current value:" + curValue);
-          return teamMarginLeft;
-        }
-      );
     }
   });
 
@@ -348,6 +228,7 @@ $(document).ready(function () {
     }
     /** */
 
+    // checks URL of current page
     if (currentURL.includes("portfolio.html")) {
       if (scrollPos <= 10) {
         console.log(scrollPos);
@@ -397,10 +278,6 @@ $(document).ready(function () {
     }
   });
 
-  // alert($(".scroll-team #leadership").offset().top);
-
-  // Project slider in landing/services page
-
   $(".brands .brand-links li").on("click", function () {
     $(".brands .brand-links li").removeClass("active");
     $(this).addClass("active");
@@ -426,6 +303,7 @@ $(document).ready(function () {
     $(".dropdown-list").toggleClass("active");
   });
 
+  // dropdown for scrolling team and portfolio list on mobile
   $(".dropdown-list li").on("click", function () {
     $(".dropdown-list li").removeClass("active");
     $(this).addClass("active");
@@ -441,5 +319,10 @@ $(document).ready(function () {
         $(this).addClass("active");
       }
     });
+  });
+
+  // dropdown in menu
+  $("#dropdown_link").on("click", function () {
+    $("#dropdown_link_content").toggleClass("active");
   });
 });

@@ -118,6 +118,10 @@
 
 /* service section */
 
+.secvices-section {
+  background: transparent;
+}
+
 .services-section #services-title-grid {
   margin-bottom: 126px;
 }
@@ -375,11 +379,15 @@
 
   .banner-section .slider .slick-prev,
   .banner-section .slider .slick-next {
-    top: 40%;
+    top: unset;
+  }
+
+  .banner-section .slider .slick-prev {
+    bottom: -15px;
   }
 
   .banner-section .slick-slide #big-img-col {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 35px;
   }
 
