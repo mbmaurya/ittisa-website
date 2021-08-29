@@ -118,6 +118,10 @@
 
 /* service section */
 
+.secvices-section {
+  background: transparent;
+}
+
 .services-section #services-title-grid {
   margin-bottom: 126px;
 }

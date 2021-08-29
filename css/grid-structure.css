@@ -19,6 +19,7 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
+  background-color: var(--dark-grey);
 }
 
 .grid {
