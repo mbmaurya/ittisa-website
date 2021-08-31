@@ -8,6 +8,11 @@ footer .footer-logo {
 
 footer .footer-logo img {
   margin-right: 10px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+  margin-left: auto;
 }
 
 footer .row p {
@@ -68,6 +73,11 @@ footer .division-social-media {
   footer .footer-logo {
     text-align: left;
     margin-bottom: 20px;
+  }
+
+  footer .footer-logo img {
+    margin-left: unset;
+    width: auto;
   }
 
   footer .partner-img-1 img {
