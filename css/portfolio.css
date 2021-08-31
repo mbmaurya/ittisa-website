@@ -194,7 +194,7 @@
   .portfolio .navigation-row-mobile.sticky {
     position: fixed;
     z-index: 2;
-    top: 80px;
+    top: 0px;
     background-color: var(--black);
     width: 40vh;
     left: 50%;
