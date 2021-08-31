@@ -180,6 +180,13 @@
 }
 
 /* client grids */
+
+.client-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .clients-section #clients-row {
   margin-top: -70px;
 }

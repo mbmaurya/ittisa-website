@@ -35,7 +35,6 @@
 
 .ittisa-section {
   padding-top: 200px;
-  padding-bottom: 70px;
 }
 
 .ittisa-section .ittisa-video {
@@ -97,11 +96,6 @@
 
 .ittisa-section .text-col .google-partner-line img {
   margin: 0 15px;
-}
-
-.impact-section {
-  padding-top: 80px;
-  padding-bottom: 70px;
 }
 
 .impact-section #impact-title-row {
@@ -363,10 +357,6 @@
   margin-bottom: 30px;
 }
 
-.services-section {
-  padding-bottom: 50px;
-}
-
 .services-section #services-title-grid {
   margin-bottom: 56px;
 }
@@ -395,11 +385,6 @@
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-}
-
-.testimonials-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .testimonials-section p {
@@ -592,13 +577,16 @@
     margin-bottom: 20px;
   }
 
+  .banner-text br {
+    display: none;
+  }
+
   .impact-section .impact-row .radar-div {
     margin-bottom: 40px;
   }
 
   .ittisa-section {
     padding-top: 40px;
-    padding-bottom: 40px;
   }
 
   .ittisa-section .ittisa-video {
@@ -618,11 +606,6 @@
   .ittisa-section .text-col .google-partner-line img {
     width: 40%;
     margin: 0px 8px;
-  }
-
-  .impact-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
 
   .impact-row .client-growth-div {
@@ -651,23 +634,11 @@
   }
 
   /* services section */
-  .services-section {
-    padding-bottom: 20px;
-  }
 
   /* testimonials section */
-  .testimonials-section {
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
 
   .testimonials-section .testimony-div {
     margin-bottom: 20px;
-  }
-
-  .faq-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
 
   .faq-section #faq-row #text-col {
@@ -676,17 +647,29 @@
 
   /* contact section */
 
-  .contact-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   .contact-section #form-col {
     margin-top: 28px;
   }
 
   .brands .brand-list {
     margin: 0px 0px 20px 0px;
+  }
+
+  .brands .brand-list .brand-title {
+    text-align: center;
+  }
+
+  .brands .brand-list .detail {
+    text-align: center;
+  }
+
+  .brands .brand-list a.view-all-link {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+    text-align: center;
   }
 
   .brands .brand-links {

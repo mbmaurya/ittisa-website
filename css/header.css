@@ -26,8 +26,9 @@ header .container {
 }
 
 header .header-container .logo {
+  width: 100px;
+  margin-left: auto;
   padding-right: 20px;
-  text-align: right;
 }
 
 header .header-container #navigation {
@@ -259,7 +260,7 @@ header .menu-overlay {
   }
 
   header .header-container .logo {
-    padding-left: 5px;
+    width: auto;
   }
 
   header .header-container .logo img {
