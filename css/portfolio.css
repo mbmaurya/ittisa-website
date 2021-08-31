@@ -92,6 +92,9 @@
 
 .portfolio .portfolio-block {
   padding-bottom: 80px;
+  margin-bottom: 150px;
+  position: relative;
+  z-index: 0;
 }
 
 .portfolio .portfolio-block img {
@@ -99,6 +102,11 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.portfolio .portfolio-block .content {
+  position: absolute;
+  z-index: 1;
 }
 
 .portfolio .portfolio-block .content .portfolio-title {
@@ -186,7 +194,7 @@
   .portfolio .navigation-row-mobile.sticky {
     position: fixed;
     z-index: 2;
-    top: 0px;
+    top: 80px;
     background-color: var(--black);
     width: 40vh;
     left: 50%;
