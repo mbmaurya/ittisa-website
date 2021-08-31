@@ -325,4 +325,11 @@ $(document).ready(function () {
   $("#dropdown_link").on("click", function () {
     $("#dropdown_link_content").toggleClass("active");
   });
+  // Get canvas DOM
+
+  var canvas = document.getElementById("canvas");
+
+  // Create an instance of the bubble and init it
+
+  this.bubble = new Bubble().init(canvas);
 });
