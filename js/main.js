@@ -325,4 +325,9 @@ $(document).ready(function () {
   $("#dropdown_link").on("click", function () {
     $("#dropdown_link_content").toggleClass("active");
   });
+
+  $(".portfolio-inner-slider").slick({
+    arrows: false,
+    dots: true,
+  });
 });

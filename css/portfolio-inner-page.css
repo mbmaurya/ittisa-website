@@ -1,0 +1,62 @@
+.portfolio-inner-page .banner {
+  padding-top: 40px;
+}
+
+.portfolio-inner-page .slick-dots {
+  bottom: -34px;
+}
+
+.portfolio-inner-page .slick-dots li {
+  width: 10px;
+  height: 10px;
+}
+
+.portfolio-inner-page .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #6c6c6c;
+  border-radius: 50%;
+}
+
+.portfolio-inner-page .slick-dots li.slick-active button {
+  background-color: var(--yellow);
+  border: 1px solid var(--yellow);
+}
+
+.portfolio-inner-page .slick-dots li button:before {
+  content: none;
+}
+
+.portfolio-inner-page .portfolio-body .title {
+  color: var(--yellow);
+  margin-bottom: 26px;
+}
+
+.portfolio-inner-page .portfolio-body p {
+  margin: 0px 0px 26px;
+}
+
+.portfolio-inner-page .portfolio-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+.portfolio-inner-page .inner-page-footer .form .form-title {
+  font-family: "BigCaslon", sans-serif;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+}
+
+.portfolio-inner-page .inner-page-footer .form .form-title span {
+  color: var(--yellow);
+}
+
+.portfolio-inner-page .inner-page-footer .form {
+  padding-top: 10px;
+}
+
+.portfolio-inner-page .inner-page-footer .pagination .blog-div .text-div {
+  margin-top: 0;
+}
