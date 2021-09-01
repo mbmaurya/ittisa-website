@@ -29,6 +29,7 @@ $(document).ready(function () {
     );
     setTimeout(function () {
       $("#navigation").toggleClass("d-nav");
+      $("body").toggleClass("stop-scroll");
     }, 500);
 
     // prevents elements of pages from overlapping the menu
