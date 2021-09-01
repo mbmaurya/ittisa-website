@@ -47,41 +47,6 @@
   margin-bottom: 32px;
 }
 
-.pagelinks {
-  margin: 0px 0px 32px;
-  padding: 0;
-  list-style-type: none;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  resize: horizontal;
-  color: var(--white);
-}
-
-.pagelinks li {
-  display: inline-block;
-}
-
-.pagelinks li::after {
-  content: ">>";
-  color: var(--yellow);
-  padding: 0px 5px 0px;
-}
-
-.pagelinks li a {
-  text-decoration: none;
-  font-family: Poppins;
-  font-size: 1rem; /*16px*/
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.375rem; /*22px*/
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--white);
-}
-
 .blog-body {
   margin-top: 20px;
 }
