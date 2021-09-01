@@ -95,6 +95,10 @@
   color: var(--yellow);
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
+
 .no-margin {
   margin: 0 !important;
 }
@@ -282,4 +286,12 @@
 
 .inner-page-footer .link-div .next {
   justify-content: flex-end;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.white-to-yellow {
+  color: var(--yellow) !important;
 }

@@ -45,6 +45,11 @@
   color: #383838;
 }
 
+.grid-letters.row-2,
+.grid-letters.row-3 {
+  margin-top: -24px;
+}
+
 .grid-letters.row-2 {
   margin-left: -40vw;
 }
