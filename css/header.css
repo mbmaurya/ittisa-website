@@ -175,6 +175,8 @@ header .header-container nav ul li ul {
 
 header .header-container nav ul li ul.active {
   display: block;
+  height: 200px;
+  overflow: scroll;
 }
 
 header .header-container nav ul li ul li a {
@@ -213,6 +215,11 @@ header .menu-overlay {
   top: 0;
   left: -200%;
   z-index: 12;
+}
+
+header .header-container #dropdown_link span {
+  display: inline-block;
+  line-height: 11px;
 }
 
 /* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */

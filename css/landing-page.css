@@ -209,6 +209,10 @@
   z-index: 0;
 }
 
+.brands .brand-links li.active button {
+  outline: none;
+}
+
 .brands .brand-links {
   width: 300px;
   list-style-type: none;

@@ -334,6 +334,8 @@ $(document).ready(function () {
   // dropdown in menu
   $("#dropdown_link").on("click", function () {
     $("#dropdown_link_content").toggleClass("active");
+    $("#dropdown_link").toggleClass("white-to-yellow");
+    $("#dropdown_link > span").toggleClass("rotate180");
   });
 
   $(".portfolio-inner-slider").slick({
