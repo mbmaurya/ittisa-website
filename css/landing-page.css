@@ -107,11 +107,95 @@
 }
 
 .impact-section .impact-row .radar-div {
-  padding: 0;
-  background-color: var(--dark-grey);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.2);
+}
+
+.impact-section .impact-row .radar-div .radar-text {
+  position: absolute;
+  top: 17%;
+  width: 100%;
+  height: 73%;
+}
+
+.impact-section .impact-row .radar-div .radar-text p {
+  position: absolute;
+  margin: 0;
+  font-family: Poppins;
+  font-size: 0.75rem; /*12px*/
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1rem; /*16px*/
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.radar-div .radar-text p:nth-child(1),
+.radar-div .radar-text p:nth-child(2),
+.radar-div .radar-text p:nth-child(3) {
+  top: 0;
+}
+
+.radar-div .radar-text p:nth-child(4),
+.radar-div .radar-text p:nth-child(5) {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.radar-div .radar-text p:nth-child(6),
+.radar-div .radar-text p:nth-child(7),
+.radar-div .radar-text p:nth-child(8) {
+  bottom: 0;
+}
+
+.radar-div .radar-text p:nth-child(1) {
+  left: 15%;
+  top: 16%;
+}
+
+.radar-div .radar-text p:nth-child(2) {
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.radar-div .radar-text p:nth-child(3) {
+  right: 10%;
+  top: 15%;
+}
+
+.radar-div .radar-text p:nth-child(4) {
+  left: 6%;
+}
+
+.radar-div .radar-text p:nth-child(5) {
+  right: 6%;
+}
+
+.radar-div .radar-text p:nth-child(6) {
+  left: 9%;
+  bottom: 16%;
+}
+
+.radar-div .radar-text p:nth-child(7) {
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.radar-div .radar-text p:nth-child(8) {
+  bottom: 16%;
+  right: 11%;
 }
 
 .impact-section .impact-row .impact-sub-title {
+  margin-top: 0;
+  padding-top: 30px;
   font-size: 18px;
   font-weight: 600;
   font-stretch: normal;
@@ -122,19 +206,15 @@
   color: var(--yellow);
 }
 
-.impact-section .impact-row .impact-sub-title {
-  font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--yellow);
+.impact-section .impact-row .radar-div img {
+  padding: 40px 40px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .impact-row .client-growth-div {
-  padding: 30px 15px 20px;
+  padding: 0px 15px 20px;
   background-color: var(--dark-grey);
 }
 
@@ -697,5 +777,9 @@
   .testimonials-section .testimonials-title-row .title {
     font-size: 46px;
     margin-bottom: 36px;
+  }
+
+  .impact-section .impact-row .radar-div img {
+    padding: 0;
   }
 }
