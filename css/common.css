@@ -295,3 +295,9 @@
 .white-to-yellow {
   color: var(--yellow) !important;
 }
+
+@media screen and (max-width: 1200px) {
+  .margin-bottom-40-tablet {
+    margin-bottom: 84px;
+  }
+}
