@@ -64,6 +64,7 @@
 .work-section #work-grid {
   margin-top: 90px;
   margin-bottom: 60px;
+  height: 100%;
 }
 
 .work-section #work-grid .work-slider .slide {
@@ -99,12 +100,12 @@
 }
 
 .work-section .work-slider .slick-prev {
-  top: 10%;
+  top: 20%;
   left: -100px;
 }
 
 .work-section .work-slider .slick-next {
-  top: 10%;
+  top: 20%;
   right: -100px;
 }
 
@@ -395,18 +396,24 @@
 }
 
 #app-container .slick-slider {
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   height: 700px;
   left: 0;
-  z-index: 9;
+  z-index: 9; */
+}
+
+#app-container .slider-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 11;
 }
 
 #app-container canvas {
   width: 100%;
-  height: 700px !important;
-  position: absolute;
-  top: 0px;
+  height: 100%;
 }
 
 /*.bb #canvas {
@@ -415,19 +422,15 @@
   top: 0;
 } */
 
-/* .bb #physics {
+#app-container #physics {
   position: absolute;
-
   top: 0;
-
   left: 0;
-
   background: transparent !important;
-
-  z-index: 20;
-
+  z-index: 10;
   width: 100% !important;
-} */
+  height: 700px !important;
+}
 
 /* .bb button {
   position: absolute;
@@ -531,6 +534,18 @@ button#ctrlRight {
 
 .bb .slick-track {
   height: 545px;
+}
+
+.work-slider .slide.slick-active .logo-img-div img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
+
+.work-slider .slide.slick-active.slick-current .logo-img-div img {
+  margin-top: 0;
+  width: 100%;
 }
 
 /* media query for mobile devices */
@@ -651,7 +666,7 @@ button#ctrlRight {
     align-items: flex-end;
   }
 
-  .work-section #work-grid {
+  #app-container .slider-container .work-section #work-grid {
     margin-top: 60px;
   }
 
@@ -704,5 +719,23 @@ button#ctrlRight {
   .work-section .work-slider .slick-next,
   .work-section .work-slider .slick-prev {
     top: 30%;
+  }
+
+  #app-container .slider-container {
+    position: relative;
+  }
+
+  .work-section .link-div {
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+
+  .work-section .work-slider .slick-next {
+    right: -50px;
+  }
+
+  .work-section .work-slider .slick-prev {
+    left: -50px;
   }
 }
