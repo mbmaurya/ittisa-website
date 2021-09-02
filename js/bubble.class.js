@@ -23,7 +23,7 @@ var pathes = [
 
 // If the amount of image is not equal to the length of the pathes array
 // You will not be able to use image insides at all
-var imgs = ["dummy.png", "dummy.png", "dummy.png", "dummy.png"];
+var imgs = ["dummy-2.png", "dummy-2.png", "dummy-2.png", "dummy-2.png"];
 
 /*  NOTE  */
 /*  I uses those two arrays but you can easily call a Json file where you will store all this datas */

@@ -99,10 +99,12 @@
 }
 
 .work-section .work-slider .slick-prev {
+  top: 10%;
   left: -100px;
 }
 
 .work-section .work-slider .slick-next {
+  top: 10%;
   right: -100px;
 }
 
@@ -395,6 +397,7 @@
 #app-container .slick-slider {
   position: absolute;
   width: 100%;
+  height: 700px;
   left: 0;
   z-index: 9;
 }
@@ -677,5 +680,29 @@ button#ctrlRight {
 
   .contact-section .form-div {
     margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #app-container {
+    height: auto !important;
+  }
+
+  #app-container canvas {
+    display: none;
+  }
+
+  #app-container .slick-slider {
+    position: relative;
+    height: auto;
+  }
+
+  .work-section #work-grid .work-slider .slick-center .preview-img-div img {
+    visibility: visible;
+  }
+
+  .work-section .work-slider .slick-next,
+  .work-section .work-slider .slick-prev {
+    top: 30%;
   }
 }
