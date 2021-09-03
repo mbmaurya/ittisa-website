@@ -315,6 +315,7 @@ $(document).ready(function () {
   /** dropdown btn */
   $(".dropdown-btn").on("click", function () {
     $(".dropdown-list").toggleClass("active");
+    $(".dropdown-btn span img").toggleClass("rotate180");
   });
 
   // dropdown for scrolling team and portfolio list on mobile
@@ -324,7 +325,8 @@ $(document).ready(function () {
     var activeListItem = $(this);
     console.log(activeListItem);
     var listName = $(this).find("a").text();
-    $(".dropdown-btn").text(listName);
+    $(".dropdown-btn .dd-title").text(listName);
+    $(".dropdown-btn span img").toggleClass("rotate180");
     $(".dropdown-list").removeClass("active");
     var sectionList = $("#dropdown_section section");
     $(sectionList).each(function () {
