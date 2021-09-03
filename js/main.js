@@ -39,12 +39,16 @@ $(document).ready(function () {
       ).css({ zIndex: 1 });
       $(".navigation-row-mobile").css({ zIndex: 1 });
       $(".navigate-portfolio").css({ zIndex: 1 });
+      setTimeout(function () {
+        $("#app-container .slider-container").css({ zIndex: 11 });
+      }, 1500);
     } else {
       $(
         ".banner-section .slider .slick-prev, .banner-section .slider .slick-next"
       ).css({ zIndex: 0 });
       $(".navigation-row-mobile").css({ zIndex: 0 });
       $(".navigate-portfolio").css({ zIndex: 0 });
+      $("#app-container .slider-container").css({ zIndex: 0 });
     }
   });
 
