@@ -350,4 +350,10 @@ $(document).ready(function () {
   // Create an instance of the bubble and init it
 
   this.bubble = new Bubble().init(canvas);
+
+  var slickPrev = $("#work-slider .slick-prev");
+  var slickNext = $("#work-slider .slick-next");
+
+  slickPrev.attr("id", "ctrlLeft");
+  slickNext.attr("id", "ctrlRight");
 });
