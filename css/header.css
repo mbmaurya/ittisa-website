@@ -176,7 +176,8 @@ header .header-container nav ul li ul {
 header .header-container nav ul li ul.active {
   display: block;
   height: 200px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 header .header-container nav ul li ul li a {
@@ -220,6 +221,29 @@ header .menu-overlay {
 header .header-container #dropdown_link span {
   display: inline-block;
   line-height: 11px;
+}
+
+
+/* width */
+header .header-container nav ul li ul.active::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+header .header-container nav ul li ul.active::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+header .header-container nav ul li ul.active::-webkit-scrollbar-thumb {
+  background:var(--yellow); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+header .header-container nav ul li ul.active::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
 }
 
 /* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */
