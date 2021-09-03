@@ -552,10 +552,10 @@ button#ctrlRight {
 }
 
 .work-slider .slide.slick-active .logo-img-div img {
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  margin-top: 23%;
 }
 
 .work-slider .slide.slick-active.slick-current .logo-img-div img {

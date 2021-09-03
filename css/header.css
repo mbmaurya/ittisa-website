@@ -11,7 +11,7 @@ header .header-container {
 .nav-fixed {
   position: fixed;
   width: 100%;
-  background-color: #00000038;
+  background-color: rgba(0, 0, 0, 0.22)
   padding: 6px 0px;
   top: 0;
   z-index: 1;
@@ -176,7 +176,8 @@ header .header-container nav ul li ul {
 header .header-container nav ul li ul.active {
   display: block;
   height: 200px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 header .header-container nav ul li ul li a {
@@ -222,6 +223,29 @@ header .header-container #dropdown_link span {
   line-height: 11px;
 }
 
+
+/* width */
+header .header-container nav ul li ul.active::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+header .header-container nav ul li ul.active::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+header .header-container nav ul li ul.active::-webkit-scrollbar-thumb {
+  background:var(--yellow); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+header .header-container nav ul li ul.active::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
+}
+
 /* HOME PAGE MOBILE VIEW --------------------------------------------------------------- */
 
 @media screen and (max-width: 1200px) {
@@ -258,6 +282,11 @@ header .header-container #dropdown_link span {
 }
 
 @media screen and (max-width: 767px) {
+
+  .nav-fixed {
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 1);
+  }
   header .header-container .button-div {
     justify-content: flex-end;
   }

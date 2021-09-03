@@ -211,6 +211,7 @@
 
 .blog-footer .pagination .blog-div .text-div {
   margin-top: -30px;
+  margin-bottom: 30px;
   margin-right: 0;
   transition: all 0.2s ease-in-out;
   position: relative;

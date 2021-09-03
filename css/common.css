@@ -4,6 +4,10 @@
 }
 
 /* button */
+button {
+  outline: none;
+}
+
 .view-all-link {
   display: flex;
   flex-direction: row;
