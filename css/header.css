@@ -11,7 +11,7 @@ header .header-container {
 .nav-fixed {
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.22)
+  background-color: rgba(0, 0, 0, 0.22);
   padding: 6px 0px;
   top: 0;
   z-index: 1;
@@ -223,7 +223,6 @@ header .header-container #dropdown_link span {
   line-height: 11px;
 }
 
-
 /* width */
 header .header-container nav ul li ul.active::-webkit-scrollbar {
   width: 10px;
@@ -231,13 +230,13 @@ header .header-container nav ul li ul.active::-webkit-scrollbar {
 
 /* Track */
 header .header-container nav ul li ul.active::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 5px;
 }
- 
+
 /* Handle */
 header .header-container nav ul li ul.active::-webkit-scrollbar-thumb {
-  background:var(--yellow); 
+  background: var(--yellow);
   border-radius: 5px;
 }
 
@@ -282,7 +281,9 @@ header .header-container nav ul li ul.active::-webkit-scrollbar-thumb:hover {
 }
 
 @media screen and (max-width: 767px) {
-
+  header {
+    margin-top: 15px;
+  }
   .nav-fixed {
     padding: 10px 0px;
     background-color: rgba(0, 0, 0, 1);

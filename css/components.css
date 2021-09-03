@@ -123,6 +123,7 @@
   transition: all 0.2s ease-in-out;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .dropdown .dropdown-list.active {
@@ -135,7 +136,7 @@
 }
 
 .dropdown .dropdown-list li.active {
-  background-color: var(--white);
+  background-color: rgb(255 255 255 / 28%);
 }
 
 .dropdown .dropdown-list li a {

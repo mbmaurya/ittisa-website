@@ -204,7 +204,7 @@ $(document).ready(function () {
       var navForMobilePosition = navForMobileOffset - scrollPos;
 
       if (
-        navForMobilePosition < 20 &&
+        navForMobilePosition < 50 &&
         navForMobileOffset != 0 &&
         scrollPos < teamHolderOffset + $(".team-holder").height()
       ) {
@@ -281,7 +281,7 @@ $(document).ready(function () {
       var navForMobilePosition = navForMobileOffset - scrollPos;
 
       if (
-        navForMobilePosition < 0 &&
+        navForMobilePosition < 50 &&
         navForMobileOffset != 0 &&
         scrollPos < scrollPortfolioOffset + teamHolderHeight
       ) {
