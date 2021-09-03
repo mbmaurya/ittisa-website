@@ -100,11 +100,13 @@
 }
 
 .work-section .work-slider .slick-prev {
+  /* display: none !important; */
   top: 20%;
   left: -100px;
 }
 
 .work-section .work-slider .slick-next {
+  /* display: none !important; */
   top: 20%;
   right: -100px;
 }
@@ -442,11 +444,24 @@
 
 button#ctrlLeft,
 button#ctrlRight {
-  width: 0;
-  height: 0;
+  /* position: absolute;
+  top: 10%;
+  width: 10%;
+  height: auto;
+  background-color: transparent !important;
   border: none;
-  background: none;
+  cursor: pointer; */
+  /* visibility: hidden; */
+  /* display: none; */
 }
+
+/* button#ctrlLeft {
+  left: -10%;
+}
+
+button#ctrlRight {
+  right: -10%;
+} */
 
 /* .bb .slider {
   width: 100%;
@@ -729,6 +744,7 @@ button#ctrlRight {
     position: relative;
     left: 0;
     transform: none;
+    bottom: 0;
   }
 
   .work-section .work-slider .slick-next {
