@@ -122,7 +122,7 @@ $(document).ready(function () {
 
   // Initialize animation on scroll
   $(function () {
-    AOS.init();
+    AOS.init({ disable: "mobile" });
   });
 
   // referesh aos plugin for recent changes

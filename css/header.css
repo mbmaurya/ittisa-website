@@ -1,5 +1,5 @@
 header {
-  margin-top: 28px;
+  padding-top: 28px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -282,7 +282,7 @@ header .header-container nav ul li ul.active::-webkit-scrollbar-thumb:hover {
 
 @media screen and (max-width: 767px) {
   header {
-    margin-top: 15px;
+    padding-top: 15px;
   }
   .nav-fixed {
     padding: 10px 0px;
